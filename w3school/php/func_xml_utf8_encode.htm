@@ -1,0 +1,226 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="Content-Language" content="zh-cn" />
+
+<meta name="robots" content="all" />
+
+<meta name="author" content="www.phper8.com" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta http-equiv="imagetoolbar" content="false" />
+
+<link rel="stylesheet" type="text/css" href="../c5.css" />
+<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+
+<title>PHP utf8_encode() 函数</title>
+</head>
+
+<body class="serverscripting">
+<div id="wrapper">
+
+<div id="header">
+<a href="../index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="ad_head">
+
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.htm" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.htm" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.htm" title="服务器脚本教程">服务器脚本</a></li>
+<li id="d"><a href="../d.htm" title="ASP.NET 教程">ASP.NET 教程</a></li>
+<li id="x"><a href="../x.htm" title="XML 系列教程">XML 系列教程</a></li>
+<li id="ws"><a href="../ws.htm" title="Web Services 系列教程">Web Services 系列教程</a></li>
+<li id="w"><a href="../w.htm" title="建站手册">建站手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>PHP 基础教程</h2>
+<ul>
+<li><a href="index.htm" title="PHP 教程">PHP 教程</a></li>
+<li><a href="php_intro.htm" title="PHP 简介">PHP 简介</a></li>
+<li><a href="php_install.htm" title="PHP 安装">PHP 安装</a></li>
+<li><a href="php_syntax.htm" title="PHP 语法">PHP 语法</a></li>
+<li><a href="php_variables.htm" title="PHP 变量">PHP 变量</a></li>
+<li><a href="php_string.htm" title="PHP 字符串">PHP 字符串</a></li>
+<li><a href="php_operators.htm" title="PHP 运算符">PHP 运算符</a></li>
+<li><a href="php_if_else.htm" title="PHP If...Else 语句">PHP If...Else</a></li>
+<li><a href="php_switch.htm" title="PHP Switch 语句">PHP Switch</a></li>
+<li><a href="php_arrays.htm" title="PHP 数组">PHP 数组</a></li>
+<li><a href="php_looping.htm" title="PHP 循环">PHP 循环</a></li>
+<li><a href="php_functions.htm" title="PHP 函数">PHP 函数</a></li>
+<li><a href="php_forms.htm" title="PHP 表单和用户输入">PHP 表单</a></li>
+<li><a href="php_get.htm" title="PHP $_GET">PHP $_GET</a></li>
+<li><a href="php_post.htm" title="PHP $_POST">PHP $_POST</a></li>
+</ul>
+<h2>PHP 高级教程</h2>
+<ul>
+<li><a href="php_date.htm" title="PHP Date()">PHP 日期</a></li>
+<li><a href="php_includes.htm" title="PHP Include 文件">PHP Include</a></li>
+<li><a href="php_file.htm" title="PHP 文件处理">PHP 文件</a></li>
+<li><a href="php_file_upload.htm" title="PHP 文件上传">PHP 文件上传</a></li>
+<li><a href="php_cookies.htm" title="PHP Cookies">PHP Cookies</a></li>
+<li><a href="php_sessions.htm" title="PHP Sessions">PHP Sessions</a></li>
+<li><a href="php_mail.htm" title="PHP 发送电子邮件">PHP E-mail</a></li>
+<li><a href="php_secure_mail.htm" title="PHP 安全的电子邮件">PHP 安全 E-mail</a></li>
+<li><a href="php_error.htm" title="PHP 错误处理">PHP Error</a></li>
+<li><a href="php_exception.htm" title="PHP 异常处理">PHP Exception</a></li>
+<li><a href="php_filter.htm" title="PHP 过滤器（Filter）">PHP Filter</a></li>
+</ul>
+<h2>PHP 数据库</h2>
+<ul>
+<li><a href="php_mysql_intro.htm" title="MySQL 简介">MySQL 简介</a></li>
+<li><a href="php_mysql_connect.htm" title="PHP MySQL 连接数据库">MySQL Connect</a></li>
+<li><a href="php_mysql_create.htm" title="PHP MySQL 创建数据库和表">MySQL Create</a></li>
+<li><a href="php_mysql_insert.htm" title="PHP MySQL Insert Into">MySQL Insert</a></li>
+<li><a href="php_mysql_select.htm" title="PHP MySQL Select">MySQL Select</a></li>
+<li><a href="php_mysql_where.htm" title="PHP MySQL Where 子句">MySQL Where</a></li>
+<li><a href="php_mysql_order_by.htm" title="PHP MySQL Order By 关键词">MySQL Order By</a></li>
+<li><a href="php_mysql_update.htm" title="PHP MySQL Update">MySQL Update</a></li>
+<li><a href="php_mysql_delete.htm" title="PHP MySQL Delete From">MySQL Delete</a></li>
+<li><a href="php_db_odbc.htm" title="PHP Database ODBC">PHP ODBC</a></li>
+</ul>
+<h2>PHP XML</h2>
+<ul>
+<li><a href="php_xml_parser_expat.htm" title="PHP XML Expat 解析器">XML Expat Parser</a></li>
+<li><a href="php_xml_dom.htm" title="PHP XML DOM">XML DOM</a></li>
+<li><a href="php_xml_simplexml.htm" title="PHP SimpleXML">XML SimpleXML</a></li>
+</ul>
+<h2>PHP 和 AJAX</h2>
+<ul>
+<li><a href="php_ajax_intro.htm" title="AJAX XMLHttpRequest">AJAX 简介</a></li>
+<li><a href="php_ajax_xmlhttprequest.htm" title="AJAX XMLHttpRequest">XMLHttpRequest</a></li>
+<li><a href="php_ajax_suggest.htm" title="PHP 和 AJAX 请求">AJAX Suggest</a></li>
+<li><a href="php_ajax_xml.htm" title="PHP 和 AJAX XML 实例">AJAX XML</a></li>
+<li><a href="php_ajax_database.htm" title="PHP 和 AJAX MySQL 数据库实例">AJAX Database</a></li>
+<li><a href="php_ajax_responsexml.htm" title="PHP 和 AJAX responseXML 实例">AJAX responseXML</a></li>
+<li><a href="php_ajax_livesearch.htm" title="PHP 和 AJAX Live Search">AJAX Live Search</a></li>
+<li><a href="php_ajax_rss_reader.htm" title="PHP 和 AJAX RSS 阅读器">AJAX RSS Reader</a></li>
+<li><a href="php_ajax_poll.htm" title="PHP 和 AJAX 投票">AJAX Poll</a></li>
+</ul>
+<h2>PHP 参考手册</h2>
+<ul>
+<li><a href="php_ref_array.htm" title="PHP Array 函数">PHP Array</a></li>
+<li><a href="php_ref_calendar.htm" title="PHP Calendar 函数">PHP Calendar</a></li>
+<li><a href="php_ref_date.htm" title="PHP Date / Time 函数">PHP Date</a></li>
+<li><a href="php_ref_directory.htm" title="PHP Directory 函数">PHP Directory</a></li>
+<li><a href="php_ref_error.htm" title="PHP Error 和 Logging 函数">PHP Error</a></li>
+<li><a href="php_ref_filesystem.htm" title="PHP Filesystem 函数">PHP Filesystem</a></li>
+<li><a href="php_ref_filter.htm" title="PHP Filter 函数">PHP Filter</a></li>
+<li><a href="php_ref_ftp.htm" title="PHP FTP 函数">PHP FTP</a></li>
+<li><a href="php_ref_http.htm" title="PHP HTTP 函数">PHP HTTP</a></li>
+<li><a href="php_ref_libxml.htm" title="PHP LibXML 函数">PHP LibXML</a></li>
+<li><a href="php_ref_mail.htm" title="PHP Mail 函数">PHP Mail</a></li>
+<li><a href="php_ref_math.htm" title="PHP Math 函数">PHP Math</a></li>
+<li><a href="php_ref_mysql.htm" title="PHP MySQL 函数">PHP MySQL</a></li>
+<li><a href="php_ref_simplexml.htm" title="PHP SimpleXML 函数">PHP SimpleXML</a></li>
+<li><a href="php_ref_string.htm" title="PHP String 函数">PHP String</a></li>
+<li><a href="php_ref_xml.htm" title="PHP XML Parser 函数">PHP XML</a></li>
+<li><a href="php_ref_zip.htm" title="PHP Zip File 函数">PHP Zip</a></li>
+<li><a href="php_ref_misc.htm" title="PHP 杂项函数">PHP 杂项</a></li>
+</ul>
+<h2>PHP 测验</h2>
+<ul>
+<li><a href="php_quiz.htm" title="PHP 测验">PHP 测验</a></li>
+</ul>
+</div><div id="selected">
+<h2>建站手册</h2>
+<ul>
+<li><a href="../site/index.htm" title="网站构建">网站构建</a></li>
+<li><a href="../w3c/index.htm" title="万维网联盟 (W3C)">万维网联盟 (W3C)</a></li>
+<li><a href="../browsers/index.htm" title="浏览器信息">浏览器信息</a></li>
+<li><a href="../quality/index.htm" title="网站品质">网站品质</a></li>
+<li><a href="../semweb/index.htm" title="语义网">语义网</a></li>
+<li><a href="../careers/index.htm" title="职业规划">职业规划</a></li>
+<li><a href="../hosting/index.htm" title="网站主机">网站主机</a></li>
+</ul>
+
+<h2><a href="../about/index.htm" title="关于 W3School" id="link_about">关于 W3School</a></h2>
+<h2><a href="../about/about_helping.htm" title="帮助 W3School" id="link_help">帮助 W3School</a></h2>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>PHP utf8_encode() 函数</h1>
+
+<div class="backtoreference">
+<p><a href="php_ref_xml.htm" title="PHP XML Parser 函数">PHP XML Parser 函数</a></p>
+</div>
+
+<div>
+<h2>定义和用法</h2>
+
+<p>utf8_encode() 函数把 ISO-8859-1 字符串编码为 UTF-8。</p>
+
+<p>Unicode 是全球标准，已经发展到能够通过唯一的编码来描述所有语言中的字符，外加大量的符号。</p>
+
+<p>不过，并不是总能可靠地在计算机之间传递 Unicode 字符。UTF-8 可用于在计算机之间传输 Unicode 字符。</p>
+
+<p>如果成功，该函数将返回编码字符串；否则返回 false。</p>
+
+
+<h3>语法</h3>
+<pre>utf8_encode(string)</pre>
+
+<table class="dataintable"> 
+  <tr>
+    <th>参数</th>
+    <th>描述</th>
+  </tr>  
+  <tr>
+    <td>string</td>
+    <td>必需。规定要编码的字符串。</td>
+  </tr>
+</table>
+
+</div>
+
+
+
+<div class="backtoreference">
+<p><a href="php_ref_xml.htm" title="PHP XML Parser 函数">PHP XML Parser 函数</a></p>
+</div>
+
+</div>
+
+<div id="sidebar">
+
+<div id="searchui">
+<form method="get" id="searchform" action="http://www.baidu.com/search">
+<p><label for="searched_content">Search:</label></p>
+<p><input type="hidden" name="s" value="10520733385329581432"><input type="hidden" name="ie" value="gbk"></p>
+<p>
+<input type="text" name="q" class="box"  id="searched_content" title="在此输入搜索内容。" />
+<input type="submit" value="Go" class="button" title="搜索！" />
+</p>
+</form>
+</div>
+
+<div id="tools">
+<h5 id="tools_reference"><a href="php_ref.htm">PHP 参考手册</a></h5>
+<h5 id="tools_quiz"><a href="php_quiz.htm">PHP 测验</a></h5>
+</div>
+
+<div id="ad">
+<h2>赞助商链接</h2>
+
+</div>
+
+</div>
+
+<div id="footer">
+
+</div>
+
+</div>
+</body>
+</html>

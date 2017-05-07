@@ -1,0 +1,20 @@
+<html>
+<head><meta http-equiv=Content-Type content='text/html; charset=GB2312'>
+
+<script type="text/javascript">
+function confirmInput()
+{
+fname=document.forms[0].fname.value
+alert("您好 " + fname + "！您会被重定向到 www.jb51.net")
+}
+</script>
+</head>
+
+<body>
+<form onsubmit="confirmInput()" action="http://www.jb51.net/">
+请输入您的名字：<input id="fname" type="text" size="20">
+<input type="submit">
+</form>
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta name="robots" content="all" />
+
+<meta name="author" content="www.phper8.com" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta http-equiv="imagetoolbar" content="false" />
+
+<link rel="stylesheet" type="text/css" href="../c5.css" />
+<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+
+<title>HTML 5 Web 存储</title>
+</head>
+
+<body class="html">
+<div id="wrapper">
+
+<div id="header">
+<a href="../index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="ad_head">
+
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.htm" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.htm" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.htm" title="服务器脚本教程">服务器脚本</a></li>
+<li id="d"><a href="../d.htm" title="ASP.NET 教程">ASP.NET 教程</a></li>
+<li id="x"><a href="../x.htm" title="XML 系列教程">XML 系列教程</a></li>
+<li id="ws"><a href="../ws.htm" title="Web Services 系列教程">Web Services 系列教程</a></li>
+<li id="w"><a href="../w.htm" title="建站手册">建站手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>HTML5 教程</h2>
+<ul>
+<li><a href="index.htm" title="HTML5 教程">HTML5 教程</a></li>
+<li><a href="html_5_intro.htm" title="HTML5 简介">HTML5 简介</a></li>
+<li><a href="html_5_video.htm" title="HTML5 视频">HTML5 视频</a></li>
+<li><a href="html_5_video_dom.htm" title="HTML5 Video + DOM">HTML5 视频/DOM</a></li>
+<li><a href="http://www.jb51.net/w3school/html5/html_5_audio.htm" title="HTML5 音频">HTML5 音频</a></li>
+<li><a href="html_5_draganddrop.htm" title="HTML5 拖放">HTML5 拖放</a></li>
+<li><a href="html_5_canvas.htm" title="HTML5 Canvas">HTML5 画布</a></li>
+<li><a href="html_5_svg.htm" title="HTML5 内联 SVG">HTML5 SVG</a></li>
+<li><a href="html_5_canvas_vs_svg.htm" title="HTML5 Canvas vs. SVG">HTML5 画布 vs SVG</a></li>
+<li><a href="html_5_geolocation.htm" title="HTML5 地理定位">HTML5 地理定位</a></li>
+<li class="currentLink"><a href="html_5_webstorage.htm" title="HTML5 Web 存储">HTML5 Web 存储</a></li>
+<li><a href="html_5_app_cache.htm" title="HTML 5 应用程序缓存">HTML5 应用缓存</a></li>
+<li><a href="html_5_webworkers.htm" title="HTML5 Web Workers">HTML5 Web Workers</a></li>
+<li><a href="html_5_serversentevents.htm" title="HTML5 服务器发送事件">HTML5 服务器发送事件</a></li>
+</ul>
+<h2>HTML5 表单</h2>
+<ul>
+<li><a href="html_5_form_input_types.htm" title="HTML5 Input 类型">HTML5 输入类型</a></li>
+<li><a href="html_5_form_elements.htm" title="HTML5 表单元素">HTML5 表单元素</a></li>
+<li><a href="html_5_form_attributes.htm" title="HTML5 表单属性">HTML5 表单属性</a></li>
+</ul>
+<h2>HTML5 测验</h2>
+<ul>
+<li><a href="html5_quiz.htm" title="HTML5 测验">HTML5 测验</a></li>
+</ul>
+<h2>HTML5 参考手册</h2>
+<ul>
+<li><a href="../tags/index.htm" title="HTML5 参考手册">HTML5 标签</a></li>
+<li><a href="../tags/html_ref_standardattributes.htm" title="HTML5 标准属性">HTML5 属性</a></li>
+<li><a href="../tags/html_ref_eventattributes.htm" title="HTML5 事件属性">HTML5 事件</a></li>
+<li><a href="../tags/html_ref_audio_video_dom.htm" title="HTML5 Audio/Video DOM 属性">HTML5 视频/音频</a></li>
+<li><a href="../tags/html_ref_canvas.htm" title="HTML5 Canvas 参考手册">HTML5 画布</a></li>
+<li><a href="../tags/html_ref_dtd.htm" title="HTML 元素和有效的 DTD">HTML 有效 DTD</a></li>
+</ul>
+<h2>HTML5 标签</h2>
+<ul>
+<li><a href="../tags/tag_comment.htm" title="HTML5 &lt;!--&gt; 标签">&lt;!--&gt;</a></li>
+<li><a href="../tags/tag_doctype.htm" title="HTML5 &lt;!DOCTYPE&gt; 标签">&lt;!DOCTYPE&gt;</a></li>
+<li><a href="../tags/tag_a.htm" title="HTML5 &lt;a&gt; 标签">&lt;a&gt;</a></li>
+<li><a href="../tags/tag_abbr.htm" title="HTML5 &lt;abbr&gt; 标签">&lt;abbr&gt;</a></li>
+<li><a href="../tags/tag_acronym.htm" title="HTML5 &lt;acronym&gt; 标签">&lt;acronym&gt;</a></li>
+<li><a href="../tags/tag_address.htm" title="HTML5 &lt;address&gt; 标签">&lt;address&gt;</a></li>
+<li><a href="../tags/tag_applet.htm" title="HTML5 &lt;applet&gt; 标签">&lt;applet&gt;</a></li>
+<li><a href="../tags/tag_area.htm" title="HTML5 &lt;area&gt; 标签">&lt;area&gt;</a></li>
+<li><a href="../tags/tag_article.htm" title="HTML5 &lt;article&gt; 标签">&lt;article&gt;</a></li>
+<li><a href="../tags/tag_aside.htm" title="HTML5 &lt;aside&gt; 标签">&lt;aside&gt;</a></li>
+<li><a href="../tags/tag_audio.htm" title="HTML5 &lt;audio&gt; 标签">&lt;audio&gt;</a></li>
+<li><a href="../tags/tag_b.htm" title="HTML5 &lt;b&gt; 标签">&lt;b&gt;</a></li>
+<li><a href="../tags/tag_base.htm" title="HTML5 &lt;base&gt; 标签">&lt;base&gt;</a></li>
+<li><a href="../tags/tag_basefont.htm" title="HTML5 &lt;basefont&gt; 标签">&lt;basefont&gt;</a></li>
+<li><a href="../tags/tag_bdi.htm" title="HTML5 &lt;bdi&gt; 标签">&lt;bdi&gt;</a></li>
+<li><a href="../tags/tag_bdo.htm" title="HTML5 &lt;bdo&gt; 标签">&lt;bdo&gt;</a></li>
+<li><a href="../tags/tag_big.htm" title="HTML5 &lt;big&gt; 标签">&lt;big&gt;</a></li>
+<li><a href="../tags/tag_blockquote.htm" title="HTML5 &lt;blockquote&gt; 标签">&lt;blockquote&gt;</a></li>
+<li><a href="../tags/tag_body.htm" title="HTML5 &lt;body&gt; 标签">&lt;body&gt;</a></li>
+<li><a href="../tags/tag_br.htm" title="HTML5 &lt;br&gt; 标签">&lt;br&gt;</a></li>
+<li><a href="../tags/tag_button.htm" title="HTML5 &lt;button&gt; 标签">&lt;button&gt;</a></li>
+<li><a href="../tags/tag_canvas.htm" title="HTML5 &lt;canvas&gt; 标签">&lt;canvas&gt;</a></li>
+<li><a href="../tags/tag_caption.htm" title="HTML5 &lt;caption&gt; 标签">&lt;caption&gt;</a></li>
+<li><a href="../tags/tag_center.htm" title="HTML5 &lt;center&gt; 标签">&lt;center&gt;</a></li>
+<li><a href="../tags/tag_cite.htm" title="HTML5 &lt;cite&gt; 标签">&lt;cite&gt;</a></li>
+<li><a href="../tags/tag_phrase_elements.htm" title="HTML5 &lt;code&gt; 标签">&lt;code&gt;</a></li>
+<li><a href="../tags/tag_col.htm" title="HTML5 &lt;col&gt; 标签">&lt;col&gt;</a></li>
+<li><a href="../tags/tag_colgroup.htm" title="HTML5 &lt;colgroup&gt; 标签">&lt;colgroup&gt;</a></li>
+<li><a href="../tags/tag_command.htm" title="HTML5 &lt;command&gt; 标签">&lt;command&gt;</a></li>
+<li><a href="../tags/tag_datalist.htm" title="HTML5 &lt;datalist&gt; 标签">&lt;datalist&gt;</a></li>
+<li><a href="../tags/tag_dd.htm" title="HTML5 &lt;dd&gt; 标签">&lt;dd&gt;</a></li>
+<li><a href="../tags/tag_del.htm" title="HTML5 &lt;del&gt; 标签">&lt;del&gt;</a></li>
+<li><a href="../tags/tag_details.htm" title="HTML5 &lt;details&gt; 标签">&lt;details&gt;</a></li>
+<li><a href="../tags/tag_phrase_elements.htm" title="HTML5 &lt;dfn&gt; 标签">&lt;dfn&gt;</a></li>
+<li><a href="../tags/tag_dialog.htm" title="HTML5 &lt;dialog&gt; 标签">&lt;dialog&gt;</a></li>
+<li><a href="../tags/tag_dir.htm" title="HTML5 &lt;dir&gt; 标签">&lt;dir&gt;</a></li>
+<li><a href="../tags/tag_div.htm" title="HTML5 &lt;div&gt; 标签">&lt;div&gt;</a></li>
+<li><a href="../tags/tag_dl.htm" title="HTML5 &lt;dl&gt; 标签">&lt;dl&gt;</a></li>
+<li><a href="../tags/tag_dt.htm" title="HTML5 &lt;dt&gt; 标签">&lt;dt&gt;</a></li>
+<li><a href="../tags/tag_phrase_elements.htm" title="HTML5 &lt;em&gt; 标签">&lt;em&gt;</a></li>
+<li><a href="../tags/tag_embed.htm" title="HTML5 &lt;embed&gt; 标签">&lt;embed&gt;</a></li>
+<li><a href="../tags/tag_fieldset.htm" title="HTML5 &lt;fieldset&gt; 标签">&lt;fieldset&gt;</a></li>
+<li><a href="../tags/tag_figcaption.htm" title="HTML5 &lt;figcaption&gt; 标签">&lt;figcaption&gt;</a></li>
+<li><a href="../tags/tag_figure.htm" title="HTML5 &lt;figure&gt; 标签">&lt;figure&gt;</a></li>
+<li><a href="../tags/tag_font.htm" title="HTML5 &lt;font&gt; 标签">&lt;font&gt;</a></li>
+<li><a href="../tags/tag_footer.htm" title="HTML5 &lt;footer&gt; 标签">&lt;footer&gt;</a></li>
+<li><a href="../tags/tag_form.htm" title="HTML5 &lt;form&gt; 标签">&lt;form&gt;</a></li>
+<li><a href="../tags/tag_frame.htm" title="HTML5 &lt;frame&gt; 标签">&lt;frame&gt;</a></li>
+<li><a href="../tags/tag_frameset.htm" title="HTML5 &lt;frameset&gt; 标签">&lt;frameset&gt;</a></li>
+<li><a href="../tags/tag_hn.htm" title="HTML5 &lt;h1&gt; - &lt;h6&gt; 标签">&lt;h1&gt; - &lt;h6&gt;</a></li>
+<li><a href="../tags/tag_head.htm" title="HTML5 &lt;head&gt; 标签">&lt;head&gt;</a></li>
+<li><a href="../tags/tag_header.htm" title="HTML5 &lt;header&gt; 标签">&lt;header&gt;</a></li>
+<li><a href="tag_hgroup.htm" title="HTML5 &lt;hgroup&gt; 标签">&lt;hgroup&gt;</a></li>
+<li><a href="../tags/tag_hr.htm" title="HTML5 &lt;hr&gt; 标签">&lt;hr&gt;</a></li>
+<li><a href="../tags/tag_html.htm" title="HTML5 &lt;html&gt; 标签">&lt;html&gt;</a></li>
+<li><a href="../tags/tag_i.htm" title="HTML5 &lt;i&gt; 标签">&lt;i&gt;</a></li>
+<li><a href="../tags/tag_iframe.htm" title="HTML5 &lt;iframe&gt; 标签">&lt;iframe&gt;</a></li>
+<li><a href="../tags/tag_img.htm" title="HTML5 &lt;img&gt; 标签">&lt;img&gt;</a></li>
+<li><a href="../tags/tag_input.htm" title="HTML5 &lt;input&gt; 标签">&lt;input&gt;</a></li>
+<li><a href="../tags/tag_ins.htm" title="HTML5 &lt;ins&gt; 标签">&lt;ins&gt;</a></li>
+<li><a href="../tags/tag_phrase_elements.htm" title="HTML5 &lt;kbd&gt; 标签">&lt;kbd&gt;</a></li>
+<li><a href="../tags/tag_keygen.htm" title="HTML5 &lt;keygen&gt; 标签">&lt;keygen&gt;</a></li>
+<li><a href="../tags/tag_label.htm" title="HTML5 &lt;label&gt; 标签">&lt;label&gt;</a></li>
+<li><a href="../tags/tag_legend.htm" title="HTML5 &lt;legend&gt; 标签">&lt;legend&gt;</a></li>
+<li><a href="../tags/tag_li.htm" title="HTML5 &lt;li&gt; 标签">&lt;li&gt;</a></li>
+<li><a href="../tags/tag_link.htm" title="HTML5 &lt;link&gt; 标签">&lt;link&gt;</a></li>
+<li><a href="../tags/tag_map.htm" title="HTML5 &lt;map&gt; 标签">&lt;map&gt;</a></li>
+<li><a href="../tags/tag_mark.htm" title="HTML5 &lt;mark&gt; 标签">&lt;mark&gt;</a></li>
+<li><a href="../tags/tag_menu.htm" title="HTML5 &lt;menu&gt; 标签">&lt;menu&gt;</a></li>
+<li><a href="../tags/tag_meta.htm" title="HTML5 &lt;meta&gt; 标签">&lt;meta&gt;</a></li>
+<li><a href="../tags/tag_meter.htm" title="HTML5 &lt;meter&gt; 标签">&lt;meter&gt;</a></li>
+<li><a href="../tags/tag_nav.htm" title="HTML5 &lt;nav&gt; 标签">&lt;nav&gt;</a></li>
+<li><a href="../tags/tag_noframes.htm" title="HTML5 &lt;noframes&gt; 标签">&lt;noframes&gt;</a></li>
+<li><a href="../tags/tag_noscript.htm" title="HTML5 &lt;noscript&gt; 标签">&lt;noscript&gt;</a></li>
+<li><a href="../tags/tag_object.htm" title="HTML5 &lt;object&gt; 标签">&lt;object&gt;</a></li>
+<li><a href="../tags/tag_ol.htm" title="HTML5 &lt;ol&gt; 标签">&lt;ol&gt;</a></li>
+<li><a href="../tags/tag_optgroup.htm" title="HTML5 &lt;optgroup&gt; 标签">&lt;optgroup&gt;</a></li>
+<li><a href="../tags/tag_option.htm" title="HTML5 &lt;option&gt; 标签">&lt;option&gt;</a></li>
+<li><a href="../tags/tag_output.htm" title="HTML5 &lt;output&gt; 标签">&lt;output&gt;</a></li>
+<li><a href="../tags/tag_p.htm" title="HTML5 &lt;p&gt; 标签">&lt;p&gt;</a></li>
+<li><a href="../tags/tag_param.htm" title="HTML5 &lt;param&gt; 标签">&lt;param&gt;</a></li>
+<li><a href="../tags/tag_pre.htm" title="HTML5 &lt;pre&gt; 标签">&lt;pre&gt;</a></li>
+<li><a href="../tags/tag_progress.htm" title="HTML5 &lt;progress&gt; 标签">&lt;progress&gt;</a></li>
+<li><a href="../tags/tag_q.htm" title="HTML5 &lt;q&gt; 标签">&lt;q&gt;</a></li>
+<li><a href="../tags/tag_rp.htm" title="HTML5 &lt;rp&gt; 标签">&lt;rp&gt;</a></li>
+<li><a href="../tags/tag_rt.htm" title="HTML5 &lt;rt&gt; 标签">&lt;rt&gt;</a></li>
+<li><a href="../tags/tag_ruby.htm" title="HTML5 &lt;ruby&gt; 标签">&lt;ruby&gt;</a></li>
+<li><a href="../tags/tag_s.htm" title="HTML5 &lt;s&gt; 标签">&lt;s&gt;</a></li>
+<li><a href="../tags/tag_phrase_elements.htm" title="HTML5 &lt;samp&gt; 标签">&lt;samp&gt;</a></li>
+<li><a href="../tags/tag_script.htm" title="HTML5 &lt;script&gt; 标签">&lt;script&gt;</a></li>
+<li><a href="../tags/tag_select.htm" title="HTML5 &lt;select&gt; 标签">&lt;select&gt;</a></li>
+<li><a href="../tags/tag_small.htm" title="HTML5 &lt;small&gt; 标签">&lt;small&gt;</a></li>
+<li><a href="../tags/tag_source.htm" title="HTML5 &lt;source&gt; 标签">&lt;source&gt;</a></li>
+<li><a href="../tags/tag_span.htm" title="HTML5 &lt;span&gt; 标签">&lt;span&gt;</a></li>
+<li><a href="../tags/tag_strike.htm" title="HTML5 &lt;strike&gt; 标签">&lt;strike&gt;</a></li>
+<li><a href="../tags/tag_phrase_elements.htm" title="HTML5 &lt;strong&gt; 标签">&lt;strong&gt;</a></li>
+<li><a href="../tags/tag_style.htm" title="HTML5 &lt;style&gt; 标签">&lt;style&gt;</a></li>
+<li><a href="../tags/tag_sub.htm" title="HTML5 &lt;sub&gt; 标签">&lt;sub&gt;</a></li>
+<li><a href="../tags/tag_summary.htm" title="HTML5 &lt;summary&gt; 标签">&lt;summary&gt;</a></li>
+<li><a href="../tags/tag_sub.htm" title="HTML5 &lt;sup&gt; 标签">&lt;sup&gt;</a></li>
+<li><a href="../tags/tag_table.htm" title="HTML5 &lt;table&gt; 标签">&lt;table&gt;</a></li>
+<li><a href="../tags/tag_tbody.htm" title="HTML5 &lt;tbody&gt; 标签">&lt;tbody&gt;</a></li>
+<li><a href="../tags/tag_td.htm" title="HTML5 &lt;td&gt; 标签">&lt;td&gt;</a></li>
+<li><a href="../tags/tag_textarea.htm" title="HTML5 &lt;textarea&gt; 标签">&lt;textarea&gt;</a></li>
+<li><a href="../tags/tag_tfoot.htm" title="HTML5 &lt;tfoot&gt; 标签">&lt;tfoot&gt;</a></li>
+<li><a href="../tags/tag_th.htm" title="HTML5 &lt;th&gt; 标签">&lt;th&gt;</a></li>
+<li><a href="../tags/tag_thead.htm" title="HTML5 &lt;thead&gt; 标签">&lt;thead&gt;</a></li>
+<li><a href="../tags/tag_time.htm" title="HTML5 &lt;time&gt; 标签">&lt;time&gt;</a></li>
+<li><a href="../tags/tag_title.htm" title="HTML5 &lt;title&gt; 标签">&lt;title&gt;</a></li>
+<li><a href="../tags/tag_tr.htm" title="HTML5 &lt;tr&gt; 标签">&lt;tr&gt;</a></li>
+<li><a href="../tags/tag_track.htm" title="HTML5 &lt;track&gt; 标签">&lt;track&gt;</a></li>
+<li><a href="../tags/tag_tt.htm" title="HTML5 &lt;tt&gt; 标签">&lt;tt&gt;</a></li>
+<li><a href="../tags/tag_u.htm" title="HTML5 &lt;u&gt; 标签">&lt;u&gt;</a></li>
+<li><a href="../tags/tag_ul.htm" title="HTML5 &lt;ul&gt; 标签">&lt;ul&gt;</a></li>
+<li><a href="../tags/tag_phrase_elements.htm" title="HTML5 &lt;var&gt; 标签">&lt;var&gt;</a></li>
+<li><a href="../tags/tag_video.htm" title="HTML5 &lt;video&gt; 标签">&lt;video&gt;</a></li>
+<li><a href="../tags/tag_wbr.htm" title="HTML5 &lt;wbr&gt; 标签">&lt;wbr&gt;</a></li>
+</ul>
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>HTML 5 Web 存储</h1>
+
+<div id="tpn">
+<ul class="prenext">
+<li class="pre"><a href="html_5_geolocation.htm" title="HTML5 地理定位">HTML5 地理定位</a></li>
+<li class="next"><a href="html_5_app_cache.htm" title="HTML 5 应用程序缓存">HTML5 应用缓存</a></li>
+</ul>
+</div>
+
+
+<div>
+<h2>在客户端存储数据</h2>
+
+<p>HTML5 提供了两种在客户端存储数据的新方法：</p>
+
+<ul>
+<li>localStorage - 没有时间限制的数据存储</li>
+<li>sessionStorage - 针对一个 session 的数据存储</li>
+</ul>
+
+<p>之前，这些都是由 cookie 完成的。但是 cookie 不适合大量数据的存储，因为它们由每个对服务器的请求来传递，这使得 cookie 速度很慢而且效率也不高。</p>
+
+<p>在 HTML5 中，数据不是由每个服务器请求传递的，而是只有在请求时使用数据。它使在不影响网站性能的情况下存储大量数据成为可能。</p>
+
+<p>对于不同的网站，数据存储于不同的区域，并且一个网站只能访问其自身的数据。</p>
+
+<p>HTML5 使用 JavaScript 来存储和访问数据。</p>
+
+</div>
+
+
+<div>
+<h2>localStorage 方法</h2>
+
+<p>localStorage 方法存储的数据没有时间限制。第二天、第二周或下一年之后，数据依然可用。</p>
+
+<p>如何创建和访问 localStorage：</p>
+
+<h3>实例</h3>
+
+<pre>
+&lt;script type=&quot;text/javascript&quot;&gt;
+<code>localStorage.lastname=&quot;Smith&quot;;</code>
+document.write(<code>localStorage.lastname</code>);
+&lt;/script&gt;
+</pre>
+
+<p><a href="../tiy/t.asp-f=html5_webstorage_local.htm">亲自试一试</a></p>
+
+<p>下面的例子对用户访问页面的次数进行计数：</p>
+
+<h3>实例</h3>
+
+<pre>
+&lt;script type=&quot;text/javascript&quot;&gt;
+if (<code>localStorage.pagecount</code>)
+  {
+  localStorage.pagecount=Number(<code>localStorage.pagecount</code>) +1;
+  }
+else
+  {
+  <code>localStorage.pagecount</code>=1;
+  }
+document.write(&quot;Visits &quot;+ <code>localStorage.pagecount</code> + &quot; time(s).&quot;);
+&lt;/script&gt;
+</pre>
+
+<p><a href="../tiy/t.asp-f=html5_webstorage_local_pagecount.htm">亲自试一试</a></p>
+</div>
+
+
+<div>
+<h2>sessionStorage 方法</h2>
+
+<p>sessionStorage 方法针对一个 session 进行数据存储。当用户关闭浏览器窗口后，数据会被删除。</p>
+
+<p>如何创建并访问一个 sessionStorage：</p>
+
+<h3>实例</h3>
+
+<pre>
+&lt;script type=&quot;text/javascript&quot;&gt;
+<code>sessionStorage.lastname=&quot;Smith&quot;;</code>
+document.write(<code>sessionStorage.lastname</code>);
+&lt;/script&gt;
+</pre>
+
+<p><a href="../tiy/t.asp-f=html5_webstorage_session.htm">亲自试一试</a></p>
+
+<p>下面的例子对用户在当前 session 中访问页面的次数进行计数：</p>
+
+<h3>实例</h3>
+
+<pre>
+&lt;script type=&quot;text/javascript&quot;&gt;
+if (<code>sessionStorage.pagecount</code>)
+  {
+  sessionStorage.pagecount=Number(<code>sessionStorage.pagecount</code>) +1;
+  }
+else
+  {
+  <code>sessionStorage.pagecount</code>=1;
+  }
+document.write(&quot;Visits &quot;+<code>sessionStorage.pagecount</code>+&quot; time(s) this session.&quot;);
+&lt;/script&gt;
+</pre>
+
+<p><a href="../tiy/t.asp-f=html5_webstorage_session_pagecount.htm">亲自试一试</a></p>
+</div>
+
+
+<div id="bpn">
+<ul class="prenext">
+<li class="pre"><a href="html_5_geolocation.htm" title="HTML5 地理定位">HTML5 地理定位</a></li>
+<li class="next"><a href="html_5_app_cache.htm" title="HTML 5 应用程序缓存">HTML5 应用缓存</a></li>
+</ul>
+</div>
+</div>
+
+<div id="sidebar">
+
+<div id="searchui">
+<form method="get" id="searchform" action="http://www.baidu.com/search">
+<p><label for="searched_content">Search:</label></p>
+<p><input type="hidden" name="s" value="10520733385329581432"><input type="hidden" name="ie" value="gbk"></p>
+<p>
+<input type="text" name="q" class="box"  id="searched_content" title="在此输入搜索内容。" />
+<input type="submit" value="Go" class="button" title="搜索！" />
+</p>
+</form>
+</div>
+
+<div id="tools">
+<h5 id="tools_reference"><a href="../tags/index.htm">HTML 5 参考手册</a></h5>
+<h5 id="tools_quiz"><a href="html5_quiz.htm">HTML5 测验</a></h5>
+</div>
+
+<div id="ad">
+<h2>赞助商链接</h2>
+
+</div>
+
+</div>
+
+<div id="footer">
+
+</div>
+
+</div>
+</body>
+</html>

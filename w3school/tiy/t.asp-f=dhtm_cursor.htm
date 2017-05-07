@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset=GB2312"gb2312" />
+<meta name="robots" content="all" />
+<meta name="author" content="www.phper8.com" />
+
+<link rel="stylesheet" type="text/css" href="tc.css" />
+
+<title>W3School在线测试工具 V2</title>
+</head>
+
+<body id="editor">
+
+<div id="wrapper">
+
+<div id="header">
+<h1>W3School TIY</h1>
+<div id="ad">
+
+</div>
+</div>
+
+<form action="http://www.w3school.com.cn/tiy/v.asp" method="post" id="tryitform" name="tryitform" onSubmit="validateForm();" target="i">
+
+<div id="butt">
+<input type="button" value="提交代码" onClick="submitTryit()">
+</div>
+
+<div id="CodeArea">
+<h2>编辑您的代码：</h2>
+<textarea id="TestCode" wrap="logical">
+<html>
+<body>
+<p>请把鼠标移动到单词上，这样会看到鼠标指针的变化：</p> 
+<span style="cursor: auto">Auto</span><br />
+<span style="cursor: crosshair">Crosshair</span><br />
+<span style="cursor: default">Default</span><br />
+<span style="cursor: pointer">Pointer</span><br />
+<span style="cursor: hand">Hand</span><br />
+<span style="cursor: move">Move</span><br />
+<span style="cursor: e-resize">e-resize</span><br />
+<span style="cursor: ne-resize">ne-resize</span><br />
+<span style="cursor: nw-resize">nw-resize</span><br />
+<span style="cursor: n-resize">n-resize</span><br />
+<span style="cursor: se-resize">se-resize</span><br />
+<span style="cursor: sw-resize">sw-resize</span><br />
+<span style="cursor: s-resize">s-resize</span><br />
+<span style="cursor: w-resize">w-resize</span><br />
+<span style="cursor: text">text</span><br />
+<span style="cursor: wait">wait</span><br />
+<span style="cursor: help">help</span><br />
+</body>
+</html>
+</textarea>
+</div>
+
+<input type="hidden" id="code" name="code"  />
+<input type="hidden" id="bt" name="bt" />
+
+</form>
+
+<div id="result">
+<h2>查看结果:</h2>
+<iframe frameborder="0" name="i" src="loadtext.asp-f=dhtm_cursor.htm"></iframe>
+</div>
+
+<div id="footer">
+<p>请在上面的文本框中编辑您的代码，然后单击提交按钮测试结果。<a href="../index.html" title="W3School 在线教程">w3school.phper8.com</a></p>
+</div>
+
+</div>
+
+<script type="text/javascript">
+function submitTryit()
+{
+var t=document.getElementById("TestCode").value;
+t=t.replace(/=/gi,"w3equalsign");
+t=t.replace(/script/gi,"w3scrw3ipttag");
+
+document.getElementById("code").value=t;
+
+document.getElementById("tryitform").action="http://www.w3school.com.cn/tiy/v.asp";
+
+validateForm();
+
+document.getElementById("tryitform").submit();
+}
+
+function validateForm()
+{
+var code=document.getElementById("code").value;
+if (code.length>5000)
+	{
+	document.getElementById("code").value="<h1>Error</h1>";
+	}
+}
+</script>
+
+</body>
+</html>

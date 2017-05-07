@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="gbk" />
+<meta name="robots" content="all" />
+<meta name="author" content="www.phper8.com" />
+<link rel="stylesheet" type="text/css" href="../c5.css" />
+
+<title>jQuery Mobile 实例</title>
+
+</head>
+
+<body class="browserscripting">
+
+<div id="wrapper">
+
+<div id="header">
+<a href="../index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="ad_head">
+
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.htm" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.htm" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.htm" title="服务器脚本教程">服务器脚本</a></li>
+<li id="d"><a href="../d.htm" title="ASP.NET 教程">ASP.NET 教程</a></li>
+<li id="x"><a href="../x.htm" title="XML 系列教程">XML 系列教程</a></li>
+<li id="ws"><a href="../ws.htm" title="Web Services 系列教程">Web Services 系列教程</a></li>
+<li id="w"><a href="../w.htm" title="建站手册">建站手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>jQuery Mobile 教程</h2>
+<ul>
+<li><a href="index.htm" title="jQuery Mobile 教程">jQuery Mobile 教程</a></li>
+<li><a href="jquerymobile_intro.htm" title="jQuery Mobile 简介">jQuery Mobile 简介</a></li>
+<li><a href="jquerymobile_install.htm" title="jQuery Mobile 安装">jQuery Mobile 安装</a></li>
+<li><a href="jquerymobile_pages.htm" title="jQuery Mobile 页面">jQuery Mobile 页面</a></li>
+<li><a href="jquerymobile_transitions.htm" title="jQuery Mobile 过渡">jQuery Mobile 过渡</a></li>
+<li><a href="jquerymobile_buttons.htm" title="jQuery Mobile 按钮">jQuery Mobile 按钮</a></li>
+<li><a href="jquerymobile_icons.htm" title="jQuery Mobile 图标">jQuery Mobile 图标</a></li>
+<li><a href="jquerymobile_toolbars.htm" title="jQuery Mobile 工具栏">jQuery Mobile 工具栏</a></li>
+<li><a href="jquerymobile_navbars.htm" title="jQuery Mobile 导航栏">jQuery Mobile 导航栏</a></li>
+<li><a href="jquerymobile_collapsibles.htm" title="jQuery Mobile 可折叠">jQuery Mobile 可折叠</a></li>
+<li><a href="jquerymobile_grids.htm" title="jQuery Mobile 网格">jQuery Mobile 网格</a></li>
+</ul>
+<h2>jQuery Mobile 列表</h2>
+<ul>
+<li><a href="jquerymobile_list_views.htm" title="jQuery Mobile 列表视图">jQuery Mobile 列表视图</a></li>
+<li><a href="jquerymobile_list_content.htm" title="jQuery Mobile 列表内容">jQuery Mobile 列表内容</a></li>
+</ul>
+<h2>jQuery Mobile 表单</h2>
+<ul>
+<li><a href="jquerymobile_form_basic.htm" title="jQuery Mobile 表单基础">jQuery Mobile 表单基础</a></li>
+<li><a href="jquerymobile_form_inputs.htm" title="jQuery Mobile 表单 - 输入">jQuery Mobile 表单输入</a></li>
+<li><a href="jquerymobile_form_select.htm" title="jQuery Mobile 表单 - 选择">jQuery Mobile 表单选择</a></li>
+<li><a href="jquerymobile_form_sliders.htm" title="jQuery Mobile 表单 - 滑块">jQuery Mobile 表单滑块</a></li>
+</ul>
+<h2>jQuery Mobile 主题</h2>
+<ul>
+<li><a href="jquerymobile_themes.htm" title="jQuery Mobile 主题">jQuery Mobile 主题</a></li>
+</ul>
+<h2>jQuery Mobile 事件</h2>
+<ul>
+<li><a href="jquerymobile_events_intro.htm" title="jQuery Mobile 事件">jQuery Mobile 事件</a></li>
+<li><a href="jquerymobile_events_touch.htm" title="jQuery Mobile 触控">jQuery Mobile 触控</a></li>
+<li><a href="jquerymobile_events_scroll.htm" title="jQuery Mobile 滚动">jQuery Mobile 滚动</a></li>
+<li><a href="jquerymobile_events_orientation.htm" title="jQuery Mobile 方向">jQuery Mobile 方向</a></li>
+<li><a href="jquerymobile_events_page.htm" title="jQuery Mobile 页面事件">jQuery Mobile 页面事件</a></li>
+</ul>
+<h2>jQuery Mobile 实例</h2>
+<ul>
+<li class="currentLink"><a href="jquerymobile_examples.htm" title="jQuery Mobile 实例">jQuery Mobile 实例</a></li>
+</ul>
+<h2>jQuery Mobile 参考手册</h2>
+<ul>
+<li><a href="jquerymobile_ref_data.htm" title="jQuery Mobile Data 参考手册">jQuery Mobile Data</a></li>
+<li><a href="jquerymobile_ref_events.htm" title="jQuery Mobile 事件">jQuery Mobile 事件</a></li>
+<li><a href="jquerymobile_ref_icons.htm" title="jQuery Mobile 图标">jQuery Mobile 图标</a></li>
+</ul>
+</div><div id="selected">
+<h2>建站手册</h2>
+<ul>
+<li><a href="../site/index.htm" title="网站构建">网站构建</a></li>
+<li><a href="../w3c/index.htm" title="万维网联盟 (W3C)">万维网联盟 (W3C)</a></li>
+<li><a href="../browsers/index.htm" title="浏览器信息">浏览器信息</a></li>
+<li><a href="../quality/index.htm" title="网站品质">网站品质</a></li>
+<li><a href="../semweb/index.htm" title="语义网">语义网</a></li>
+<li><a href="../careers/index.htm" title="职业规划">职业规划</a></li>
+<li><a href="../hosting/index.htm" title="网站主机">网站主机</a></li>
+</ul>
+
+<h2><a href="../about/index.htm" title="关于 W3School" id="link_about">关于 W3School</a></h2>
+<h2><a href="../about/about_helping.htm" title="帮助 W3School" id="link_help">帮助 W3School</a></h2>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>jQuery Mobile 实例</h1>
+
+<div id="tpn">
+<ul class="prenext">
+<li class="pre"><a href="jquerymobile_events_page.htm" title="jQuery Mobile 页面事件">jQuery Mobile 页面事件</a></li>
+<li class="next"><a href="jquerymobile_ref_data.htm" title="jQuery Mobile Data 参考手册">jQuery Mobile Data</a></li>
+</ul>
+</div>
+
+
+<div class="example">
+<h2>jQuery Mobile 页面</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_start.htm">基础的移动网页</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_pages.htm">多页面</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_dialog.htm">对话框</a></dt>
+</dl>
+
+<p><em><a target="_blank" href="jquerymobile_pages.htm">例子解释</a></em></p>
+</div>
+
+
+<div class="example">
+<h2>jQuery Mobile 过渡</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_transition_fade.htm">淡入淡出效果</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_transition_flip.htm">翻页效果</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_transition_flow.htm">流效果</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_transition_pop.htm">弹窗效果</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_transition_slide.htm">滑动效果</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_transition_slidefade.htm">滑动淡出效果</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_transition_slideup.htm">上滑动效果</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_transition_slidedown.htm">下滑动效果</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_transition_turn.htm">翻页效果</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_transition_none.htm">无过渡效果</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_transition_reverse.htm">逆转效果</a></dt>
+</dl>
+
+<p><em><a target="_blank" href="jquerymobile_transitions.htm">例子解释</a></em></p>
+</div>
+
+
+<div class="example">
+<h2>jQuery Mobile 按钮</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_button.htm">创建按钮</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_button_inline.htm">行内按钮</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_button_group.htm">分组按钮</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_button_back.htm">后退按钮</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_button_corners.htm">带有和不带有圆角的按钮</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_button_mini.htm">小型和常规尺寸的按钮</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_button_shadow.htm">带有和不带有阴影的按钮</a></dt>
+</dl>
+
+<p><em><a target="_blank" href="jquerymobile_buttons.htm">例子解释</a></em></p>
+</div>
+
+
+<div class="example">
+<h2>jQuery Mobile 按钮图标</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_icon_all.htm">向按钮添加图标</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_icon_positions.htm">定位图标</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_icon_notext.htm">只显示图标</a></dt>
+</dl>
+
+<p><em><a target="_blank" href="jquerymobile_icons.htm">例子解释</a></em></p>
+</div>
+
+
+<div class="example">
+<h2>jQuery Mobile 工具栏</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_toolbars_basic.htm">创建页眉和页脚</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_header.htm">在页眉中添加按钮</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_header_left.htm">在页眉中向左侧添加按钮</a></dt>
+<dt><a target="_blank" href="http://www.jb51.net/w3school/tiy/t.asp-f=jquerymobile_header_class.htm">在页眉中向右侧添加按钮</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_footer.htm">带有按钮的页脚</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_footer_class.htm">带有居中对齐按钮的页脚</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_navbars_content.htm">带有分组按钮的页脚</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_footer_grouped_horizontal.htm">带有水平分组按钮的页脚</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_toolbars_inline.htm">行内定位 - 页眉和页脚与页面内容行内定位</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_toolbars_fixed.htm">固定定位 - 页眉和页脚将保留在页面的顶部和底部</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_toolbars_fullscreen.htm">全屏定位 - 页面和页脚分班位于顶部和底部，但仍然在页面内容上</a></dt>
+</dl>
+
+<p><em><a target="_blank" href="jquerymobile_toolbars.htm">例子解释</a></em></p>
+</div>
+
+
+<div class="example">
+<h2>jQuery Mobile 导航栏</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_navbars.htm">创建导航栏</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_navbars_content.htm">在内容中的导航栏</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_navbars_footer.htm">在页脚中导航栏</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_navbars_class_active.htm">在导航栏中为按钮添加被选外观（被按下）</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_navbars_class_persist.htm">添加被选外观（被按下）</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_navbars_footer_icons.htm">在导航栏中定位图标</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_navbars_wrap.htm">演示在导航栏中的十个按钮</a></dt>
+</dl>
+
+<p><em><a target="_blank" href="jquerymobile_navbars.htm">例子解释</a></em></p>
+</div>
+
+
+<div class="example">
+<h2>jQuery Mobile 可折叠</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_collapsible.htm">创建内容可折叠块</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_collapsible_false.htm">当页面加载时展开内容</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_collapsible_nested.htm">嵌套的可折叠块</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_collapsible_sets.htm">可折叠集合（手风琴）</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_collapsible_inset.htm">删除可折叠块上的圆角</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_collapsible_mini.htm">使可折叠块更小</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_collapsible_icons.htm">改变可折叠块的图标</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_lists_collapsible.htm">可折叠列表</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_collapsible.htm">可折叠表单</a></dt>
+</dl>
+
+<p><em><a target="_blank" href="jquerymobile_collapsibles.htm">例子解释</a></em></p>
+</div>
+
+
+<div class="example">
+<h2>jQuery Mobile 网格</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_grid_a.htm">两列布局</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_grid_b.htm">三列布局</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_grid_c.htm">四列布局</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_grid_d.htm">五列布局</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_grid_css.htm">自定义网格</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_grid_multiple.htm">列中的多行</a></dt>
+</dl>
+
+<p><em><a target="_blank" href="jquerymobile_grids.htm">例子解释</a></em></p>
+</div>
+
+
+<div class="example">
+<h2>jQuery Mobile 列表</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_lists_views.htm">创建列表视图</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_lists_inset.htm">带有圆角的列表视图</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_lists_dividers.htm">列表分隔符</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_lists_autodividers.htm">自动分隔符</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_lists_filter.htm">创建搜索过滤器</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_lists_filter_placeholder.htm">改变搜索框中的文本</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_lists_readonly.htm">创建只读列表</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_lists_thumbs.htm">向列表项添加缩略图</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_lists_thumbs_text.htm">使用标准 HTML 来填充带有信息的列表</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_lists_icons.htm">向列表项添加图标</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_lists_split.htm">创建带有分隔按钮的列表</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_lists_split2.htm">增强列表项的功能性</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_lists_count.htm">创建计数泡泡</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_lists_change_icons.htm">改变列表项的默认链接图标</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_lists_collapsible.htm">可折叠列表</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_lists_formatting.htm">创建日历</a></dt>
+</dl>
+
+<p><em><a target="_blank" href="jquerymobile_list_views.htm">例子解释</a></em></p>
+</div>
+
+
+<div class="example">
+<h2>jQuery Mobile 表单</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_inputs.htm">文本输入</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_none.htm">文本框</a></dt>
+<dt><a target="_blank" href="http://www.jb51.net/w3school/tiy/t.asp-f=jquerymobile_forms_search.htm">搜索输入</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_radio.htm">单选按钮</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_checkbox.htm">复选框</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_horizontal.htm">对单选按钮和复选框进行水平组合</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_radio_check_fieldcontain.htm">带有单选按钮和复选框的域包含器</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_checked.htm">预选的单选按钮和复选框</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_select.htm">创建选择菜单</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_select_optgroup.htm">创建带有分隔符的选择菜单 (optgroup)</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_select_native.htm">自定义选择菜单</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_select_multiple.htm">在选择菜单中选取多个选项</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_select_group.htm">组合选择菜单</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_select_horizontal.htm">水平组合选择菜单</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_select_selected.htm">预选一个选项</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_collapsible.htm">可折叠表单</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_slider.htm">创建滑块控件</a></dt>
+<dt><a target="_blank" href="http://www.jb51.net/w3school/tiy/t.asp-f=jquerymobile_forms_slider_highlight.htm">突出显示截至滑块值的轨道</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_slider_range.htm">范围滑块（双重的）</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_select_switch.htm">创建切换开关</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_select_switch_selected.htm">预选一个切换开关</a></dt>
+</dl>
+
+<p><em><a target="_blank" href="jquerymobile_form_basic.htm">例子解释</a></em></p>
+</div>
+
+
+<div class="example">
+<h2>jQuery Mobile 主题</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_themes_a.htm">主题 "a" </a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_themes_b.htm">主题 "b" </a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_themes_c.htm">主题 "c" </a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_themes_d.htm">主题 "d" </a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_themes_e.htm">主题 "e" </a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_themes_content.htm">主题化的页眉、内容和页脚</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_themes_dialog.htm">主题化的对话框</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_themes_buttons.htm">主题化的按钮</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_themes_icons.htm">主题化的图标</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_themes_toolbars_buttons.htm">页眉和页脚中的主题化按钮</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_themes_navbars.htm">主题化的导航栏</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_themes_collapsibles.htm">主题化的可折叠按钮和内容</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_themes_lists.htm">主题化的列表</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_themes_split.htm">主题化的划分按钮</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_themes_collapsible_lists.htm">主题化的可折叠列表</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_themes_forms.htm">主题化的表单</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_themes_collapsible_forms.htm">主题化的可折叠表单</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_themes_customize.htm">定制主题</a></dt>
+</dl>
+
+<p><em><a target="_blank" href="jquerymobile_themes.htm">例子解释</a></em></p>
+</div>
+
+
+<div class="example">
+<h2>jQuery Mobile 事件</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_events_tap.htm">Tap 事件</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_events_taphold.htm">Taphold 事件</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_events_swipe.htm">Swipe 事件</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_events_swipeleft.htm">Swipeleft 事件</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_events_swiperight.htm">Swiperight 事件</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_events_scrollstart.htm">Scrollstart 事件</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_events_scrollstop.htm">Scrollstop 事件</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_events_orientationchange.htm">Orientationchange 事件 - 提示方向</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_events_orientationchange2.htm">Orientationchange 事件 - 为水平和垂直方向设置不同的样式</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_events_page_initialization.htm">Page initialization 事件</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_events_pageload.htm">Page load 事件</a></dt>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_events_page_transitions.htm">Page transition 事件</a></dt>
+</dl>
+
+<p><em><a target="_blank" href="jquerymobile_events_intro.htm">例子解释</a></em></p>
+</div>
+
+
+<div id="bpn">
+<ul class="prenext">
+<li class="pre"><a href="jquerymobile_events_page.htm" title="jQuery Mobile 页面事件">jQuery Mobile 页面事件</a></li>
+<li class="next"><a href="jquerymobile_ref_data.htm" title="jQuery Mobile Data 参考手册">jQuery Mobile Data</a></li>
+</ul>
+</div>
+
+
+
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="searchui">
+<form method="get" id="searchform" action="http://www.baidu.com/search">
+<p><label for="searched_content">Search:</label></p>
+<p><input type="hidden" name="s" value="10520733385329581432"><input type="hidden" name="ie" value="gbk"></p>
+<p>
+<input type="text" name="q" class="box"  id="searched_content" title="在此输入搜索内容。" />
+<input type="submit" value="Go" class="button" title="搜索！" />
+</p>
+</form>
+</div>
+
+<div id="tools">
+<h5 id="tools_reference"><a href="jquerymobile_ref_data.htm">jQuery Mobile Data 属性</a></h5>
+<h5 id="tools_example"><a href="jquerymobile_examples.htm">jQuery Mobile 实例</a></h5>
+</div>
+
+<div id="ad">
+<h2>赞助商链接</h2>
+
+</div>
+
+</div>
+
+<div id="footer">
+
+</div>
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

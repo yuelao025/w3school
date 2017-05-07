@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="gbk" />
+<meta name="robots" content="all" />
+<meta name="author" content="www.phper8.com" />
+<link rel="stylesheet" type="text/css" href="../c5.css" />
+
+<title>jQuery Mobile 滚动事件</title>
+
+</head>
+
+<body class="browserscripting">
+
+<div id="wrapper">
+
+<div id="header">
+<a href="../index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="ad_head">
+
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.htm" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.htm" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.htm" title="服务器脚本教程">服务器脚本</a></li>
+<li id="d"><a href="../d.htm" title="ASP.NET 教程">ASP.NET 教程</a></li>
+<li id="x"><a href="../x.htm" title="XML 系列教程">XML 系列教程</a></li>
+<li id="ws"><a href="../ws.htm" title="Web Services 系列教程">Web Services 系列教程</a></li>
+<li id="w"><a href="../w.htm" title="建站手册">建站手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>jQuery Mobile 教程</h2>
+<ul>
+<li><a href="index.htm" title="jQuery Mobile 教程">jQuery Mobile 教程</a></li>
+<li><a href="jquerymobile_intro.htm" title="jQuery Mobile 简介">jQuery Mobile 简介</a></li>
+<li><a href="jquerymobile_install.htm" title="jQuery Mobile 安装">jQuery Mobile 安装</a></li>
+<li><a href="jquerymobile_pages.htm" title="jQuery Mobile 页面">jQuery Mobile 页面</a></li>
+<li><a href="jquerymobile_transitions.htm" title="jQuery Mobile 过渡">jQuery Mobile 过渡</a></li>
+<li><a href="jquerymobile_buttons.htm" title="jQuery Mobile 按钮">jQuery Mobile 按钮</a></li>
+<li><a href="jquerymobile_icons.htm" title="jQuery Mobile 图标">jQuery Mobile 图标</a></li>
+<li><a href="jquerymobile_toolbars.htm" title="jQuery Mobile 工具栏">jQuery Mobile 工具栏</a></li>
+<li><a href="jquerymobile_navbars.htm" title="jQuery Mobile 导航栏">jQuery Mobile 导航栏</a></li>
+<li><a href="jquerymobile_collapsibles.htm" title="jQuery Mobile 可折叠">jQuery Mobile 可折叠</a></li>
+<li><a href="jquerymobile_grids.htm" title="jQuery Mobile 网格">jQuery Mobile 网格</a></li>
+</ul>
+<h2>jQuery Mobile 列表</h2>
+<ul>
+<li><a href="jquerymobile_list_views.htm" title="jQuery Mobile 列表视图">jQuery Mobile 列表视图</a></li>
+<li><a href="jquerymobile_list_content.htm" title="jQuery Mobile 列表内容">jQuery Mobile 列表内容</a></li>
+</ul>
+<h2>jQuery Mobile 表单</h2>
+<ul>
+<li><a href="jquerymobile_form_basic.htm" title="jQuery Mobile 表单基础">jQuery Mobile 表单基础</a></li>
+<li><a href="jquerymobile_form_inputs.htm" title="jQuery Mobile 表单 - 输入">jQuery Mobile 表单输入</a></li>
+<li><a href="jquerymobile_form_select.htm" title="jQuery Mobile 表单 - 选择">jQuery Mobile 表单选择</a></li>
+<li><a href="jquerymobile_form_sliders.htm" title="jQuery Mobile 表单 - 滑块">jQuery Mobile 表单滑块</a></li>
+</ul>
+<h2>jQuery Mobile 主题</h2>
+<ul>
+<li><a href="jquerymobile_themes.htm" title="jQuery Mobile 主题">jQuery Mobile 主题</a></li>
+</ul>
+<h2>jQuery Mobile 事件</h2>
+<ul>
+<li><a href="jquerymobile_events_intro.htm" title="jQuery Mobile 事件">jQuery Mobile 事件</a></li>
+<li><a href="jquerymobile_events_touch.htm" title="jQuery Mobile 触控">jQuery Mobile 触控</a></li>
+<li class="currentLink"><a href="jquerymobile_events_scroll.htm" title="jQuery Mobile 滚动">jQuery Mobile 滚动</a></li>
+<li><a href="jquerymobile_events_orientation.htm" title="jQuery Mobile 方向">jQuery Mobile 方向</a></li>
+<li><a href="jquerymobile_events_page.htm" title="jQuery Mobile 页面事件">jQuery Mobile 页面事件</a></li>
+</ul>
+<h2>jQuery Mobile 实例</h2>
+<ul>
+<li><a href="jquerymobile_examples.htm" title="jQuery Mobile 实例">jQuery Mobile 实例</a></li>
+</ul>
+<h2>jQuery Mobile 参考手册</h2>
+<ul>
+<li><a href="jquerymobile_ref_data.htm" title="jQuery Mobile Data 参考手册">jQuery Mobile Data</a></li>
+<li><a href="jquerymobile_ref_events.htm" title="jQuery Mobile 事件">jQuery Mobile 事件</a></li>
+<li><a href="jquerymobile_ref_icons.htm" title="jQuery Mobile 图标">jQuery Mobile 图标</a></li>
+</ul>
+</div><div id="selected">
+<h2>建站手册</h2>
+<ul>
+<li><a href="../site/index.htm" title="网站构建">网站构建</a></li>
+<li><a href="../w3c/index.htm" title="万维网联盟 (W3C)">万维网联盟 (W3C)</a></li>
+<li><a href="../browsers/index.htm" title="浏览器信息">浏览器信息</a></li>
+<li><a href="../quality/index.htm" title="网站品质">网站品质</a></li>
+<li><a href="../semweb/index.htm" title="语义网">语义网</a></li>
+<li><a href="../careers/index.htm" title="职业规划">职业规划</a></li>
+<li><a href="../hosting/index.htm" title="网站主机">网站主机</a></li>
+</ul>
+
+<h2><a href="../about/index.htm" title="关于 W3School" id="link_about">关于 W3School</a></h2>
+<h2><a href="../about/about_helping.htm" title="帮助 W3School" id="link_help">帮助 W3School</a></h2>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>jQuery Mobile 滚动事件</h1>
+
+<div id="tpn">
+<ul class="prenext">
+<li class="pre"><a href="jquerymobile_events_touch.htm" title="jQuery Mobile 触控">jQuery Mobile 触控</a></li>
+<li class="next"><a href="jquerymobile_events_orientation.htm" title="jQuery Mobile 方向">jQuery Mobile 方向</a></li>
+</ul>
+</div>
+
+
+<div>
+<p>jQuery Mobile 提供两种滚动事件：在滚动开始和当滚动结束。</p>
+</div>
+
+
+<div>
+<h2>jQuery Mobile Scrollstart</h2>
+
+<p>scrollstart 事件在用户开始滚动页面时被触发：</p>
+
+<h3>实例</h3>
+<pre>
+$(document).on(<span class="marked">&quot;scrollstart&quot;</span>,function(){
+  alert(&quot;开始滚动！&quot;);
+});
+</pre>
+
+<p><a target="_blank" href="../tiy/t.asp-f=jquerymobile_events_scrollstart.htm">亲自试一试</a></p>
+
+<p class="note"><span>注释：</span>iOS 设备会在滚动事件发生时冻结 DOM 操作，这意味着当用户滚动时无法改变任何事物。不过 jQuery 团队正致力于解决该问题。</p>
+</div>
+
+
+<div>
+<h2>jQuery Mobile Scrollstop</h2>
+
+<p>scrollstop 事件在用户停止滚动页面时被触发：</p>
+
+<h3>实例</h3>
+<pre>
+$(document).on(<span class="marked">&quot;scrollstop&quot;</span>,function(){
+  alert(&quot;结束滚动！&quot;);
+});
+</pre>
+
+<p><a target="_blank" href="../tiy/t.asp-f=jquerymobile_events_scrollstop.htm">亲自试一试</a></p>
+</div>
+
+
+<div id="bpn">
+<ul class="prenext">
+<li class="pre"><a href="jquerymobile_events_touch.htm" title="jQuery Mobile 触控">jQuery Mobile 触控</a></li>
+<li class="next"><a href="jquerymobile_events_orientation.htm" title="jQuery Mobile 方向">jQuery Mobile 方向</a></li>
+</ul>
+</div>
+
+
+
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="searchui">
+<form method="get" id="searchform" action="http://www.baidu.com/search">
+<p><label for="searched_content">Search:</label></p>
+<p><input type="hidden" name="s" value="10520733385329581432"><input type="hidden" name="ie" value="gbk"></p>
+<p>
+<input type="text" name="q" class="box"  id="searched_content" title="在此输入搜索内容。" />
+<input type="submit" value="Go" class="button" title="搜索！" />
+</p>
+</form>
+</div>
+
+<div id="tools">
+<h5 id="tools_reference"><a href="jquerymobile_ref_data.htm">jQuery Mobile Data 属性</a></h5>
+<h5 id="tools_example"><a href="jquerymobile_examples.htm">jQuery Mobile 实例</a></h5>
+</div>
+
+<div id="ad">
+<h2>赞助商链接</h2>
+
+</div>
+
+</div>
+
+<div id="footer">
+
+</div>
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

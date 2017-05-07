@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="gb2312" />
+<meta name="robots" content="all" />
+<meta name="author" content="www.phper8.com" />
+<link rel="stylesheet" type="text/css" href="../c5.css" />
+
+<title>ASP.NET MVC - 控制器</title>
+
+</head>
+
+<body class="dotnet">
+
+<div id="wrapper">
+
+<div id="header">
+<a href="../index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="ad_head">
+
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.htm" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.htm" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.htm" title="服务器脚本教程">服务器脚本</a></li>
+<li id="d"><a href="../d.htm" title="ASP.NET 教程">ASP.NET 教程</a></li>
+<li id="x"><a href="../x.htm" title="XML 系列教程">XML 系列教程</a></li>
+<li id="ws"><a href="../ws.htm" title="Web Services 系列教程">Web Services 系列教程</a></li>
+<li id="w"><a href="../w.htm" title="建站手册">建站手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>ASP.NET 教程</h2>
+<ul>
+<li><a href="index.htm" title="ASP.NET 教程">ASP.NET 教程</a></li>
+<li><a href="aspnet.htm" title="ASP.NET 简介">ASP.NET 简介</a></li>
+</ul>
+<h2>WP 教程</h2>
+<ul>
+<li><a href="webpages_intro.htm" title="WebPages 简介">WebPages 简介</a></li>
+<li><a href="webpages_razor.htm" title="WebPages Razor">WebPages Razor</a></li>
+<li><a href="webpages_layout.htm" title="WebPages 布局">WebPages 布局</a></li>
+<li><a href="webpages_folders.htm" title="WebPages 文件夹">WebPages 文件夹</a></li>
+<li><a href="webpages_global.htm" title="WebPages 全局">WebPages 全局</a></li>
+<li><a href="webpages_forms.htm" title="WebPages 窗体">WebPages 窗体</a></li>
+<li><a href="webpages_objects.htm" title="WebPages 对象">WebPages 对象</a></li>
+<li><a href="webpages_files.htm" title="WebPages 文件">WebPages 文件</a></li>
+<li><a href="webpages_helpers.htm" title="WebPages 帮助器">WebPages 帮助器</a></li>
+<li><a href="webpages_webgrid.htm" title="WebPages WebGrid">WebPages WebGrid</a></li>
+<li><a href="webpages_chart.htm" title="WebPages 图表">WebPages 图表</a></li>
+<li><a href="webpages_email.htm" title="WebPages 电邮">WebPages 电邮</a></li>
+<li><a href="webpages_php.htm" title="WebPages PHP">WebPages PHP</a></li>
+<li><a href="webpages_publish.htm" title="WebPages 发布">WebPages 发布</a></li>
+<li><a href="webpages_examples.htm" title="WebPages 实例">WebPages 实例</a></li>
+</ul>
+<h2>WP 参考手册</h2>
+<ul>
+<li><a href="webpages_ref_classes.htm" title="WebPages 类">WebPages 类</a></li>
+<li><a href="webpages_ref_websecurity.htm" title="WebPages 安全">WebPages 安全</a></li>
+<li><a href="webpages_ref_database.htm" title="WebPages 数据库">WebPages 数据库</a></li>
+<li><a href="webpages_ref_webmail.htm" title="WebPages WebMail">WebPages WebMail</a></li>
+<li><a href="webpages_ref_helpers.htm" title="WebPages 助手">WebPages 助手</a></li>
+</ul>
+<h2>ASP.NET Razor</h2>
+<ul>
+<li><a href="razor_intro.htm" title="Razor 简介">Razor 简介</a></li>
+<li><a href="razor_syntax.htm" title="Razor 语法">Razor 语法</a></li>
+<li><a href="razor_cs_variables.htm" title="Razor C# 变量">Razor C# 变量</a></li>
+<li><a href="razor_cs_loops.htm" title="Razor C# 循环">Razor C# 循环</a></li>
+<li><a href="razor_cs_logic.htm" title="Razor 外边距合并">Razor C# 逻辑</a></li>
+<li><a href="razor_vb_variables.htm" title="Razor VB 变量">Razor VB 变量</a></li>
+<li><a href="razor_vb_loops.htm" title="Razor VB 循环">Razor VB 循环</a></li>
+<li><a href="razor_vb_logic.htm" title="Razor VB 逻辑">Razor VB 逻辑</a></li>
+</ul>
+<h2>ASP.NET MVC</h2>
+<ul>
+<li><a href="mvc_intro.htm" title="MVC 简介">MVC 简介</a></li>
+<li><a href="mvc_app.htm" title="MVC 应用程序">MVC 应用程序</a></li>
+<li><a href="mvc_folders.htm" title="MVC 文件夹">MVC 文件夹</a></li>
+<li><a href="mvc_layout.htm" title="MVC 布局">MVC 布局</a></li>
+<li class="currentLink"><a href="mvc_controllers.htm" title="MVC 控制器">MVC 控制器</a></li>
+<li><a href="mvc_views.htm" title="MVC 视图">MVC 视图</a></li>
+<li><a href="mvc_database.htm" title="MVC 数据库">MVC 数据库</a></li>
+<li><a href="mvc_models.htm" title="MVC 模型">MVC 模型</a></li>
+<li><a href="mvc_security.htm" title="MVC 安全">MVC 安全</a></li>
+<li><a href="mvc_htmlhelpers.htm" title="MVC HTML 助手">MVC HTML 助手</a></li>
+<li><a href="mvc_publish.htm" title="MVC 发布">MVC 发布</a></li>
+<li><a href="mvc_reference.htm" title="MVC 参考手册">MVC 参考手册</a></li>
+</ul>
+<h2>WF 教程</h2>
+<ul>
+<li><a href="aspnet_intro.htm" title="WebForms 简介">WebForms 简介</a></li>
+<li><a href="aspnet_pages.htm" title="WebForms Pages">WebForms Pages</a></li>
+<li><a href="aspnet_controls.htm" title="WebForms 控件">WebForms 控件</a></li>
+<li><a href="aspnet_events.htm" title="WebForms 事件">WebForms 事件</a></li>
+<li><a href="aspnet_forms.htm" title="WebForms 窗体">WebForms 窗体</a></li>
+<li><a href="aspnet_viewstate.htm" title="WebForms ViewState">WebForms ViewState</a></li>
+<li><a href="aspnet_textbox.htm" title="WebForms TextBox">WebForms TextBox</a></li>
+<li><a href="aspnet_button.htm" title="WebForms Button">WebForms Button</a></li>
+<li><a href="aspnet_databinding.htm" title="WebForms Data Binding">WebForms 数据绑定</a></li>
+<li><a href="aspnet_arraylist.htm" title="WebForms ArrayList">WebForms ArrayList</a></li>
+<li><a href="aspnet_hashtable.htm" title="WebForms Hashtable">WebForms Hashtable</a></li>
+<li><a href="aspnet_sortedlist.htm" title="WebForms SortedList">WebForms SortedList</a></li>
+<li><a href="aspnet_xml.htm" title="WebForms XML 文件">WebForms XML 文件</a></li>
+<li><a href="aspnet_repeater.htm" title="WebForms Repeater">WebForms Repeater</a></li>
+<li><a href="aspnet_datalist.htm" title="WebForms DataList">WebForms DataList</a></li>
+<li><a href="aspnet_dbconnection.htm" title="WebForms DbConnection">WebForms 数据库连接</a></li>
+<li><a href="aspnet_masterpages.htm" title="WebForms Master Pages">WebForms 母版页</a></li>
+<li><a href="aspnet_navigation.htm" title="WebForms 导航">WebForms 导航</a></li>
+<li><a href="aspnet_examples.htm" title="WebForms 实例">WebForms 实例</a></li>
+</ul>
+<h2>WF 参考手册</h2>
+<ul>
+<li><a href="aspnet_refhtmlcontrols.htm" title="WebForms HTML">WebForms HTML</a></li>
+<li><a href="aspnet_refwebcontrols.htm" title="WebForms Controls">WebForms Controls</a></li>
+<li><a href="aspnet_refvalidationcontrols.htm" title="WebForms Validation">WebForms Validation</a></li>
+</ul>
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>ASP.NET MVC - 控制器</h1>
+
+
+<div id="tpn">
+<ul class="prenext">
+<li class="pre"><a href="mvc_layout.htm" title="MVC 布局">MVC 布局</a></li>
+<li class="next"><a href="mvc_views.htm" title="MVC 视图">MVC 视图</a></li>
+</ul>
+</div>
+
+
+<div id="intro">
+<p>为了学习 ASP.NET MVC，我们将构建一个 Internet 应用程序。</p>
+
+<p class="note"><span>部分 4：</span>添加控制器。</p>
+</div>
+
+
+<div>
+<h2>Controllers 文件夹</h2>
+
+<p>Controllers 文件夹包含负责处理用户输入和响应的控制器类。</p>
+
+<p>MVC 要求所有控制器的名称必须以 &quot;Controller&quot; 结尾。</p>
+
+<p>在我们的例子中，Visual Web Developer 已创建以下文件：<em>HomeController.cs</em>（用于首页和关于页面）和 <em>AccountController.cs</em> （用于登录页面）：</p>
+
+<p>web 服务器通常会将进入的 URL 请求直接映射到服务器上的磁盘文件。例如：某个 URL 请求（比如 &quot;http://www.jb51.net/index.asp&quot;）将映射到服务器根目录上的文件 &quot;index.asp&quot;。</p>
+
+<p>MVC 框架的映射方式有所不同。MVC 将 URL 映射到方法。这些方法在类中被称为“控制器”。</p>
+
+<p>控制器负责处理进入的请求、处理输入、保存数据、并把响应发送回客户端。</p>
+</div>
+
+
+<div>
+<h2>Home 控制器</h2>
+
+<p>我们应用程序中的控制器文件 <em>HomeController.cs</em>，定义了两个控件 <em>Index</em> 和 <em>About</em>。</p>
+
+<p>把 HomeController.cs 文件的内容替换为：</p>
+
+<pre>
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace MvcDemo.Controllers
+{
+public class HomeController : Controller
+{
+public ActionResult Index()
+{return View();}
+
+public ActionResult About()
+{return View();}
+}
+}
+</pre>
+</div>
+
+
+<div>
+<h2>Controller 视图</h2>
+
+<p>Views 文件夹中的文件 <em>Index.cshtml</em> 和 <em>About.cshtml</em> 定义了控制器中的 ActionResult 视图 Index() 和 About()。</p>
+</div>
+
+
+<div id="bpn">
+<ul class="prenext">
+<li class="pre"><a href="mvc_layout.htm" title="MVC 布局">MVC 布局</a></li>
+<li class="next"><a href="mvc_views.htm" title="MVC 视图">MVC 视图</a></li>
+</ul>
+</div>
+
+
+
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="searchui">
+<form method="get" id="searchform" action="http://www.baidu.com/search">
+<p><label for="searched_content">Search:</label></p>
+<p><input type="hidden" name="s" value="10520733385329581432"><input type="hidden" name="ie" value="gbk"></p>
+<p>
+<input type="text" name="q" class="box"  id="searched_content" title="在此输入搜索内容。" />
+<input type="submit" value="Go" class="button" title="搜索！" />
+</p>
+</form>
+</div>
+
+<div id="tools">
+<h5 id="tools_reference"><a href="aspnet_reference.htm">ASP.NET 参考手册</a></h5>
+</div>
+
+<div id="ad">
+<h2>赞助商链接</h2>
+
+</div>
+
+</div>
+
+<div id="footer">
+
+</div>
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

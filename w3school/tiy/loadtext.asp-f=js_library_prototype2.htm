@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv=Content-Type content='text/html; charset=GB2312'>
+
+<script src="../../ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js">
+</script>
+<script>
+function myFunction()
+{
+$("h01").writeAttribute("style","color:red").insert("Hello Prototype!");
+}
+Event.observe(window,"load",myFunction);
+</script>
+</head>
+
+<body>
+<h1 id="h01"></h1>
+</body>
+</html>

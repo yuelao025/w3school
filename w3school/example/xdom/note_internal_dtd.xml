@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--  Copyright jb51.net -->
+<!DOCTYPE note [
+  <!ELEMENT note    (to,from,heading,body)>
+  <!ELEMENT to      (#PCDATA)>
+  <!ELEMENT from    (#PCDATA)>
+  <!ELEMENT heading (#PCDATA)>
+  <!ELEMENT body    (#PCDATA)>
+  <!ENTITY writer "Bill Gates">
+  <!ENTITY copyright "Copyright jb51.net">
+]>
+<note>
+<to>George</to>
+<from>John</from>
+<heading>Reminder</heading>
+<body>Don't forget the meeting!</body>
+</note> 

@@ -1,0 +1,18 @@
+<html><head><meta http-equiv=Content-Type content='text/html; charset=GB2312'></head>
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<video id="video1" controls="controls">
+  <source src="../example/html5/mov_bbb.mp4" type="video/mp4">
+  <source src="../example/html5/mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+<script>
+myVid=document.getElementById("video1");
+myVid.onloadstart=alert("Starting to load video");
+</script> 
+
+</body> 
+</html>

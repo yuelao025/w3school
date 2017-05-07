@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="gbk" />
+<meta name="robots" content="all" />
+<meta name="author" content="www.phper8.com" />
+<link rel="stylesheet" type="text/css" href="../c5.css" />
+
+<title>CSS :link 伪类</title>
+
+</head>
+
+<body class="html">
+
+<div id="wrapper">
+
+<div id="header">
+<a href="../index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="ad_head">
+
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.htm" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.htm" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.htm" title="服务器脚本教程">服务器脚本</a></li>
+<li id="d"><a href="../d.htm" title="ASP.NET 教程">ASP.NET 教程</a></li>
+<li id="x"><a href="../x.htm" title="XML 系列教程">XML 系列教程</a></li>
+<li id="ws"><a href="../ws.htm" title="Web Services 系列教程">Web Services 系列教程</a></li>
+<li id="w"><a href="../w.htm" title="建站手册">建站手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>CSS 参考手册</h2>
+<ul>
+<li><a href="index.htm" title="CSS 参考手册">CSS 参考手册</a></li>
+<li><a href="css_selectors.htm" title="CSS 选择器参考手册">CSS 选择器</a></li>
+<li><a href="css_ref_aural.htm" title="CSS 听觉参考手册">CSS 听觉参考手册</a></li>
+<li><a href="css_websafe_fonts.htm" title="CSS 网络安全字体组合">CSS 网络安全字体</a></li>
+<li><a href="css_units.htm" title="CSS 单位">CSS 单位</a></li>
+<li><a href="css_colors.htm" title="CSS 颜色">CSS 颜色</a></li>
+<li><a href="css_colors_legal.htm" title="CSS 合法颜色值">CSS 颜色值</a></li>
+<li><a href="css_colornames.htm" title="CSS 颜色名">CSS 颜色名</a></li>
+<li><a href="css_colorsfull.htm" title="CSS 颜色十六进制值">CSS 颜色十六进制</a></li>
+</ul>
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>CSS :link 伪类</h1>
+
+<div class="backtoreference">
+<p><a href="index.htm" title="CSS 参考手册">CSS 参考手册</a></p>
+</div>
+
+
+<div>
+<h2>定义和用法</h2>
+
+<p>:link 伪类向未访问的链接添加特殊的样式。</p>
+
+<p>这个伪类应用于尚未访问过的链接；也就是说，链接所指的 URI 尚未出现在用户代理的历史中。这种状态与 :visited 状态是互斥的。</p>
+
+<h3>说明</h3>
+
+<p>激活的、已访问的、未访问的或者当有鼠标悬停在其上的链接，它们会在支持 CSS 的浏览器中以不同的方式显示出来：</p>
+
+<pre>
+a:link {color: #FF0000}     /* 未访问的链接 */
+a:visited {color: #00FF00}  /* 已访问的链接 */
+a:hover {color: #FF00FF}    /* 当有鼠标悬停在链接上 */
+a:active {color: #0000FF}   /* 被选择的链接 */
+</pre>
+
+<p class="note"><span>注释：</span>为了产生预期的效果，在 CSS 定义中，a:hover 必须位于 a:link 和 a:visited 之后！！</p>
+
+<p class="note"><span>注释：</span>为了产生预期的效果，在 CSS 定义中，a:active 必须位于 a:hover 之后！！</p>
+
+<p class="note"><span>注释：</span>Pseudo-class（伪类）的名称对大小写不敏感。</p>
+
+<p class="note"><span>注释：</span>伪类可与 CSS 类配合使用：</p>
+
+<pre>
+<code>a.red:visited {color: #FF0000;}</code>
+
+&lt;a <span style="color:#00FF00;">class=&quot;red&quot;</span> href=&quot;css_syntax.asp&quot;&gt;CSS Syntax&lt;/a&gt;
+</pre>
+
+<p class="note">如果上面这个例子中的链接已访问过，那么它会显示为红色。</p>
+</div>
+
+
+<div>
+<h2>实例</h2>
+
+<p>规定链接的颜色：</p>
+
+<pre>
+<code>a:link {color: #FF0000}</code>     <span>/* 未访问的链接 */</span>
+a:visited {color: #00FF00}  <span>/* 已访问的链接 */</span>
+a:hover {color: #FF00FF}    <span>/* 当有鼠标悬停在链接上 */</span>
+a:active {color: #0000FF}   <span>/* 被选择的链接 */</span>
+</pre>
+
+<p><a href="../tiy/t.asp-f=csse_link.htm">TIY</a> （在页面底部可以找到更多实例）</p>
+</div>
+
+
+<div>
+<h2>浏览器支持</h2>
+
+<p>所有主流浏览器都支持 :link 伪类。</p>
+</div>
+
+
+<div class="example">
+<h2>TIY 实例</h2>
+
+<dl>
+<dt><a href="../tiy/t.asp-f=csse_link.htm">超链接</a></dt>
+<dd>本例演示如何向文档中的超链接添加不同的颜色。</dd>
+
+<dt><a href="../tiy/t.asp-f=csse_link2.htm">超链接 2</a></dt>
+<dd>本例演示如何向超链接添加其他样式。</dd>
+</dl>
+</div>
+
+
+<div>
+<h2>相关页面</h2>
+
+<p>CSS 教程：<a href="../css/css_pseudo_classes.htm" title="CSS 伪类 (Pseudo-classes)">CSS 伪类</a></p>
+</div>
+
+
+<div class="backtoreference">
+<p><a href="index.htm" title="CSS 参考手册">CSS 参考手册</a></p>
+</div>
+
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="searchui">
+<form method="get" id="searchform" action="http://www.baidu.com/search">
+<p><label for="searched_content">Search:</label></p>
+<p><input type="hidden" name="s" value="10520733385329581432"><input type="hidden" name="ie" value="gbk"></p>
+<p>
+<input type="text" name="q" class="box"  id="searched_content" title="在此输入搜索内容。" />
+<input type="submit" value="Go" class="button" title="搜索！" />
+</p>
+</form>
+</div>
+
+<div id="tools">
+<h5 id="tools_reference"><a href="index.htm">CSS 参考手册</a></h5>
+</div>
+
+<div id="ad">
+<h2>赞助商链接</h2>
+
+</div>
+
+</div>
+
+<div id="footer">
+
+</div>
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

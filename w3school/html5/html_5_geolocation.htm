@@ -1,0 +1,490 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="gb2312" />
+<meta name="robots" content="all" />
+<meta name="author" content="www.phper8.com" />
+
+<link rel="stylesheet" type="text/css" href="../c5.css" />
+<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+
+<title>HTML5 地理定位</title>
+
+</head>
+
+<body class="html">
+<div id="wrapper">
+
+<div id="header">
+<a href="../index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="ad_head">
+
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.htm" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.htm" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.htm" title="服务器脚本教程">服务器脚本</a></li>
+<li id="d"><a href="../d.htm" title="ASP.NET 教程">ASP.NET 教程</a></li>
+<li id="x"><a href="../x.htm" title="XML 系列教程">XML 系列教程</a></li>
+<li id="ws"><a href="../ws.htm" title="Web Services 系列教程">Web Services 系列教程</a></li>
+<li id="w"><a href="../w.htm" title="建站手册">建站手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>HTML5 教程</h2>
+<ul>
+<li><a href="index.htm" title="HTML5 教程">HTML5 教程</a></li>
+<li><a href="html_5_intro.htm" title="HTML5 简介">HTML5 简介</a></li>
+<li><a href="html_5_video.htm" title="HTML5 视频">HTML5 视频</a></li>
+<li><a href="html_5_video_dom.htm" title="HTML5 Video + DOM">HTML5 视频/DOM</a></li>
+<li><a href="http://www.jb51.net/w3school/html5/html_5_audio.htm" title="HTML5 音频">HTML5 音频</a></li>
+<li><a href="html_5_draganddrop.htm" title="HTML5 拖放">HTML5 拖放</a></li>
+<li><a href="html_5_canvas.htm" title="HTML5 Canvas">HTML5 画布</a></li>
+<li><a href="html_5_svg.htm" title="HTML5 内联 SVG">HTML5 SVG</a></li>
+<li><a href="html_5_canvas_vs_svg.htm" title="HTML5 Canvas vs. SVG">HTML5 画布 vs SVG</a></li>
+<li class="currentLink"><a href="html_5_geolocation.htm" title="HTML5 地理定位">HTML5 地理定位</a></li>
+<li><a href="html_5_webstorage.htm" title="HTML5 Web 存储">HTML5 Web 存储</a></li>
+<li><a href="html_5_app_cache.htm" title="HTML 5 应用程序缓存">HTML5 应用缓存</a></li>
+<li><a href="html_5_webworkers.htm" title="HTML5 Web Workers">HTML5 Web Workers</a></li>
+<li><a href="html_5_serversentevents.htm" title="HTML5 服务器发送事件">HTML5 服务器发送事件</a></li>
+</ul>
+<h2>HTML5 表单</h2>
+<ul>
+<li><a href="html_5_form_input_types.htm" title="HTML5 Input 类型">HTML5 输入类型</a></li>
+<li><a href="html_5_form_elements.htm" title="HTML5 表单元素">HTML5 表单元素</a></li>
+<li><a href="html_5_form_attributes.htm" title="HTML5 表单属性">HTML5 表单属性</a></li>
+</ul>
+<h2>HTML5 测验</h2>
+<ul>
+<li><a href="html5_quiz.htm" title="HTML5 测验">HTML5 测验</a></li>
+</ul>
+<h2>HTML5 参考手册</h2>
+<ul>
+<li><a href="../tags/index.htm" title="HTML5 参考手册">HTML5 标签</a></li>
+<li><a href="../tags/html_ref_standardattributes.htm" title="HTML5 标准属性">HTML5 属性</a></li>
+<li><a href="../tags/html_ref_eventattributes.htm" title="HTML5 事件属性">HTML5 事件</a></li>
+<li><a href="../tags/html_ref_audio_video_dom.htm" title="HTML5 Audio/Video DOM 属性">HTML5 视频/音频</a></li>
+<li><a href="../tags/html_ref_canvas.htm" title="HTML5 Canvas 参考手册">HTML5 画布</a></li>
+<li><a href="../tags/html_ref_dtd.htm" title="HTML 元素和有效的 DTD">HTML 有效 DTD</a></li>
+</ul>
+<h2>HTML5 标签</h2>
+<ul>
+<li><a href="../tags/tag_comment.htm" title="HTML5 &lt;!--&gt; 标签">&lt;!--&gt;</a></li>
+<li><a href="../tags/tag_doctype.htm" title="HTML5 &lt;!DOCTYPE&gt; 标签">&lt;!DOCTYPE&gt;</a></li>
+<li><a href="../tags/tag_a.htm" title="HTML5 &lt;a&gt; 标签">&lt;a&gt;</a></li>
+<li><a href="../tags/tag_abbr.htm" title="HTML5 &lt;abbr&gt; 标签">&lt;abbr&gt;</a></li>
+<li><a href="../tags/tag_acronym.htm" title="HTML5 &lt;acronym&gt; 标签">&lt;acronym&gt;</a></li>
+<li><a href="../tags/tag_address.htm" title="HTML5 &lt;address&gt; 标签">&lt;address&gt;</a></li>
+<li><a href="../tags/tag_applet.htm" title="HTML5 &lt;applet&gt; 标签">&lt;applet&gt;</a></li>
+<li><a href="../tags/tag_area.htm" title="HTML5 &lt;area&gt; 标签">&lt;area&gt;</a></li>
+<li><a href="../tags/tag_article.htm" title="HTML5 &lt;article&gt; 标签">&lt;article&gt;</a></li>
+<li><a href="../tags/tag_aside.htm" title="HTML5 &lt;aside&gt; 标签">&lt;aside&gt;</a></li>
+<li><a href="../tags/tag_audio.htm" title="HTML5 &lt;audio&gt; 标签">&lt;audio&gt;</a></li>
+<li><a href="../tags/tag_b.htm" title="HTML5 &lt;b&gt; 标签">&lt;b&gt;</a></li>
+<li><a href="../tags/tag_base.htm" title="HTML5 &lt;base&gt; 标签">&lt;base&gt;</a></li>
+<li><a href="../tags/tag_basefont.htm" title="HTML5 &lt;basefont&gt; 标签">&lt;basefont&gt;</a></li>
+<li><a href="../tags/tag_bdi.htm" title="HTML5 &lt;bdi&gt; 标签">&lt;bdi&gt;</a></li>
+<li><a href="../tags/tag_bdo.htm" title="HTML5 &lt;bdo&gt; 标签">&lt;bdo&gt;</a></li>
+<li><a href="../tags/tag_big.htm" title="HTML5 &lt;big&gt; 标签">&lt;big&gt;</a></li>
+<li><a href="../tags/tag_blockquote.htm" title="HTML5 &lt;blockquote&gt; 标签">&lt;blockquote&gt;</a></li>
+<li><a href="../tags/tag_body.htm" title="HTML5 &lt;body&gt; 标签">&lt;body&gt;</a></li>
+<li><a href="../tags/tag_br.htm" title="HTML5 &lt;br&gt; 标签">&lt;br&gt;</a></li>
+<li><a href="../tags/tag_button.htm" title="HTML5 &lt;button&gt; 标签">&lt;button&gt;</a></li>
+<li><a href="../tags/tag_canvas.htm" title="HTML5 &lt;canvas&gt; 标签">&lt;canvas&gt;</a></li>
+<li><a href="../tags/tag_caption.htm" title="HTML5 &lt;caption&gt; 标签">&lt;caption&gt;</a></li>
+<li><a href="../tags/tag_center.htm" title="HTML5 &lt;center&gt; 标签">&lt;center&gt;</a></li>
+<li><a href="../tags/tag_cite.htm" title="HTML5 &lt;cite&gt; 标签">&lt;cite&gt;</a></li>
+<li><a href="../tags/tag_phrase_elements.htm" title="HTML5 &lt;code&gt; 标签">&lt;code&gt;</a></li>
+<li><a href="../tags/tag_col.htm" title="HTML5 &lt;col&gt; 标签">&lt;col&gt;</a></li>
+<li><a href="../tags/tag_colgroup.htm" title="HTML5 &lt;colgroup&gt; 标签">&lt;colgroup&gt;</a></li>
+<li><a href="../tags/tag_command.htm" title="HTML5 &lt;command&gt; 标签">&lt;command&gt;</a></li>
+<li><a href="../tags/tag_datalist.htm" title="HTML5 &lt;datalist&gt; 标签">&lt;datalist&gt;</a></li>
+<li><a href="../tags/tag_dd.htm" title="HTML5 &lt;dd&gt; 标签">&lt;dd&gt;</a></li>
+<li><a href="../tags/tag_del.htm" title="HTML5 &lt;del&gt; 标签">&lt;del&gt;</a></li>
+<li><a href="../tags/tag_details.htm" title="HTML5 &lt;details&gt; 标签">&lt;details&gt;</a></li>
+<li><a href="../tags/tag_phrase_elements.htm" title="HTML5 &lt;dfn&gt; 标签">&lt;dfn&gt;</a></li>
+<li><a href="../tags/tag_dialog.htm" title="HTML5 &lt;dialog&gt; 标签">&lt;dialog&gt;</a></li>
+<li><a href="../tags/tag_dir.htm" title="HTML5 &lt;dir&gt; 标签">&lt;dir&gt;</a></li>
+<li><a href="../tags/tag_div.htm" title="HTML5 &lt;div&gt; 标签">&lt;div&gt;</a></li>
+<li><a href="../tags/tag_dl.htm" title="HTML5 &lt;dl&gt; 标签">&lt;dl&gt;</a></li>
+<li><a href="../tags/tag_dt.htm" title="HTML5 &lt;dt&gt; 标签">&lt;dt&gt;</a></li>
+<li><a href="../tags/tag_phrase_elements.htm" title="HTML5 &lt;em&gt; 标签">&lt;em&gt;</a></li>
+<li><a href="../tags/tag_embed.htm" title="HTML5 &lt;embed&gt; 标签">&lt;embed&gt;</a></li>
+<li><a href="../tags/tag_fieldset.htm" title="HTML5 &lt;fieldset&gt; 标签">&lt;fieldset&gt;</a></li>
+<li><a href="../tags/tag_figcaption.htm" title="HTML5 &lt;figcaption&gt; 标签">&lt;figcaption&gt;</a></li>
+<li><a href="../tags/tag_figure.htm" title="HTML5 &lt;figure&gt; 标签">&lt;figure&gt;</a></li>
+<li><a href="../tags/tag_font.htm" title="HTML5 &lt;font&gt; 标签">&lt;font&gt;</a></li>
+<li><a href="../tags/tag_footer.htm" title="HTML5 &lt;footer&gt; 标签">&lt;footer&gt;</a></li>
+<li><a href="../tags/tag_form.htm" title="HTML5 &lt;form&gt; 标签">&lt;form&gt;</a></li>
+<li><a href="../tags/tag_frame.htm" title="HTML5 &lt;frame&gt; 标签">&lt;frame&gt;</a></li>
+<li><a href="../tags/tag_frameset.htm" title="HTML5 &lt;frameset&gt; 标签">&lt;frameset&gt;</a></li>
+<li><a href="../tags/tag_hn.htm" title="HTML5 &lt;h1&gt; - &lt;h6&gt; 标签">&lt;h1&gt; - &lt;h6&gt;</a></li>
+<li><a href="../tags/tag_head.htm" title="HTML5 &lt;head&gt; 标签">&lt;head&gt;</a></li>
+<li><a href="../tags/tag_header.htm" title="HTML5 &lt;header&gt; 标签">&lt;header&gt;</a></li>
+<li><a href="tag_hgroup.htm" title="HTML5 &lt;hgroup&gt; 标签">&lt;hgroup&gt;</a></li>
+<li><a href="../tags/tag_hr.htm" title="HTML5 &lt;hr&gt; 标签">&lt;hr&gt;</a></li>
+<li><a href="../tags/tag_html.htm" title="HTML5 &lt;html&gt; 标签">&lt;html&gt;</a></li>
+<li><a href="../tags/tag_i.htm" title="HTML5 &lt;i&gt; 标签">&lt;i&gt;</a></li>
+<li><a href="../tags/tag_iframe.htm" title="HTML5 &lt;iframe&gt; 标签">&lt;iframe&gt;</a></li>
+<li><a href="../tags/tag_img.htm" title="HTML5 &lt;img&gt; 标签">&lt;img&gt;</a></li>
+<li><a href="../tags/tag_input.htm" title="HTML5 &lt;input&gt; 标签">&lt;input&gt;</a></li>
+<li><a href="../tags/tag_ins.htm" title="HTML5 &lt;ins&gt; 标签">&lt;ins&gt;</a></li>
+<li><a href="../tags/tag_phrase_elements.htm" title="HTML5 &lt;kbd&gt; 标签">&lt;kbd&gt;</a></li>
+<li><a href="../tags/tag_keygen.htm" title="HTML5 &lt;keygen&gt; 标签">&lt;keygen&gt;</a></li>
+<li><a href="../tags/tag_label.htm" title="HTML5 &lt;label&gt; 标签">&lt;label&gt;</a></li>
+<li><a href="../tags/tag_legend.htm" title="HTML5 &lt;legend&gt; 标签">&lt;legend&gt;</a></li>
+<li><a href="../tags/tag_li.htm" title="HTML5 &lt;li&gt; 标签">&lt;li&gt;</a></li>
+<li><a href="../tags/tag_link.htm" title="HTML5 &lt;link&gt; 标签">&lt;link&gt;</a></li>
+<li><a href="../tags/tag_map.htm" title="HTML5 &lt;map&gt; 标签">&lt;map&gt;</a></li>
+<li><a href="../tags/tag_mark.htm" title="HTML5 &lt;mark&gt; 标签">&lt;mark&gt;</a></li>
+<li><a href="../tags/tag_menu.htm" title="HTML5 &lt;menu&gt; 标签">&lt;menu&gt;</a></li>
+<li><a href="../tags/tag_meta.htm" title="HTML5 &lt;meta&gt; 标签">&lt;meta&gt;</a></li>
+<li><a href="../tags/tag_meter.htm" title="HTML5 &lt;meter&gt; 标签">&lt;meter&gt;</a></li>
+<li><a href="../tags/tag_nav.htm" title="HTML5 &lt;nav&gt; 标签">&lt;nav&gt;</a></li>
+<li><a href="../tags/tag_noframes.htm" title="HTML5 &lt;noframes&gt; 标签">&lt;noframes&gt;</a></li>
+<li><a href="../tags/tag_noscript.htm" title="HTML5 &lt;noscript&gt; 标签">&lt;noscript&gt;</a></li>
+<li><a href="../tags/tag_object.htm" title="HTML5 &lt;object&gt; 标签">&lt;object&gt;</a></li>
+<li><a href="../tags/tag_ol.htm" title="HTML5 &lt;ol&gt; 标签">&lt;ol&gt;</a></li>
+<li><a href="../tags/tag_optgroup.htm" title="HTML5 &lt;optgroup&gt; 标签">&lt;optgroup&gt;</a></li>
+<li><a href="../tags/tag_option.htm" title="HTML5 &lt;option&gt; 标签">&lt;option&gt;</a></li>
+<li><a href="../tags/tag_output.htm" title="HTML5 &lt;output&gt; 标签">&lt;output&gt;</a></li>
+<li><a href="../tags/tag_p.htm" title="HTML5 &lt;p&gt; 标签">&lt;p&gt;</a></li>
+<li><a href="../tags/tag_param.htm" title="HTML5 &lt;param&gt; 标签">&lt;param&gt;</a></li>
+<li><a href="../tags/tag_pre.htm" title="HTML5 &lt;pre&gt; 标签">&lt;pre&gt;</a></li>
+<li><a href="../tags/tag_progress.htm" title="HTML5 &lt;progress&gt; 标签">&lt;progress&gt;</a></li>
+<li><a href="../tags/tag_q.htm" title="HTML5 &lt;q&gt; 标签">&lt;q&gt;</a></li>
+<li><a href="../tags/tag_rp.htm" title="HTML5 &lt;rp&gt; 标签">&lt;rp&gt;</a></li>
+<li><a href="../tags/tag_rt.htm" title="HTML5 &lt;rt&gt; 标签">&lt;rt&gt;</a></li>
+<li><a href="../tags/tag_ruby.htm" title="HTML5 &lt;ruby&gt; 标签">&lt;ruby&gt;</a></li>
+<li><a href="../tags/tag_s.htm" title="HTML5 &lt;s&gt; 标签">&lt;s&gt;</a></li>
+<li><a href="../tags/tag_phrase_elements.htm" title="HTML5 &lt;samp&gt; 标签">&lt;samp&gt;</a></li>
+<li><a href="../tags/tag_script.htm" title="HTML5 &lt;script&gt; 标签">&lt;script&gt;</a></li>
+<li><a href="../tags/tag_select.htm" title="HTML5 &lt;select&gt; 标签">&lt;select&gt;</a></li>
+<li><a href="../tags/tag_small.htm" title="HTML5 &lt;small&gt; 标签">&lt;small&gt;</a></li>
+<li><a href="../tags/tag_source.htm" title="HTML5 &lt;source&gt; 标签">&lt;source&gt;</a></li>
+<li><a href="../tags/tag_span.htm" title="HTML5 &lt;span&gt; 标签">&lt;span&gt;</a></li>
+<li><a href="../tags/tag_strike.htm" title="HTML5 &lt;strike&gt; 标签">&lt;strike&gt;</a></li>
+<li><a href="../tags/tag_phrase_elements.htm" title="HTML5 &lt;strong&gt; 标签">&lt;strong&gt;</a></li>
+<li><a href="../tags/tag_style.htm" title="HTML5 &lt;style&gt; 标签">&lt;style&gt;</a></li>
+<li><a href="../tags/tag_sub.htm" title="HTML5 &lt;sub&gt; 标签">&lt;sub&gt;</a></li>
+<li><a href="../tags/tag_summary.htm" title="HTML5 &lt;summary&gt; 标签">&lt;summary&gt;</a></li>
+<li><a href="../tags/tag_sub.htm" title="HTML5 &lt;sup&gt; 标签">&lt;sup&gt;</a></li>
+<li><a href="../tags/tag_table.htm" title="HTML5 &lt;table&gt; 标签">&lt;table&gt;</a></li>
+<li><a href="../tags/tag_tbody.htm" title="HTML5 &lt;tbody&gt; 标签">&lt;tbody&gt;</a></li>
+<li><a href="../tags/tag_td.htm" title="HTML5 &lt;td&gt; 标签">&lt;td&gt;</a></li>
+<li><a href="../tags/tag_textarea.htm" title="HTML5 &lt;textarea&gt; 标签">&lt;textarea&gt;</a></li>
+<li><a href="../tags/tag_tfoot.htm" title="HTML5 &lt;tfoot&gt; 标签">&lt;tfoot&gt;</a></li>
+<li><a href="../tags/tag_th.htm" title="HTML5 &lt;th&gt; 标签">&lt;th&gt;</a></li>
+<li><a href="../tags/tag_thead.htm" title="HTML5 &lt;thead&gt; 标签">&lt;thead&gt;</a></li>
+<li><a href="../tags/tag_time.htm" title="HTML5 &lt;time&gt; 标签">&lt;time&gt;</a></li>
+<li><a href="../tags/tag_title.htm" title="HTML5 &lt;title&gt; 标签">&lt;title&gt;</a></li>
+<li><a href="../tags/tag_tr.htm" title="HTML5 &lt;tr&gt; 标签">&lt;tr&gt;</a></li>
+<li><a href="../tags/tag_track.htm" title="HTML5 &lt;track&gt; 标签">&lt;track&gt;</a></li>
+<li><a href="../tags/tag_tt.htm" title="HTML5 &lt;tt&gt; 标签">&lt;tt&gt;</a></li>
+<li><a href="../tags/tag_u.htm" title="HTML5 &lt;u&gt; 标签">&lt;u&gt;</a></li>
+<li><a href="../tags/tag_ul.htm" title="HTML5 &lt;ul&gt; 标签">&lt;ul&gt;</a></li>
+<li><a href="../tags/tag_phrase_elements.htm" title="HTML5 &lt;var&gt; 标签">&lt;var&gt;</a></li>
+<li><a href="../tags/tag_video.htm" title="HTML5 &lt;video&gt; 标签">&lt;video&gt;</a></li>
+<li><a href="../tags/tag_wbr.htm" title="HTML5 &lt;wbr&gt; 标签">&lt;wbr&gt;</a></li>
+</ul>
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>HTML5 地理定位</h1>
+
+<div id="tpn">
+<ul class="prenext">
+<li class="pre"><a href="html_5_canvas_vs_svg.htm" title="HTML5 Canvas vs. SVG">HTML5 画布 vs SVG</a></li>
+<li class="next"><a href="html_5_webstorage.htm" title="HTML5 Web 存储">HTML5 Web 存储</a></li>
+</ul>
+</div>
+
+
+<div id="intro">
+<p><strong>HTML5 Geolocation（地理定位）用于定位用户的位置。</strong></p>
+<p><a href="../tiy/t.asp-f=html5_geolocation_map_script.htm">亲自试一试：在谷歌地图上显示您的位置</a></p>
+</div>
+
+
+<div>
+<h2>定位用户的位置</h2>
+
+<p>HTML5 Geolocation API 用于获得用户的地理位置。</p>
+
+<p>鉴于该特性可能侵犯用户的隐私，除非用户同意，否则用户位置信息是不可用的。</p>
+</div>
+
+
+<div>
+<h2>浏览器支持</h2>
+
+<p>Internet Explorer 9、Firefox、Chrome、Safari 以及 Opera 支持地理定位。</p>
+
+<p class="note"><span>注释：</span>对于拥有 GPS 的设备，比如 iPhone，地理定位更加精确。</p>
+</div>
+
+
+<div>
+<h2>HTML5 - 使用地理定位</h2>
+
+<p>请使用 getCurrentPosition() 方法来获得用户的位置。</p>
+
+<p>下例是一个简单的地理定位实例，可返回用户位置的经度和纬度。</p>
+
+<h3>实例</h3>
+
+<pre>
+&lt;script&gt;
+var x=document.getElementById(&quot;demo&quot;);
+function getLocation()
+  {
+  if (navigator.geolocation)
+    {
+    navigator.geolocation.<code>getCurrentPosition(showPosition)</code>;
+    }
+  else{x.innerHTML=&quot;Geolocation is not supported by this browser.&quot;;}
+  }
+function showPosition(position)
+  {
+  x.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +
+  &quot;&lt;br /&gt;Longitude: &quot; + position.coords.longitude;
+  }
+&lt;/script&gt;
+</pre>
+
+<p><a href="../tiy/t.asp-f=html5_geolocation.htm">亲自试一试</a></p>
+
+<p>例子解释：</p>
+
+<ul>
+<li>检测是否支持地理定位</li>
+<li>如果支持，则运行 getCurrentPosition() 方法。如果不支持，则向用户显示一段消息。</li>
+<li>如果getCurrentPosition()运行成功，则向参数showPosition中规定的函数返回一个coordinates对象</li>
+<li>showPosition() 函数获得并显示经度和纬度</li>
+</ul>
+
+<p>上面的例子是一个非常基础的地理定位脚本，不含错误处理。</p>
+</div>
+
+
+<div>
+<h2>处理错误和拒绝</h2>
+
+<p>getCurrentPosition() 方法的第二个参数用于处理错误。它规定当获取用户位置失败时运行的函数：</p>
+
+<h3>实例</h3>
+
+<pre>
+function showError(error)
+  {
+  switch(error.code)
+    {
+    case error.PERMISSION_DENIED:
+      x.innerHTML=&quot;User denied the request for Geolocation.&quot;
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML=&quot;Location information is unavailable.&quot;
+      break;
+    case error.TIMEOUT:
+      x.innerHTML=&quot;The request to get user location timed out.&quot;
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML=&quot;An unknown error occurred.&quot;
+      break;
+    }
+  }
+</pre>
+
+<p><a href="../tiy/t.asp-f=html5_geolocation_error.htm">亲自试一试</a></p>
+
+<p>错误代码：</p>
+
+<ul>
+<li>Permission denied - 用户不允许地理定位</li>
+<li>Position unavailable - 无法获取当前位置</li>
+<li>Timeout - 操作超时</li>
+</ul>
+</div>
+
+
+<div>
+<h2>在地图中显示结果</h2>
+
+<p>如需在地图中显示结果，您需要访问可使用经纬度的地图服务，比如谷歌地图或百度地图：</p>
+
+<h3>实例</h3>
+
+<pre>
+function showPosition(position)
+{
+var latlon=position.coords.latitude+&quot;,&quot;+position.coords.longitude;
+
+var img_url=&quot;http://maps.googleapis.com/maps/api/staticmap?center=&quot;
++latlon+&quot;&amp;zoom=14&amp;size=400x300&amp;sensor=false&quot;;
+
+document.getElementById(&quot;mapholder&quot;).innerHTML=&quot;&lt;img src='&quot;+img_url+&quot;' /&gt;&quot;;
+}
+</pre>
+
+<p><a href="../tiy/t.asp-f=html5_geolocation_map.htm">亲自试一试</a></p>
+
+<p>在上例中，我们使用返回的经纬度数据在谷歌地图中显示位置（使用静态图像）。</p>
+
+<p><a href="../tiy/t.asp-f=html5_geolocation_map_script.htm">谷歌地图脚本</a></p>
+
+<p>上面的链接向您演示如何使用脚本来显示带有标记、缩放和拖曳选项的交互式地图。</p>
+</div>
+
+<div>
+<h2>给定位置的信息</h2>
+
+<p>本页演示的是如何在地图上显示用户的位置。不过，地理定位对于给定位置的信息同样很有用处。</p>
+
+<p>案例：</p>
+
+<ul>
+<li>更新本地信息</li>
+<li>显示用户周围的兴趣点</li>
+<li>交互式车载导航系统 (GPS)</li>
+</ul>
+</div>
+
+
+<div>
+<h2>getCurrentPosition() 方法 - 返回数据</h2>
+
+<p>若成功，则 getCurrentPosition() 方法返回对象。始终会返回 latitude、longitude 以及 accuracy 属性。如果可用，则会返回其他下面的属性。</p>
+
+<table class="dataintable">
+<tr>
+<th style="width:40%;">属性</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td>coords.latitude</td>
+<td>十进制数的纬度</td>
+</tr>
+
+<tr>
+<td>coords.longitude</td>
+<td>十进制数的经度</td>
+</tr>
+
+<tr>
+<td>coords.accuracy</td>
+<td>位置精度</td>
+</tr>
+
+<tr>
+<td>coords.altitude</td>
+<td>海拔，海平面以上以米计</td>
+</tr>
+
+<tr>
+<td>coords.altitudeAccuracy</td>
+<td>位置的海拔精度</td>
+</tr>
+
+<tr>
+<td>coords.heading</td>
+<td>方向，从正北开始以度计</td>
+</tr>
+
+<tr>
+<td>coords.speed</td>
+<td>速度，以米/每秒计</td>
+</tr>
+
+<tr>
+<td>timestamp</td>
+<td>响应的日期/时间</td>
+</tr>
+</table>
+</div>
+
+
+<div>
+<h2>Geolocation 对象 - 其他有趣的方法</h2>
+
+<p>watchPosition() - 返回用户的当前位置，并继续返回用户移动时的更新位置（就像汽车上的 GPS）。</p>
+
+<p>clearWatch() - 停止 watchPosition() 方法</p>
+
+<p>下面的例子展示 watchPosition() 方法。您需要一台精确的 GPS 设备来测试该例（比如 iPhone）：</p>
+
+<h3>实例</h3>
+
+<pre>
+&lt;script&gt;
+var x=document.getElementById(&quot;demo&quot;);
+function getLocation()
+  {
+  if (navigator.geolocation)
+    {
+    navigator.geolocation.<code>watchPosition(showPosition)</code>;
+    }
+  else{x.innerHTML=&quot;Geolocation is not supported by this browser.&quot;;}
+  }
+function showPosition(position)
+  {
+  x.innerHTML=&quot;Latitude: &quot; + position.coords.latitude +
+  &quot;&lt;br /&gt;Longitude: &quot; + position.coords.longitude;
+  }
+&lt;/script&gt;
+</pre>
+
+<p><a href="../tiy/t.asp-f=html5_geolocation_watchposition.htm">亲自试一试</a></p>
+</div>
+
+
+<div id="bpn">
+<ul class="prenext">
+<li class="pre"><a href="html_5_canvas_vs_svg.htm" title="HTML5 Canvas vs. SVG">HTML5 画布 vs SVG</a></li>
+<li class="next"><a href="html_5_webstorage.htm" title="HTML5 Web 存储">HTML5 Web 存储</a></li>
+</ul>
+</div>
+
+</div>
+
+<div id="sidebar">
+
+<div id="searchui">
+<form method="get" id="searchform" action="http://www.baidu.com/search">
+<p><label for="searched_content">Search:</label></p>
+<p><input type="hidden" name="s" value="10520733385329581432"><input type="hidden" name="ie" value="gbk"></p>
+<p>
+<input type="text" name="q" class="box"  id="searched_content" title="在此输入搜索内容。" />
+<input type="submit" value="Go" class="button" title="搜索！" />
+</p>
+</form>
+</div>
+
+<div id="tools">
+<h5 id="tools_reference"><a href="../tags/index.htm">HTML 5 参考手册</a></h5>
+<h5 id="tools_quiz"><a href="html5_quiz.htm">HTML5 测验</a></h5>
+</div>
+
+<div id="ad">
+<h2>赞助商链接</h2>
+
+</div>
+
+</div>
+
+<div id="footer">
+
+</div>
+
+</div>
+</body>
+</html>

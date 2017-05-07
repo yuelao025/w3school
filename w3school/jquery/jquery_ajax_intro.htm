@@ -1,0 +1,238 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="Content-Language" content="zh-cn" />
+
+<meta name="robots" content="all" />
+
+<meta name="author" content="www.phper8.com" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta http-equiv="imagetoolbar" content="false" />
+
+<link rel="stylesheet" type="text/css" href="../c5.css" />
+<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+
+<title>jQuery - AJAX 简介</title>
+</head>
+
+<body class="browserscripting">
+<div id="wrapper">
+
+<div id="header">
+<a href="../index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="ad_head">
+
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.htm" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.htm" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.htm" title="服务器脚本教程">服务器脚本</a></li>
+<li id="d"><a href="../d.htm" title="ASP.NET 教程">ASP.NET 教程</a></li>
+<li id="x"><a href="../x.htm" title="XML 系列教程">XML 系列教程</a></li>
+<li id="ws"><a href="../ws.htm" title="Web Services 系列教程">Web Services 系列教程</a></li>
+<li id="w"><a href="../w.htm" title="建站手册">建站手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>jQuery 教程</h2>
+<ul>
+<li><a href="index.htm" title="jQuery 教程">jQuery 教程</a></li>
+<li><a href="jquery_intro.htm" title="jQuery 简介">jQuery 简介</a></li>
+<li><a href="jquery_install.htm" title="jQuery 安装">jQuery 安装</a></li>
+<li><a href="jquery_syntax.htm" title="jQuery 语法">jQuery 语法</a></li>
+<li><a href="jquery_selectors.htm" title="jQuery 选择器">jQuery 选择器</a></li>
+<li><a href="jquery_events.htm" title="jQuery 事件">jQuery 事件</a></li>
+</ul>
+<h2>jQuery 效果</h2>
+<ul>
+<li><a href="jquery_hide_show.htm" title="jQuery jQuery 效果 - 隐藏和显示">jQuery 隐藏/显示</a></li>
+<li><a href="jquery_fade.htm" title="jQuery jQuery 效果 - 淡入淡出">jQuery 淡入淡出</a></li>
+<li><a href="jquery_slide.htm" title="jQuery 效果 - 滑动">jQuery 滑动</a></li>
+<li><a href="jquery_animate.htm" title="jQuery 效果 - 动画">jQuery 动画</a></li>
+<li><a href="jquery_stop.htm" title="jQuery 停止动画">jQuery stop()</a></li>
+<li><a href="jquery_callback.htm" title="jQuery 回调函数">jQuery Callback</a></li>
+<li><a href="jquery_chaining.htm" title="jQuery - Chaining">jQuery Chaining</a></li>
+</ul>
+<h2>jQuery HTML</h2>
+<ul>
+<li><a href="jquery_dom_get.htm" title="jQuery - 获取内容和属性">jQuery 获取</a></li>
+<li><a href="jquery_dom_set.htm" title="jQuery - 设置内容和属性">jQuery 设置</a></li>
+<li><a href="jquery_dom_add.htm" title="jQuery - 添加元素">jQuery 添加</a></li>
+<li><a href="jquery_dom_remove.htm" title="jQuery - 删除元素">jQuery 删除</a></li>
+<li><a href="jquery_css_classes.htm" title="jQuery - 获取和设置 CSS 类">jQuery CSS 类</a></li>
+<li><a href="jquery_css.htm" title="jQuery - css() 方法">jQuery css()</a></li>
+<li><a href="jquery_dimensions.htm" title="jQuery - 尺寸">jQuery 尺寸</a></li>
+</ul>
+<h2>jQuery 遍历</h2>
+<ul>
+<li><a href="jquery_traversing.htm" title="jQuery 遍历">jQuery 遍历</a></li>
+<li><a href="jquery_traversing_ancestors.htm" title="jQuery 遍历 - 祖先">jQuery 祖先</a></li>
+<li><a href="jquery_traversing_descendants.htm" title="jQuery 遍历 - 后代">jQuery 后代</a></li>
+<li><a href="jquery_traversing_siblings.htm" title="jQuery 遍历 - 同胞">jQuery 同胞</a></li>
+<li><a href="jquery_traversing_filtering.htm" title="jQuery 遍历 - 过滤">jQuery 过滤</a></li>
+</ul>
+<h2>jQuery AJAX</h2>
+<ul>
+<li class="currentLink"><a href="jquery_ajax_intro.htm" title="jQuery - AJAX 简介">jQuery AJAX 简介</a></li>
+<li><a href="jquery_ajax_load.htm" title="jQuery - AJAX load() 方法">jQuery 加载</a></li>
+<li><a href="jquery_ajax_get_post.htm" title="jQuery - AJAX get() 和 post() 方法">jQuery Get/Post</a></li>
+</ul>
+<h2>jQuery 杂项</h2>
+<ul>
+<li><a href="jquery_noconflict.htm" title="jQuery - noConflict() 方法">jQuery noConflict()</a></li>
+</ul>
+<h2>jQuery 实例</h2>
+<ul>
+<li><a href="http://www.jb51.net/w3school/jquery/jquery_examples.htm" title="jQuery 实例">jQuery 实例</a></li>
+<li><a href="jquery_quiz.htm" title="jQuery 测验">jQuery 测验</a></li>
+</ul>
+<h2>jQuery 参考手册</h2>
+<ul>
+<li><a href="jquery_reference.htm" title="jQuery 参考手册">jQuery 参考手册</a></li>
+<li><a href="jquery_ref_selectors.htm" title="jQuery 参考手册 - 选择器">jQuery 选择器</a></li>
+<li><a href="jquery_ref_events.htm" title="jQuery 参考手册 - 事件">jQuery 事件</a></li>
+<li><a href="jquery_ref_effects.htm" title="jQuery 参考手册 - 效果">jQuery 效果</a></li>
+<li><a href="jquery_ref_manipulation.htm" title="jQuery 参考手册 - 文档操作">jQuery 文档操作</a></li>
+<li><a href="jquery_ref_attributes.htm" title="jQuery 参考手册 - 属性操作">jQuery 属性操作</a></li>
+<li><a href="jquery_ref_css.htm" title="jQuery 参考手册 - CSS 操作">jQuery CSS 操作</a></li>
+<li><a href="jquery_ref_ajax.htm" title="jQuery 参考手册 - Ajax">jQuery Ajax</a></li>
+<li><a href="jquery_ref_traversing.htm" title="jQuery 参考手册 - 遍历">jQuery 遍历</a></li>
+<li><a href="jquery_ref_data.htm" title="jQuery 参考手册 - 数据">jQuery 数据</a></li>
+<li><a href="jquery_ref_dom_element_methods.htm" title="jQuery 参考手册 - DOM 元素方法">jQuery DOM 元素</a></li>
+<li><a href="jquery_ref_core.htm" title="jQuery 参考手册 - 核心">jQuery 核心</a></li>
+<li><a href="jquery_ref_prop.htm" title="jQuery 属性">jQuery 属性</a></li>
+</ul>
+</div><div id="selected">
+<h2>建站手册</h2>
+<ul>
+<li><a href="../site/index.htm" title="网站构建">网站构建</a></li>
+<li><a href="../w3c/index.htm" title="万维网联盟 (W3C)">万维网联盟 (W3C)</a></li>
+<li><a href="../browsers/index.htm" title="浏览器信息">浏览器信息</a></li>
+<li><a href="../quality/index.htm" title="网站品质">网站品质</a></li>
+<li><a href="../semweb/index.htm" title="语义网">语义网</a></li>
+<li><a href="../careers/index.htm" title="职业规划">职业规划</a></li>
+<li><a href="../hosting/index.htm" title="网站主机">网站主机</a></li>
+</ul>
+
+<h2><a href="../about/index.htm" title="关于 W3School" id="link_about">关于 W3School</a></h2>
+<h2><a href="../about/about_helping.htm" title="帮助 W3School" id="link_help">帮助 W3School</a></h2>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>jQuery - AJAX 简介</h1>
+
+<div id="tpn">
+<ul class="prenext">
+<li class="pre"><a href="jquery_traversing_filtering.htm" title="jQuery 遍历 - 过滤">jQuery 过滤</a></li>
+<li class="next"><a href="jquery_ajax_load.htm" title="jQuery - AJAX load() 方法">jQuery 加载</a></li>
+</ul>
+</div>
+
+<div id="intro">
+<p><strong>AJAX 是与服务器交换数据的艺术，它在不重载全部页面的情况下，实现了对部分网页的更新。</strong></p>
+</div>
+
+
+<div>
+<h2>jQuery AJAX 实例</h2>
+
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $('#test').load('../example/jquery/demo_test.txt.htm'/*tpa=http://www.jb51.net/example/jquery/demo_test.txt*/);
+  })
+})
+</script>
+
+<h3 id="test">请点击下面的按钮，通过 jQuery AJAX 改变这段文本。</h3>
+<button id="btn1" type="button">获得外部的内容</button>
+
+<p><a href="../tiy/t.asp-f=jquery_ajax_load.htm">亲自试一试</a></p>
+</div>
+
+
+<div>
+<h2>什么是 AJAX？</h2>
+
+<p>AJAX = 异步 JavaScript 和 XML（Asynchronous JavaScript and XML）。</p>
+
+<p>简短地说，在不重载整个网页的情况下，AJAX 通过后台加载数据，并在网页上进行显示。</p>
+
+<p>使用 AJAX 的应用程序案例：谷歌地图、腾讯微博、优酷视频、人人网等等。</p>
+
+<p>您可以在我们的 <a href="../ajax/index.htm">AJAX 教程</a>中学到更多有关 AJAX 的知识。</p>
+</div>
+
+
+<div>
+<h2>关于 jQuery 与 AJAX</h2>
+
+<p>jQuery 提供多个与 AJAX 有关的方法。</p>
+
+<p>通过 jQuery AJAX 方法，您能够使用 HTTP Get 和 HTTP Post 从远程服务器上请求文本、HTML、XML 或 JSON - 同时您能够把这些外部数据直接载入网页的被选元素中。</p>
+
+<p class="tip"><span>提示：</span>如果没有 jQuery，AJAX 编程还是有些难度的。</p>
+
+<p>编写常规的 AJAX 代码并不容易，因为不同的浏览器对 AJAX 的实现并不相同。这意味着您必须编写额外的代码对浏览器进行测试。不过，jQuery 团队为我们解决了这个难题，我们只需要一行简单的代码，就可以实现 AJAX 功能。</p>
+</div>
+
+
+<div>
+<h2>jQuery AJAX 方法</h2>
+
+<p>在下面的章节，我们将学习到最重要的 jQuery AJAX 方法。</p>
+</div>
+
+
+<div id="bpn">
+<ul class="prenext">
+<li class="pre"><a href="jquery_traversing_filtering.htm" title="jQuery 遍历 - 过滤">jQuery 过滤</a></li>
+<li class="next"><a href="jquery_ajax_load.htm" title="jQuery - AJAX load() 方法">jQuery 加载</a></li>
+</ul>
+</div>
+</div>
+
+<div id="sidebar">
+
+<div id="searchui">
+<form method="get" id="searchform" action="http://www.baidu.com/search">
+<p><label for="searched_content">Search:</label></p>
+<p><input type="hidden" name="s" value="10520733385329581432"><input type="hidden" name="ie" value="gbk"></p>
+<p>
+<input type="text" name="q" class="box"  id="searched_content" title="在此输入搜索内容。" />
+<input type="submit" value="Go" class="button" title="搜索！" />
+</p>
+</form>
+</div>
+
+<div id="tools">
+<h5 id="tools_reference"><a href="jquery_reference.htm" title="jQuery 参考手册">jQuery 参考手册</a></h5>
+<h5 id="tools_quiz"><a href="jquery_quiz.htm">jQuery 测验</a></h5>
+</div>
+
+<div id="ad">
+<h2>赞助商链接</h2>
+
+</div>
+
+</div>
+
+<div id="footer">
+
+</div>
+
+</div>
+</body>
+</html>

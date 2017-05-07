@@ -1,0 +1,389 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="Content-Language" content="zh-cn" />
+
+<meta name="robots" content="all" />
+
+<meta name="author" content="www.phper8.com" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta http-equiv="imagetoolbar" content="false" />
+
+<link rel="stylesheet" type="text/css" href="../c5.css" />
+<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+
+<title>ASP.NET AutoCompleteType 属性</title>
+</head>
+
+<body class="dotnet">
+<div id="wrapper">
+
+<div id="header">
+<a href="../index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="ad_head">
+
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.htm" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.htm" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.htm" title="服务器脚本教程">服务器脚本</a></li>
+<li id="d"><a href="../d.htm" title="ASP.NET 教程">ASP.NET 教程</a></li>
+<li id="x"><a href="../x.htm" title="XML 系列教程">XML 系列教程</a></li>
+<li id="ws"><a href="../ws.htm" title="Web Services 系列教程">Web Services 系列教程</a></li>
+<li id="w"><a href="../w.htm" title="建站手册">建站手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>ASP.NET 教程</h2>
+<ul>
+<li><a href="index.htm" title="ASP.NET 教程">ASP.NET 教程</a></li>
+<li><a href="aspnet.htm" title="ASP.NET 简介">ASP.NET 简介</a></li>
+</ul>
+<h2>WP 教程</h2>
+<ul>
+<li><a href="webpages_intro.htm" title="WebPages 简介">WebPages 简介</a></li>
+<li><a href="webpages_razor.htm" title="WebPages Razor">WebPages Razor</a></li>
+<li><a href="webpages_layout.htm" title="WebPages 布局">WebPages 布局</a></li>
+<li><a href="webpages_folders.htm" title="WebPages 文件夹">WebPages 文件夹</a></li>
+<li><a href="webpages_global.htm" title="WebPages 全局">WebPages 全局</a></li>
+<li><a href="webpages_forms.htm" title="WebPages 窗体">WebPages 窗体</a></li>
+<li><a href="webpages_objects.htm" title="WebPages 对象">WebPages 对象</a></li>
+<li><a href="webpages_files.htm" title="WebPages 文件">WebPages 文件</a></li>
+<li><a href="webpages_helpers.htm" title="WebPages 帮助器">WebPages 帮助器</a></li>
+<li><a href="webpages_webgrid.htm" title="WebPages WebGrid">WebPages WebGrid</a></li>
+<li><a href="webpages_chart.htm" title="WebPages 图表">WebPages 图表</a></li>
+<li><a href="webpages_email.htm" title="WebPages 电邮">WebPages 电邮</a></li>
+<li><a href="webpages_php.htm" title="WebPages PHP">WebPages PHP</a></li>
+<li><a href="webpages_publish.htm" title="WebPages 发布">WebPages 发布</a></li>
+<li><a href="webpages_examples.htm" title="WebPages 实例">WebPages 实例</a></li>
+</ul>
+<h2>WP 参考手册</h2>
+<ul>
+<li><a href="webpages_ref_classes.htm" title="WebPages 类">WebPages 类</a></li>
+<li><a href="webpages_ref_websecurity.htm" title="WebPages 安全">WebPages 安全</a></li>
+<li><a href="webpages_ref_database.htm" title="WebPages 数据库">WebPages 数据库</a></li>
+<li><a href="webpages_ref_webmail.htm" title="WebPages WebMail">WebPages WebMail</a></li>
+<li><a href="webpages_ref_helpers.htm" title="WebPages 助手">WebPages 助手</a></li>
+</ul>
+<h2>ASP.NET Razor</h2>
+<ul>
+<li><a href="razor_intro.htm" title="Razor 简介">Razor 简介</a></li>
+<li><a href="razor_syntax.htm" title="Razor 语法">Razor 语法</a></li>
+<li><a href="razor_cs_variables.htm" title="Razor C# 变量">Razor C# 变量</a></li>
+<li><a href="razor_cs_loops.htm" title="Razor C# 循环">Razor C# 循环</a></li>
+<li><a href="razor_cs_logic.htm" title="Razor 外边距合并">Razor C# 逻辑</a></li>
+<li><a href="razor_vb_variables.htm" title="Razor VB 变量">Razor VB 变量</a></li>
+<li><a href="razor_vb_loops.htm" title="Razor VB 循环">Razor VB 循环</a></li>
+<li><a href="razor_vb_logic.htm" title="Razor VB 逻辑">Razor VB 逻辑</a></li>
+</ul>
+<h2>ASP.NET MVC</h2>
+<ul>
+<li><a href="mvc_intro.htm" title="MVC 简介">MVC 简介</a></li>
+<li><a href="mvc_app.htm" title="MVC 应用程序">MVC 应用程序</a></li>
+<li><a href="mvc_folders.htm" title="MVC 文件夹">MVC 文件夹</a></li>
+<li><a href="mvc_layout.htm" title="MVC 布局">MVC 布局</a></li>
+<li><a href="mvc_controllers.htm" title="MVC 控制器">MVC 控制器</a></li>
+<li><a href="mvc_views.htm" title="MVC 视图">MVC 视图</a></li>
+<li><a href="mvc_database.htm" title="MVC 数据库">MVC 数据库</a></li>
+<li><a href="mvc_models.htm" title="MVC 模型">MVC 模型</a></li>
+<li><a href="mvc_security.htm" title="MVC 安全">MVC 安全</a></li>
+<li><a href="mvc_htmlhelpers.htm" title="MVC HTML 助手">MVC HTML 助手</a></li>
+<li><a href="mvc_publish.htm" title="MVC 发布">MVC 发布</a></li>
+<li><a href="mvc_reference.htm" title="MVC 参考手册">MVC 参考手册</a></li>
+</ul>
+<h2>WF 教程</h2>
+<ul>
+<li><a href="aspnet_intro.htm" title="WebForms 简介">WebForms 简介</a></li>
+<li><a href="aspnet_pages.htm" title="WebForms Pages">WebForms Pages</a></li>
+<li><a href="aspnet_controls.htm" title="WebForms 控件">WebForms 控件</a></li>
+<li><a href="aspnet_events.htm" title="WebForms 事件">WebForms 事件</a></li>
+<li><a href="aspnet_forms.htm" title="WebForms 窗体">WebForms 窗体</a></li>
+<li><a href="aspnet_viewstate.htm" title="WebForms ViewState">WebForms ViewState</a></li>
+<li><a href="aspnet_textbox.htm" title="WebForms TextBox">WebForms TextBox</a></li>
+<li><a href="aspnet_button.htm" title="WebForms Button">WebForms Button</a></li>
+<li><a href="aspnet_databinding.htm" title="WebForms Data Binding">WebForms 数据绑定</a></li>
+<li><a href="aspnet_arraylist.htm" title="WebForms ArrayList">WebForms ArrayList</a></li>
+<li><a href="aspnet_hashtable.htm" title="WebForms Hashtable">WebForms Hashtable</a></li>
+<li><a href="aspnet_sortedlist.htm" title="WebForms SortedList">WebForms SortedList</a></li>
+<li><a href="aspnet_xml.htm" title="WebForms XML 文件">WebForms XML 文件</a></li>
+<li><a href="aspnet_repeater.htm" title="WebForms Repeater">WebForms Repeater</a></li>
+<li><a href="aspnet_datalist.htm" title="WebForms DataList">WebForms DataList</a></li>
+<li><a href="aspnet_dbconnection.htm" title="WebForms DbConnection">WebForms 数据库连接</a></li>
+<li><a href="aspnet_masterpages.htm" title="WebForms Master Pages">WebForms 母版页</a></li>
+<li><a href="aspnet_navigation.htm" title="WebForms 导航">WebForms 导航</a></li>
+<li><a href="aspnet_examples.htm" title="WebForms 实例">WebForms 实例</a></li>
+</ul>
+<h2>WF 参考手册</h2>
+<ul>
+<li><a href="aspnet_refhtmlcontrols.htm" title="WebForms HTML">WebForms HTML</a></li>
+<li><a href="aspnet_refwebcontrols.htm" title="WebForms Controls">WebForms Controls</a></li>
+<li><a href="aspnet_refvalidationcontrols.htm" title="WebForms Validation">WebForms Validation</a></li>
+</ul>
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>ASP.NET AutoCompleteType 属性</h1>
+
+<div class="backtoreference">
+<p><a href="control_textbox.htm" title="ASP.NET TextBox 控件">返回 ASP.NET TextBox 控件参考手册</a></p>
+</div>
+
+<div>
+<h2>定义和用法</h2>
+
+<p>AutoCompleteType 属性用于设置或返回 TextBox 控件的 AutoComplete 种类。</p>
+<p>为了协助用户的数据输入，Microsoft Internet Explorer 5 及更高版本和 Netscape 都支持名为自动完成的功能。</p>
+<p>AutoComplete 特性可创建在文本框中已输入的值列表。当再次使用该文本框时，已输入的值的列表或显示出来。用户可以直接选取值，而不需要重复键入之前已输入的值。</p>
+<p>使用 AutoCompleteType 属性来控制 TextBox 控件的自动完成功能的行为。System.Web.UI.WebControls.AutoCompleteType 枚举用于表示可以应用到 AutoCompleteType 属性的值。</p>
+<h3>语法</h3>
+<pre>&lt;asp:TextBox <code>AutoCompleteType=&quot;cat&quot;</code> runat=&quot;server&quot;/&gt;</pre>
+
+<table class="dataintable">
+<tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td>cat</td>
+<td>
+<p>规定自动完成的种类。默认值为 None。</p>
+<p>可能的值：<a href="prop_webcontrol_textbox_autocompletetype.htm#AutoCompleteType">System.Web.UI.WebControls.AutoCompleteType 枚举值</a>之一。</p></td>
+</tr>
+</table>
+</div>
+
+<div>
+<h2>实例</h2>
+
+<p>下面的例子把 AutoCompleteType 模式设置为 &quot;HomePhone&quot;：</p>
+
+<pre>&lt;form runat=&quot;server&quot;&gt;
+&lt;asp:TextBox id=&quot;tb1&quot; runat=&quot;server&quot; <code>AutoCompleteType=&quot;HomePhone&quot;</code> /&gt;
+&lt;/form&gt;</pre>
+</div>
+
+<div class="example">
+<h2>实例</h2>
+<dl>
+<dt>设置 TextBox 控件的 AutoCompleteType 属性</dt>
+</dl>
+</div>
+
+<div>
+<h2><a id="AutoCompleteType">AutoCompleteType 枚举</a></h2>
+
+<table class="dataintable">
+<tr>
+<th>成员名称</th>
+<th>说明</th>
+</tr>
+
+<tr>
+<td>BusinessCity</td>
+<td>办公地址所在城市类别。</td>
+</tr>
+
+<tr>
+<td>BusinessCountryRegion</td>
+<td>办公地址所在国家/地区类别。</td>
+</tr>
+
+<tr>
+<td>BusinessFax</td>
+<td>办公地址的传真号码类别。</td>
+</tr>
+
+<tr>
+<td>BusinessPhone</td>
+<td>办公地址的电话号码类别。</td>
+</tr>
+
+<tr>
+<td>BusinessState</td>
+<td>办公地址所在州类别。</td>
+</tr>
+
+<tr>
+<td>BusinessStreetAddress</td>
+<td>办公地址所在街道类别。</td>
+</tr>
+
+<tr>
+<td>BusinessUrl</td>
+<td>业务网站的 URL 类别。</td>
+</tr>
+
+<tr>
+<td>BusinessZipCode</td>
+<td>办公地址的邮政编码类别。</td>
+</tr>
+
+<tr>
+<td>Cellular</td>
+<td>移动电话号码类别。</td>
+</tr>
+
+<tr>
+<td>Company</td>
+<td>企业名称类别。</td>
+</tr>
+
+<tr>
+<td>Department</td>
+<td>企业内的部门类别。</td>
+</tr>
+
+<tr>
+<td>Disabled</td>
+<td>为 TextBox 控件禁用自动完成功能。</td>
+</tr>
+
+<tr>
+<td>DisplayName</td>
+<td>为该用户显示的名称类别。</td>
+</tr>
+
+<tr>
+<td>Email</td>
+<td>用户的电子邮件地址类别。</td>
+</tr>
+
+<tr>
+<td>FirstName</td>
+<td>用户名类别。</td>
+</tr>
+
+<tr>
+<td>Gender</td>
+<td>用户性别类别。</td>
+</tr>
+
+<tr>
+<td>HomeCity</td>
+<td>家庭地址所在城市类别。</td>
+</tr>
+
+<tr>
+<td>HomeCountryRegion</td>
+<td>家庭地址所在国家/地区类别。</td>
+</tr>
+
+<tr>
+<td>HomeFax</td>
+<td>家庭地址的传真号码类别。</td>
+</tr>
+
+<tr>
+<td>Homepage</td>
+<td>网站的 URL 类别。</td>
+</tr>
+
+<tr>
+<td>HomePhone</td>
+<td>家庭地址的电话号码类别。</td>
+</tr>
+
+<tr>
+<td>HomeState</td>
+<td>家庭地址所在州类别。</td>
+</tr>
+
+<tr>
+<td>HomeStreetAddress</td>
+<td>家庭地址所在街道类别。</td>
+</tr>
+
+<tr>
+<td>HomeZipCode</td>
+<td>家庭地址的邮政编码类别。</td>
+</tr>
+
+<tr>
+<td>JobTitle</td>
+<td>用户的职务类别。</td>
+</tr>
+
+<tr>
+<td>LastName</td>
+<td>用户的姓氏类别。</td>
+</tr>
+
+<tr>
+<td>MiddleName</td>
+<td>用户的中名类别。</td>
+</tr>
+
+<tr>
+<td>None</td>
+<td>无任何类别与 TextBox 控件相关联。具有相同 ID 的所有 TextBox 控件都共享同一值列表。</td>
+</tr>
+
+<tr>
+<td>Notes</td>
+<td>要包含在窗体类别中的任何补充信息。</td>
+</tr>
+
+<tr>
+<td>Office</td>
+<td>业务办公室所在位置类别。</td>
+</tr>
+
+<tr>
+<td>Pager</td>
+<td>寻呼机号码类别。</td>
+</tr>
+
+<tr>
+<td>Search</td>
+<td>用于搜索网页或网站的关键字类别。</td>
+</tr>
+</table>
+</div>
+
+<div class="backtoreference">
+<p><a href="control_textbox.htm" title="ASP.NET TextBox 控件">返回 ASP.NET TextBox 控件参考手册</a></p>
+</div>
+</div>
+
+<div id="sidebar">
+
+<div id="searchui">
+<form method="get" id="searchform" action="http://www.baidu.com/search">
+<p><label for="searched_content">Search:</label></p>
+<p><input type="hidden" name="s" value="10520733385329581432"><input type="hidden" name="ie" value="gbk"></p>
+<p>
+<input type="text" name="q" class="box"  id="searched_content" title="在此输入搜索内容。" />
+<input type="submit" value="Go" class="button" title="搜索！" />
+</p>
+</form>
+</div>
+
+<div id="tools">
+<h5 id="tools_reference"><a href="aspnet_reference.htm">ASP.NET 参考手册</a></h5>
+</div>
+
+<div id="ad">
+<h2>赞助商链接</h2>
+
+</div>
+
+</div>
+
+<div id="footer">
+
+</div>
+
+</div>
+</body>
+</html>

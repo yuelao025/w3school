@@ -1,0 +1,451 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="gb2312" />
+<meta name="robots" content="all" />
+<meta name="author" content="www.phper8.com" />
+<link rel="stylesheet" type="text/css" href="../c5.css" />
+
+<title>ASP.NET Web Pages - 更多帮助器</title>
+
+</head>
+
+<body class="dotnet">
+
+<div id="wrapper">
+
+<div id="header">
+<a href="../index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="ad_head">
+
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.htm" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.htm" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.htm" title="服务器脚本教程">服务器脚本</a></li>
+<li id="d"><a href="../d.htm" title="ASP.NET 教程">ASP.NET 教程</a></li>
+<li id="x"><a href="../x.htm" title="XML 系列教程">XML 系列教程</a></li>
+<li id="ws"><a href="../ws.htm" title="Web Services 系列教程">Web Services 系列教程</a></li>
+<li id="w"><a href="../w.htm" title="建站手册">建站手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>ASP.NET 教程</h2>
+<ul>
+<li><a href="index.htm" title="ASP.NET 教程">ASP.NET 教程</a></li>
+<li><a href="aspnet.htm" title="ASP.NET 简介">ASP.NET 简介</a></li>
+</ul>
+<h2>WP 教程</h2>
+<ul>
+<li><a href="webpages_intro.htm" title="WebPages 简介">WebPages 简介</a></li>
+<li><a href="webpages_razor.htm" title="WebPages Razor">WebPages Razor</a></li>
+<li><a href="webpages_layout.htm" title="WebPages 布局">WebPages 布局</a></li>
+<li><a href="webpages_folders.htm" title="WebPages 文件夹">WebPages 文件夹</a></li>
+<li><a href="webpages_global.htm" title="WebPages 全局">WebPages 全局</a></li>
+<li><a href="webpages_forms.htm" title="WebPages 窗体">WebPages 窗体</a></li>
+<li><a href="webpages_objects.htm" title="WebPages 对象">WebPages 对象</a></li>
+<li><a href="webpages_files.htm" title="WebPages 文件">WebPages 文件</a></li>
+<li><a href="webpages_helpers.htm" title="WebPages 帮助器">WebPages 帮助器</a></li>
+<li><a href="webpages_webgrid.htm" title="WebPages WebGrid">WebPages WebGrid</a></li>
+<li><a href="webpages_chart.htm" title="WebPages 图表">WebPages 图表</a></li>
+<li><a href="webpages_email.htm" title="WebPages 电邮">WebPages 电邮</a></li>
+<li><a href="webpages_php.htm" title="WebPages PHP">WebPages PHP</a></li>
+<li><a href="webpages_publish.htm" title="WebPages 发布">WebPages 发布</a></li>
+<li><a href="webpages_examples.htm" title="WebPages 实例">WebPages 实例</a></li>
+</ul>
+<h2>WP 参考手册</h2>
+<ul>
+<li><a href="webpages_ref_classes.htm" title="WebPages 类">WebPages 类</a></li>
+<li><a href="webpages_ref_websecurity.htm" title="WebPages 安全">WebPages 安全</a></li>
+<li><a href="webpages_ref_database.htm" title="WebPages 数据库">WebPages 数据库</a></li>
+<li><a href="webpages_ref_webmail.htm" title="WebPages WebMail">WebPages WebMail</a></li>
+<li class="currentLink"><a href="webpages_ref_helpers.htm" title="WebPages 助手">WebPages 助手</a></li>
+</ul>
+<h2>ASP.NET Razor</h2>
+<ul>
+<li><a href="razor_intro.htm" title="Razor 简介">Razor 简介</a></li>
+<li><a href="razor_syntax.htm" title="Razor 语法">Razor 语法</a></li>
+<li><a href="razor_cs_variables.htm" title="Razor C# 变量">Razor C# 变量</a></li>
+<li><a href="razor_cs_loops.htm" title="Razor C# 循环">Razor C# 循环</a></li>
+<li><a href="razor_cs_logic.htm" title="Razor 外边距合并">Razor C# 逻辑</a></li>
+<li><a href="razor_vb_variables.htm" title="Razor VB 变量">Razor VB 变量</a></li>
+<li><a href="razor_vb_loops.htm" title="Razor VB 循环">Razor VB 循环</a></li>
+<li><a href="razor_vb_logic.htm" title="Razor VB 逻辑">Razor VB 逻辑</a></li>
+</ul>
+<h2>ASP.NET MVC</h2>
+<ul>
+<li><a href="mvc_intro.htm" title="MVC 简介">MVC 简介</a></li>
+<li><a href="mvc_app.htm" title="MVC 应用程序">MVC 应用程序</a></li>
+<li><a href="mvc_folders.htm" title="MVC 文件夹">MVC 文件夹</a></li>
+<li><a href="mvc_layout.htm" title="MVC 布局">MVC 布局</a></li>
+<li><a href="mvc_controllers.htm" title="MVC 控制器">MVC 控制器</a></li>
+<li><a href="mvc_views.htm" title="MVC 视图">MVC 视图</a></li>
+<li><a href="mvc_database.htm" title="MVC 数据库">MVC 数据库</a></li>
+<li><a href="mvc_models.htm" title="MVC 模型">MVC 模型</a></li>
+<li><a href="mvc_security.htm" title="MVC 安全">MVC 安全</a></li>
+<li><a href="mvc_htmlhelpers.htm" title="MVC HTML 助手">MVC HTML 助手</a></li>
+<li><a href="mvc_publish.htm" title="MVC 发布">MVC 发布</a></li>
+<li><a href="mvc_reference.htm" title="MVC 参考手册">MVC 参考手册</a></li>
+</ul>
+<h2>WF 教程</h2>
+<ul>
+<li><a href="aspnet_intro.htm" title="WebForms 简介">WebForms 简介</a></li>
+<li><a href="aspnet_pages.htm" title="WebForms Pages">WebForms Pages</a></li>
+<li><a href="aspnet_controls.htm" title="WebForms 控件">WebForms 控件</a></li>
+<li><a href="aspnet_events.htm" title="WebForms 事件">WebForms 事件</a></li>
+<li><a href="aspnet_forms.htm" title="WebForms 窗体">WebForms 窗体</a></li>
+<li><a href="aspnet_viewstate.htm" title="WebForms ViewState">WebForms ViewState</a></li>
+<li><a href="aspnet_textbox.htm" title="WebForms TextBox">WebForms TextBox</a></li>
+<li><a href="aspnet_button.htm" title="WebForms Button">WebForms Button</a></li>
+<li><a href="aspnet_databinding.htm" title="WebForms Data Binding">WebForms 数据绑定</a></li>
+<li><a href="aspnet_arraylist.htm" title="WebForms ArrayList">WebForms ArrayList</a></li>
+<li><a href="aspnet_hashtable.htm" title="WebForms Hashtable">WebForms Hashtable</a></li>
+<li><a href="aspnet_sortedlist.htm" title="WebForms SortedList">WebForms SortedList</a></li>
+<li><a href="aspnet_xml.htm" title="WebForms XML 文件">WebForms XML 文件</a></li>
+<li><a href="aspnet_repeater.htm" title="WebForms Repeater">WebForms Repeater</a></li>
+<li><a href="aspnet_datalist.htm" title="WebForms DataList">WebForms DataList</a></li>
+<li><a href="aspnet_dbconnection.htm" title="WebForms DbConnection">WebForms 数据库连接</a></li>
+<li><a href="aspnet_masterpages.htm" title="WebForms Master Pages">WebForms 母版页</a></li>
+<li><a href="aspnet_navigation.htm" title="WebForms 导航">WebForms 导航</a></li>
+<li><a href="aspnet_examples.htm" title="WebForms 实例">WebForms 实例</a></li>
+</ul>
+<h2>WF 参考手册</h2>
+<ul>
+<li><a href="aspnet_refhtmlcontrols.htm" title="WebForms HTML">WebForms HTML</a></li>
+<li><a href="aspnet_refwebcontrols.htm" title="WebForms Controls">WebForms Controls</a></li>
+<li><a href="aspnet_refvalidationcontrols.htm" title="WebForms Validation">WebForms Validation</a></li>
+</ul>
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>ASP.NET Web Pages - 更多帮助器</h1>
+
+
+<div id="tpn">
+<ul class="prenext">
+<li class="pre"><a href="webpages_ref_webmail.htm" title="WebPages WebMail">WebPages WebMail</a></li>
+<li class="next"><a href="razor_intro.htm" title="Razor 简介">Razor 简介</a></li>
+</ul>
+</div>
+
+
+<div>
+<h2>ASP.NET Helpers - 对象参考手册</h2>
+</div>
+
+
+<div>
+<h2>Analytics 对象参考手册 (Google)</h2>
+
+<dl class="define">
+<dt>Analytics.GetGoogleHtml(webPropertyId)</dt>
+<dd>呈现指定 ID 的 Google Analytics JavaScript 代码。</dd>
+
+<dt>Analytics.GetStatCounterHtml(project, security)</dt>
+<dd>呈现指定项目的 StatCounter Analytics JavaScript 代码。</dd>
+
+<dt>Analytics.GetYahooHtml(account)</dt>
+<dd>呈现指定帐户的 Yahoo Analytics JavaScript 代码。</dd>
+</dl>
+</div>
+
+
+<div>
+<h2>Bing 对象参考手册</h2>
+
+<dl class="define">
+<dt>Bing.SearchBox([boxWidth])</dt>
+<dd>向 Bing 传递搜索。如需规定要搜素的站点和搜索框的标题，您可以设置 Bing.SiteUrl 和 Bing.SiteTitle 属性。通常在 _AppStart 页面设置这些属性。</dd>
+
+<dt>Bing.AdvancedSearchBox([, boxWidth] [, resultWidth] [, resultHeight] 
+  [, themeColor] [, locale])</dt>
+<dd>以可选的格式在页面中显示 Bing 搜索结果。如需规定要搜素的站点和搜索框的标题，您可以设置 Bing.SiteUrl 和 Bing.SiteTitle 属性。通常在 _AppStart 页面设置这些属性。</dd>
+</dl>
+</div>
+
+
+<div>
+<h2>Chart 对象参考手册</h2>
+
+<dl class="define">
+<dt>Chart(width, height [, template] [, templatePath])</dt>
+<dd>对图表进行初始化。</dd>
+
+<dt>Chart.AddLegend([title] [, name])</dt>
+<dd>向图像添加图例。</dd>
+
+<dt>Chart.AddSeries([name] [, chartType] [, chartArea] [, axisLabel] [, legend] [, markerStep] [, xValue] [, xField] [, yValues] [, yFields] [, options])</dt>
+<dd>提供图表的数据点和系列特性。</dd>
+</dl>
+</div>
+
+
+<div>
+<h2>Crypto 对象参考手册</h2>
+
+<dl class="define">
+<dt>Crypto.Hash(string [, algorithm]) Crypto.Hash(bytes [, algorithm])</dt>
+<dd>返回指定数据的哈希值。默认算法是 sha256。</dd>
+</dl>
+</div>
+
+
+<div>
+<h2>Facebook 对象参考手册</h2>
+
+<dl class="define">
+<dt>Facebook.LikeButton(href [, buttonLayout] [, showFaces] [, width] [, height] [, action] [, font] [, colorScheme] [, refLabel])</dt>
+<dd>使 Facebook 用户生成到页面的连接。</dd>
+</dl>
+</div>
+
+
+<div>
+<h2>FileUpload 对象参考手册</h2>
+
+<dl class="define">
+<dt>FileUpload.GetHtml([initialNumberOfFiles] [, allowMoreFilesToBeAdded] [, includeFormTag] [, addText] [, uploadText])</dt>
+<dd>程序用于上传文件的 UI。</dd>
+</dl>
+</div>
+
+
+<div>
+<h2>GamerCard 对象参考手册</h2>
+
+<dl class="define">
+<dt>GamerCard.GetHtml(gamerTag)</dt>
+<dd>呈现指定的 Xbox 游戏者标签。</dd>
+</dl>
+</div>
+
+
+<div>
+<h2>Gravatar 对象参考手册</h2>
+
+<dl class="define">
+<dt>Gravatar.GetHtml(email [, imageSize] [, defaultImage] [, rating] [, imageExtension] [, attributes])</dt>
+<dd>呈现指定电邮地址的 Gravatar 图像。</dd>
+</dl>
+</div>
+
+
+<div>
+<h2>Json 对象参考手册</h2>
+
+<dl class="define">
+<dt>Json.Encode(object)</dt>
+<dd>将数据对象转换为 JavaScript 对象表示法 (JSON) 格式的字符串。</dd>
+
+<dt>Json.Decode(string)</dt>
+<dd>将 JavaScript 对象表示法 (JSON) 格式的数据转换为数据对象。</dd>
+</dl>
+</div>
+
+
+<div>
+<h2>LinkShare 对象参考手册</h2>
+
+<dl class="define">
+<dt>LinkShare.GetHtml(pageTitle [, pageLinkBack] [, twitterUserName] [, additionalTweetText] [, linkSites])</dt>
+<dd>使用指定的标题和可选 URL 来呈现社交网络连接。</dd>
+</dl>
+</div>
+
+
+<div>
+<h2>ModelState 对象参考手册</h2>
+
+<dl class="define">
+<dt>ModelStateDictionary.AddError(key, errorMessage)</dt>
+<dd>将错误消息添加到与指定键关联的模型状态中。</dd>
+
+<dt>ModelStateDictionary.AddFormError(errorMessage)</dt>
+<dd>将错误消息添加到与整个窗体关联的模型状态中。</dd>
+
+<dt>ModelStateDictionary.IsValid</dt>
+<dd>确定是否有任何错误消息与指定键关联。</dd>
+</dl>
+</div>
+
+
+<div>
+<h2>ObjectInfo 对象参考手册</h2>
+
+<dl class="define">
+<dt>ObjectInfo.Print(value [, depth] [, enumerationLength])</dt>
+<dd>呈现指定对象及任何子对象的属性名称和值。</dd>
+</dl>
+</div>
+
+
+<div>
+<h2>Recaptcha 对象参考手册</h2>
+
+<dl class="define">
+<dt>Recaptcha.GetHtml([, publicKey] [, theme] [, language] [, tabIndex])</dt>
+<dd>呈现 reCAPTCHA 验证测试。</dd>
+
+<dt>ReCaptcha.PublicKey<br />
+ReCaptcha.PrivateKey</dt>
+<dd>设置 reCAPTCHA 服务的公有键和私有键。通常在 _AppStart 页面设置这些属性。</dd>
+
+<dt>ReCaptcha.Validate([, privateKey])</dt>
+<dd>返回 reCAPTCHA 测试的结果。</dd>
+
+<dt>ServerInfo.GetHtml()</dt>
+<dd>呈现 ASP.NET Web Pages 的状态信息。</dd>
+</dl>
+</div>
+
+
+<div>
+<h2>Twitter 对象参考手册</h2>
+
+<dl class="define">
+<dt>Twitter.Profile(twitterUserName)</dt>
+<dd>呈现指定用户的 Twitter 流。</dd>
+
+<dt>Twitter.Search(searchQuery)</dt>
+<dd>呈现指定搜索文本的 Twitter 流。</dd>
+</dl>
+</div>
+
+
+<div>
+<h2>Video 对象参考手册</h2>
+
+<dl class="define">
+<dt>Video.Flash(filename [, width, height])</dt>
+<dd>为指定文件（可选宽度和高度）呈现 Flash 视频播放器。</dd>
+
+<dt>Video.MediaPlayer(filename [, width, height])</dt>
+<dd>为指定文件（可选宽度和高度）呈现 Windows 媒体播放器。</dd>
+
+<dt>Video.Silverlight(filename, width, height)</dt>
+<dd>为指定的 .xap 文件（必需的宽度和高度）呈现 Silverlight 播放器。</dd>
+</dl>
+</div>
+
+
+<div>
+<h2>WebCache 对象参考手册</h2>
+
+<dl class="define">
+<dt>WebCache.Get(key)</dt>
+<dd>从 WebCache 对象中检索指定项。</dd>
+
+<dt>WebCache.Remove(key)</dt>
+<dd>从 WebCache 对象中删除指定项。</dd>
+
+<dt>WebCache.Set(key, value [, minutesToCache] [, slidingExpiration])</dt>
+<dd>将一个项插入到 WebCache 对象。</dd>
+</dl>
+</div>
+
+
+<div>
+<h2>WebGrid 对象参考手册</h2>
+
+<dl class="define">
+<dt>WebGrid(data)</dt>
+<dd>初始化 WebGrid 类的新实例。</dd>
+
+<dt>WebGrid.GetHtml()</dt>
+<dd>返回用于呈现 WebGrid 实例并使用指定分页选项的 HTML 标记。</dd>
+
+<dt>WebGrid.Pager()</dt>
+<dd>返回用于为 WebGrid 实例提供指定分页支持的 HTML 标记。</dd>
+</dl>
+</div>
+
+
+<div>
+<h2>WebImage 对象参考手册</h2>
+
+<dl class="define">
+<dt>WebImage(path)</dt>
+<dd>加载指定路径的图像。</dd>
+
+<dt>WebImage.AddImagesWatermark(image)</dt>
+<dd>将水印图像添加到 WebImage 对象。</dd>
+
+<dt>WebImage.AddTextWatermark(text)</dt>
+<dd>在图像中添加水印文本。</dd>
+
+<dt>WebImage.FlipHorizontal()<br />
+WebImage.FlipVertical()</dt>
+<dd>水平或垂直翻转图片。</dd>
+
+<dt>WebImage.GetImageFromRequest()</dt>
+<dd>返回已使用浏览器上载的图像。</dd>
+
+<dt>WebImage.Resize(width, height)</dt>
+<dd>调整图像大小。</dd>
+
+<dt>WebImage.RotateLeft()<br />
+WebImage.RotateRight()</dt>
+<dd>将图像旋转到左侧或右侧。</dd>
+
+<dt>WebImage.Save(path [, imageFormat])</dt>
+<dd>把图像保存到指定路径。</dd>
+</dl>
+</div>
+
+
+<div id="bpn">
+<ul class="prenext">
+<li class="pre"><a href="webpages_ref_webmail.htm" title="WebPages WebMail">WebPages WebMail</a></li>
+<li class="next"><a href="razor_intro.htm" title="Razor 简介">Razor 简介</a></li>
+</ul>
+</div>
+
+
+
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="searchui">
+<form method="get" id="searchform" action="http://www.baidu.com/search">
+<p><label for="searched_content">Search:</label></p>
+<p><input type="hidden" name="s" value="10520733385329581432"><input type="hidden" name="ie" value="gbk"></p>
+<p>
+<input type="text" name="q" class="box"  id="searched_content" title="在此输入搜索内容。" />
+<input type="submit" value="Go" class="button" title="搜索！" />
+</p>
+</form>
+</div>
+
+<div id="tools">
+<h5 id="tools_reference"><a href="aspnet_reference.htm">ASP.NET 参考手册</a></h5>
+</div>
+
+<div id="ad">
+<h2>赞助商链接</h2>
+
+</div>
+
+</div>
+
+<div id="footer">
+
+</div>
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

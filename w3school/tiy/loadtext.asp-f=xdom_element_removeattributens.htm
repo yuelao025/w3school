@@ -1,0 +1,25 @@
+<html>
+<head><meta http-equiv=Content-Type content='text/html; charset=GB2312'>
+
+<script type="text/javascript" src="../example/xdom/loadxmldoc.js"> 
+</script>
+</head>
+<body>
+
+<script type="text/javascript">
+xmlDoc=loadXMLDoc("../example/xdom/books_ns.xml"/*tpa=http://www.jb51.net/example/xdom/books_ns.xml*/);
+
+x=xmlDoc.getElementsByTagName("title")[0];
+ns="../children/index.htm"/*tpa=http://www.jb51.net/children/*/;
+
+document.write("Attribute Found: ");
+document.write(x.hasAttributeNS(ns,"lang"));
+
+x.removeAttributeNS(ns,"lang");
+
+document.write("<br />Attribute Found: ");
+document.write(x.hasAttributeNS(ns,"lang"));
+
+</script>
+</body>
+</html>

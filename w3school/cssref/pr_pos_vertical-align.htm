@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="gbk" />
+<meta name="robots" content="all" />
+<meta name="author" content="www.phper8.com" />
+<link rel="stylesheet" type="text/css" href="../c5.css" />
+
+<title>CSS vertical-align 属性</title>
+
+</head>
+
+<body class="html">
+
+<div id="wrapper">
+
+<div id="header">
+<a href="../index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="ad_head">
+
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.htm" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.htm" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.htm" title="服务器脚本教程">服务器脚本</a></li>
+<li id="d"><a href="../d.htm" title="ASP.NET 教程">ASP.NET 教程</a></li>
+<li id="x"><a href="../x.htm" title="XML 系列教程">XML 系列教程</a></li>
+<li id="ws"><a href="../ws.htm" title="Web Services 系列教程">Web Services 系列教程</a></li>
+<li id="w"><a href="../w.htm" title="建站手册">建站手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>CSS 参考手册</h2>
+<ul>
+<li><a href="index.htm" title="CSS 参考手册">CSS 参考手册</a></li>
+<li><a href="css_selectors.htm" title="CSS 选择器参考手册">CSS 选择器</a></li>
+<li><a href="css_ref_aural.htm" title="CSS 听觉参考手册">CSS 听觉参考手册</a></li>
+<li><a href="css_websafe_fonts.htm" title="CSS 网络安全字体组合">CSS 网络安全字体</a></li>
+<li><a href="css_units.htm" title="CSS 单位">CSS 单位</a></li>
+<li><a href="css_colors.htm" title="CSS 颜色">CSS 颜色</a></li>
+<li><a href="css_colors_legal.htm" title="CSS 合法颜色值">CSS 颜色值</a></li>
+<li><a href="css_colornames.htm" title="CSS 颜色名">CSS 颜色名</a></li>
+<li><a href="css_colorsfull.htm" title="CSS 颜色十六进制值">CSS 颜色十六进制</a></li>
+</ul>
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>CSS vertical-align 属性</h1>
+
+<div class="backtoreference">
+<p><a href="index.htm" title="CSS 参考手册">CSS 参考手册</a></p>
+</div>
+
+<div>
+<h2>定义和用法</h2>
+
+<p>vertical-align 属性设置元素的垂直对齐方式。</p>
+
+<h3>说明</h3>
+
+<p>该属性定义行内元素的基线相对于该元素所在行的基线的垂直对齐。允许指定负长度值和百分比值。这会使元素降低而不是升高。在表单元格中，这个属性会设置单元格框中的单元格内容的对齐方式。</p>
+
+<table class="dataintable">
+  <tr>
+    <th style="width:25%;">默认值：</th>
+    <td style="width:75%;">baseline</td>
+  </tr>
+  <tr>
+    <th>继承性：</th>
+    <td>no</td>
+  </tr>
+  <tr>
+    <th>版本：</th>
+    <td>CSS1</td>
+  </tr>
+  <tr>
+    <th>JavaScript 语法：</th>
+    <td><i>object</i>.style.verticalAlign=&quot;bottom&quot;</td>
+  </tr>
+</table>
+</div>
+
+
+<div>
+<h2>实例</h2>
+
+<p>垂直对齐一幅图像：</p>
+
+<pre>
+img
+  {
+  <code>vertical-align:text-top;</code>
+  }
+</pre>
+
+<p><a href="../tiy/t.asp-f=csse_vertical-align.htm">TIY</a></p>
+</div>
+
+
+<div>
+<h2>浏览器支持</h2>
+
+<p>所有浏览器都支持 vertical-align 属性。</p>
+
+<p class="note"><span>注释：</span>任何的版本的 Internet Explorer （包括 IE8）都不支持属性值 &quot;inherit&quot;。</p>
+</div>
+
+
+<div>
+<h2>可能的值</h2>
+
+<table class="dataintable">
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+
+<tr>
+<td>baseline</td>
+<td>默认。元素放置在父元素的基线上。</td>
+</tr>
+
+<tr>
+<td>sub</td>
+<td>垂直对齐文本的下标。</td>
+</tr>
+
+<tr>
+<td>super</td>
+<td>垂直对齐文本的上标</td>
+</tr>
+
+<tr>
+<td>top</td>
+<td>把元素的顶端与行中最高元素的顶端对齐</td>
+</tr>
+
+<tr>
+<td>text-top</td>
+<td>把元素的顶端与父元素字体的顶端对齐</td>
+</tr>
+
+<tr>
+<td>middle</td>
+<td>把此元素放置在父元素的中部。</td>
+</tr>
+
+<tr>
+<td>bottom</td>
+<td>把元素的顶端与行中最低的元素的顶端对齐。</td>
+</tr>
+
+<tr>
+<td>text-bottom</td>
+<td>把元素的底端与父元素字体的底端对齐。</td>
+</tr>
+
+<tr>
+<td>length</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>%</td>
+<td>使用 &quot;line-height&quot; 属性的百分比值来排列此元素。允许使用负值。</td>
+</tr>
+
+<tr>
+<td>inherit</td>
+<td>规定应该从父元素继承 vertical-align 属性的值。</td>
+</tr>
+</table>
+</div>
+
+
+<div class="example">
+<h2>TIY 实例</h2>
+
+<dl>
+<dt><a href="../tiy/t.asp-f=csse_vertical-align.htm">垂直对齐图象</a></dt>
+<dd>本例演示如何在文本中垂直排列图象。</dd>
+</dl>
+</div>
+
+
+<div>
+<h2>相关页面</h2>
+
+<p>CSS 教程：<a href="../css/css_text.htm" title="CSS 文本">CSS 文本</a></p>
+
+<p>HTML DOM 参考手册：<a href="../jsref/prop_style_verticalalign.htm" title="HTML DOM verticalAlign 属性">verticalAlign 属性</a></p>
+</div>
+
+
+<div class="backtoreference">
+<p><a href="index.htm" title="CSS 参考手册">CSS 参考手册</a></p>
+</div>
+
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="searchui">
+<form method="get" id="searchform" action="http://www.baidu.com/search">
+<p><label for="searched_content">Search:</label></p>
+<p><input type="hidden" name="s" value="10520733385329581432"><input type="hidden" name="ie" value="gbk"></p>
+<p>
+<input type="text" name="q" class="box"  id="searched_content" title="在此输入搜索内容。" />
+<input type="submit" value="Go" class="button" title="搜索！" />
+</p>
+</form>
+</div>
+
+<div id="tools">
+<h5 id="tools_reference"><a href="index.htm">CSS 参考手册</a></h5>
+</div>
+
+<div id="ad">
+<h2>赞助商链接</h2>
+
+</div>
+
+</div>
+
+<div id="footer">
+
+</div>
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

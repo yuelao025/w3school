@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="gbk" />
+<meta name="robots" content="all" />
+<meta name="author" content="www.phper8.com" />
+<link rel="stylesheet" type="text/css" href="../c5.css" />
+
+<title>CSS3 :nth-last-child() 选择器</title>
+
+</head>
+
+<body class="html">
+
+<div id="wrapper">
+
+<div id="header">
+<a href="../index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="ad_head">
+
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.htm" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.htm" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.htm" title="服务器脚本教程">服务器脚本</a></li>
+<li id="d"><a href="../d.htm" title="ASP.NET 教程">ASP.NET 教程</a></li>
+<li id="x"><a href="../x.htm" title="XML 系列教程">XML 系列教程</a></li>
+<li id="ws"><a href="../ws.htm" title="Web Services 系列教程">Web Services 系列教程</a></li>
+<li id="w"><a href="../w.htm" title="建站手册">建站手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>CSS 参考手册</h2>
+<ul>
+<li><a href="index.htm" title="CSS 参考手册">CSS 参考手册</a></li>
+<li><a href="css_selectors.htm" title="CSS 选择器参考手册">CSS 选择器</a></li>
+<li><a href="css_ref_aural.htm" title="CSS 听觉参考手册">CSS 听觉参考手册</a></li>
+<li><a href="css_websafe_fonts.htm" title="CSS 网络安全字体组合">CSS 网络安全字体</a></li>
+<li><a href="css_units.htm" title="CSS 单位">CSS 单位</a></li>
+<li><a href="css_colors.htm" title="CSS 颜色">CSS 颜色</a></li>
+<li><a href="css_colors_legal.htm" title="CSS 合法颜色值">CSS 颜色值</a></li>
+<li><a href="css_colornames.htm" title="CSS 颜色名">CSS 颜色名</a></li>
+<li><a href="css_colorsfull.htm" title="CSS 颜色十六进制值">CSS 颜色十六进制</a></li>
+</ul>
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>CSS3 :nth-last-child() 选择器</h1>
+
+
+<div class="backtoreference">
+<p><a href="css_selectors.htm" title="CSS 选择器参考手册">CSS 选择器参考手册</a></p>
+</div>
+
+
+<div>
+<h2>实例</h2>
+
+<p>规定属于其父元素的第二个子元素的每个 p 元素，从最后一个子元素开始计数：</p>
+
+<pre>
+<code>p:nth-last-child(2)</code>
+{
+background:#ff0000;
+}
+</pre>
+
+<p><a target="_blank" href="../tiy/t.asp-f=css_sel_nth-last-child.htm">亲自试一试</a></p>
+</div>
+
+
+<div>
+<h2>定义和用法</h2>
+
+<p>:nth-last-child(<i>n</i>) 选择器匹配属于其元素的第 N 个子元素的每个元素，不论元素的类型，从最后一个子元素开始计数。</p>
+
+<p><i>n</i> 可以是数字、关键词或公式。</p>
+
+<p class="tip"><span>提示：</span>请参阅 <a href="selector_nth-last-of-type.htm" title="CSS :nth-last-of-type() 选择器">:nth-last-of-type()</a> 选择器，该选择器选取父元素的第 N 个指定类型的子元素，从最后一个子元素开始计数。</p>
+</div>
+
+
+<div>
+<h2>浏览器支持</h2>
+
+<p>所有主流浏览器均支持 :nth-last-child() 选择器，除了 IE8 及更早的版本。</p>
+</div>
+
+
+<div>
+<h2>亲自试一试 - 实例</h2>
+
+<h3>实例 1</h3>
+
+<p>Odd 和 even 是可用于匹配下标是奇数或偶数的子元素的关键词（第一个子元素的下标是 1）。</p>
+
+<p>在这里，我们为奇数和偶数 p 元素指定两种不同的背景色，从最后一个子元素开始计数：</p>
+
+<pre>
+<code>p:nth-last-child(odd)</code>
+{
+background:#ff0000;
+}
+<code>p:nth-last-child(even)</code>
+{
+background:#0000ff;
+}
+</pre>
+
+<p><a target="_blank" href="../tiy/t.asp-f=css_sel_nth-last-child_odd_even.htm">亲自试一试</a></p>
+
+<h3>实例 2</h3>
+
+<p>使用公式 (<i>an</i> + <i>b</i>)。描述：表示周期的长度，n 是计数器（从 0 开始），b 是偏移值。</p>
+
+<p>在这里，我们指定了下标是 3 的倍数的所有 p 元素的背景色，从最后一个子元素开始计数：</p>
+
+<pre>
+<code>p:nth-last-child(3n+0)</code>
+{
+background:#ff0000;
+}
+</pre>
+
+<p><a target="_blank" href="../tiy/t.asp-f=css_sel_nth-last-child_formula.htm">亲自试一试</a></p>
+</div>
+
+
+<div class="backtoreference">
+<p><a href="css_selectors.htm" title="CSS 选择器参考手册">CSS 选择器参考手册</a></p>
+</div>
+
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="searchui">
+<form method="get" id="searchform" action="http://www.baidu.com/search">
+<p><label for="searched_content">Search:</label></p>
+<p><input type="hidden" name="s" value="10520733385329581432"><input type="hidden" name="ie" value="gbk"></p>
+<p>
+<input type="text" name="q" class="box"  id="searched_content" title="在此输入搜索内容。" />
+<input type="submit" value="Go" class="button" title="搜索！" />
+</p>
+</form>
+</div>
+
+<div id="tools">
+<h5 id="tools_reference"><a href="index.htm">CSS 参考手册</a></h5>
+</div>
+
+<div id="ad">
+<h2>赞助商链接</h2>
+
+</div>
+
+</div>
+
+<div id="footer">
+
+</div>
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="gbk" />
+<meta name="robots" content="all" />
+<meta name="author" content="www.phper8.com" />
+<link rel="stylesheet" type="text/css" href="../c5.css" />
+
+<title>HTML DOM Text 对象</title>
+
+</head>
+
+<body class="browserscripting" id="jsref">
+
+<div id="wrapper">
+
+<div id="header">
+<a href="../index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="ad_head">
+
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.htm" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.htm" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.htm" title="服务器脚本教程">服务器脚本</a></li>
+<li id="d"><a href="../d.htm" title="ASP.NET 教程">ASP.NET 教程</a></li>
+<li id="x"><a href="../x.htm" title="XML 系列教程">XML 系列教程</a></li>
+<li id="ws"><a href="../ws.htm" title="Web Services 系列教程">Web Services 系列教程</a></li>
+<li id="w"><a href="../w.htm" title="建站手册">建站手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>JS & DOM 参考手册</h2>
+<ul>
+<li><a href="index.htm" title="JavaScript 参考手册">参考手册目录</a></li>
+</ul>
+<h2>JavaScript 对象</h2>
+<ul>
+<li><a href="jsref_obj_array.htm" title="JavaScript Array 对象参考手册">JS Array</a></li>
+<li><a href="jsref_obj_boolean.htm" title="JavaScript Boolean 对象参考手册">JS Boolean</a></li>
+<li><a href="jsref_obj_date.htm" title="JavaScript Date 对象参考手册">JS Date</a></li>
+<li><a href="jsref_obj_math.htm" title="JavaScript Math 对象的参考手册">JS Math</a></li>
+<li><a href="jsref_obj_number.htm" title="JavaScript Number 对象参考手册">JS Number</a></li>
+<li><a href="jsref_obj_string.htm" title="JavaScript String 对象参考手册">JS String</a></li>
+<li><a href="jsref_obj_regexp.htm" title="JavaScript RegExp 对象参考手册">JS RegExp</a></li>
+<li><a href="jsref_obj_global.htm" title="JavaScript 全局对象参考手册">JS Functions</a></li>
+<li><a href="jsref_events.htm" title="JavaScript 事件参考手册">JS Events</a></li>
+</ul>
+<h2>Browser 对象</h2>
+<ul>
+<li><a href="dom_obj_window.htm" title="HTML DOM Window 对象">Window</a></li>
+<li><a href="dom_obj_navigator.htm" title="HTML DOM Navigator 对象">Navigator</a></li>
+<li><a href="dom_obj_screen.htm" title="HTML DOM Screen 对象">Screen</a></li>
+<li><a href="dom_obj_history.htm" title="HTML DOM History 对象">History</a></li>
+<li><a href="dom_obj_location.htm" title="HTML DOM Location 对象">Location</a></li>
+</ul>
+<h2>HTML DOM 对象</h2>
+<ul>
+<li><a href="dom_obj_document.htm" title="HTML DOM Document 对象">DOM Document</a></li>
+<li><a href="dom_obj_all.htm" title="HTML DOM Element 对象">DOM Element</a></li>
+<li><a href="dom_obj_attributes.htm" title="HTML DOM Attribute 对象">DOM Attribute</a></li>
+<li><a href="dom_obj_event.htm" title="HTML DOM Event 对象">DOM Event</a></li>
+</ul>
+<h2>HTML 对象</h2>
+<ul>
+<li><a href="dom_obj_anchor.htm" title="HTML DOM Anchor 对象">&lt;a&gt;</a></li>
+<li><a href="dom_obj_area.htm" title="HTML DOM Area 对象">&lt;area&gt;</a></li>
+<li><a href="dom_obj_base.htm" title="HTML DOM Base 对象">&lt;base&gt;</a></li>
+<li><a href="dom_obj_body.htm" title="HTML DOM Body 对象">&lt;body&gt;</a></li>
+<li><a href="dom_obj_pushbutton.htm" title="HTML DOM Button 对象">&lt;button&gt;</a></li>
+<li><a href="dom_obj_canvas.htm" title="HTML DOM Canvas 对象">&lt;canvas&gt;</a></li>
+<li><a href="dom_obj_form.htm" title="HTML DOM Form 对象">&lt;form&gt;</a></li>
+<li><a href="dom_obj_frame.htm" title="HTML DOM Frame 对象">&lt;frame&gt;</a></li>
+<li><a href="dom_obj_frameset.htm" title="HTML DOM Frameset 对象">&lt;frameset&gt;</a></li>
+<li><a href="dom_obj_iframe.htm" title="HTML DOM IFrame 对象">&lt;iframe&gt;</a></li>
+<li><a href="dom_obj_image.htm" title="HTML DOM Image 对象">&lt;image&gt;</a></li>
+<li><a href="dom_obj_button.htm" title="HTML DOM Button 对象">&lt;input&gt; button</a></li>
+<li><a href="dom_obj_checkbox.htm" title="HTML DOM Checkbox 对象">&lt;input&gt; checkbox</a></li>
+<li><a href="dom_obj_fileupload.htm" title="HTML DOM FileUpload 对象">&lt;input&gt; file</a></li>
+<li><a href="dom_obj_hidden.htm" title="HTML DOM Hidden 对象">&lt;input&gt; hidden</a></li>
+<li><a href="dom_obj_password.htm" title="HTML DOM Password 对象">&lt;input&gt; password</a></li>
+<li><a href="dom_obj_radio.htm" title="HTML DOM Radio 对象">&lt;input&gt; radio</a></li>
+<li><a href="dom_obj_reset.htm" title="HTML DOM Reset 对象">&lt;input&gt; reset</a></li>
+<li><a href="dom_obj_submit.htm" title="HTML DOM Submit 对象">&lt;input&gt; submit</a></li>
+<li class="currentLink"><a href="dom_obj_text.htm" title="HTML DOM Text 对象">&lt;input&gt; text</a></li>
+<li><a href="dom_obj_link.htm" title="HTML DOM Link 对象">&lt;link&gt;</a></li>
+<li><a href="dom_obj_meta.htm" title="HTML DOM Meta 对象">&lt;meta&gt;</a></li>
+<li><a href="dom_obj_object.htm" title="HTML DOM Object 对象">&lt;object&gt;</a></li>
+<li><a href="dom_obj_option.htm" title="HTML DOM Option 对象">&lt;option&gt;</a></li>
+<li><a href="dom_obj_select.htm" title="HTML DOM Select 对象">&lt;select&gt;</a></li>
+<li><a href="dom_obj_style.htm" title="HTML DOM Style 对象">&lt;style&gt;</a></li>
+<li><a href="dom_obj_table.htm" title="HTML DOM Table 对象">&lt;table&gt;</a></li>
+<li><a href="dom_obj_tabledata.htm" title="HTML DOM TableCell 对象">&lt;td&gt;</a></li>
+<li><a href="dom_obj_tabledata.htm" title="HTML DOM TableCell 对象">&lt;th&gt;</a></li>
+<li><a href="dom_obj_tablerow.htm" title="HTML DOM TableRow 对象">&lt;tr&gt;</a></li>
+<li><a href="dom_obj_textarea.htm" title="HTML DOM Textarea 对象">&lt;textarea&gt;</a></li>
+</ul>
+</div><div id="selected">
+<h2>建站手册</h2>
+<ul>
+<li><a href="../site/index.htm" title="网站构建">网站构建</a></li>
+<li><a href="../w3c/index.htm" title="万维网联盟 (W3C)">万维网联盟 (W3C)</a></li>
+<li><a href="../browsers/index.htm" title="浏览器信息">浏览器信息</a></li>
+<li><a href="../quality/index.htm" title="网站品质">网站品质</a></li>
+<li><a href="../semweb/index.htm" title="语义网">语义网</a></li>
+<li><a href="../careers/index.htm" title="职业规划">职业规划</a></li>
+<li><a href="../hosting/index.htm" title="网站主机">网站主机</a></li>
+</ul>
+
+<h2><a href="../about/index.htm" title="关于 W3School" id="link_about">关于 W3School</a></h2>
+<h2><a href="../about/about_helping.htm" title="帮助 W3School" id="link_help">帮助 W3School</a></h2>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>HTML DOM Text 对象</h1>
+
+
+<div>
+<h2>Text 对象</h2>
+
+<p>Text 对象代表 HTML 表单中的文本输入域。</p>
+
+<p>在 HTML 表单中 &lt;input type=&quot;text&quot;&gt; 每出现一次，Text 对象就会被创建。</p>
+
+<p>该元素可创建一个单行的文本输入字段。当用户编辑显示的文本并随后把输入焦点转移到其他元素的时候，会触发 onchange 事件句柄。</p>
+
+<p>您可以使用 HTML &lt;textarea&gt; 标记来创建多行文本输入。参阅 <a href="dom_obj_textarea.htm">Textarea 对象</a>。</p>
+
+<p>对于掩码文本输入，把 &lt;input type=&quot;text&quot;&gt; 中的 type 设置为 &quot;password&quot;。参阅 <a href="dom_obj_password.htm">Input Password</a>。</p>
+
+<p>您可以通过表单的 elements[] 数组来访问文本输入域，或者通过使用 document.getElementById()。</p>
+</div>
+
+
+<div>
+<h2>Text 对象属性</h2>
+
+<table class="dataintable">
+  <tr>
+    <th style="width:25%">属性</th>
+    <th>描述</th>
+  </tr>
+  <tr>
+    <td><a href="http://www.jb51.net/w3school/jsref/prop_text_accesskey.htm">accessKey</a></td>
+    <td>设置或返回访问文本域的快捷键。</td>
+  </tr>
+  <tr>
+    <td><a href="prop_text_alt.htm">alt</a></td>
+    <td>设置或返回当浏览器不支持文本域时供显示的替代文本。</td>
+  </tr>
+  <tr>
+    <td><a href="prop_text_defaultvalue.htm">defaultValue</a></td>
+    <td>设置或返回文本域的默认值。</td>
+  </tr>
+  <tr>
+    <td><a href="prop_text_disabled.htm">disabled</a></td>
+    <td>设置或返回文本域是否应被禁用。</td>
+  </tr>
+  <tr>
+    <td><a href="prop_text_form.htm">form</a></td>
+    <td>返回一个对包含文本域的表单对象的引用。</td>
+  </tr>
+  <tr>
+    <td><a href="prop_text_id.htm">id</a></td>
+    <td>设置或返回文本域的 id。</td>
+  </tr>
+  <tr>
+    <td><a href="prop_text_maxlength.htm">maxLength</a></td>
+    <td>设置或返回文本域中的最大字符数。</td>
+  </tr>
+  <tr>
+    <td><a href="prop_text_name.htm">name</a></td>
+    <td>设置或返回文本域的名称。</td>
+  </tr>
+  <tr>
+    <td><a href="prop_text_readonly.htm">readOnly</a></td>
+    <td>设置或返回文本域是否应是只读的。</td>
+  </tr>
+  <tr>
+    <td><a href="prop_text_size.htm">size</a></td>
+    <td>设置或返回文本域的尺寸。</td>
+  </tr>
+  <tr>
+    <td><a href="prop_text_tabindex.htm">tabIndex</a></td>
+    <td>设置或返回文本域的 tab 键控制次序。</td>
+  </tr>
+  <tr>
+    <td><a href="prop_text_type.htm">type</a></td>
+    <td>返回文本域的表单元素类型。</td>
+  </tr>
+  <tr>
+    <td><a href="prop_text_value.htm">value</a></td>
+    <td>设置或返回文本域的 value 属性的值。</td>
+  </tr>
+</table>
+</div>
+
+
+<div>
+<h2>标准属性</h2>
+
+<table class="dataintable">
+  <tr>
+    <th style="width:25%">属性</th>
+    <th>描述</th>
+  </tr>
+  <tr>
+    <td><a href="prop_classname.htm">className</a></td>
+    <td>设置或返回元素的 class 属性。</td>
+  </tr>
+  <tr>
+    <td><a href="prop_dir.htm">dir</a></td>
+    <td>设置或返回文本的方向。</td>
+  </tr>
+  <tr>
+    <td><a href="prop_lang.htm">lang</a></td>
+    <td>设置或返回元素的语言代码。</td>
+  </tr>
+  <tr>
+    <td><a href="prop_title.htm">title</a></td>
+    <td>设置或返回元素的 title 属性。</td>
+  </tr>
+</table>
+</div>
+
+
+<div>
+<h2>Text 对象方法</h2>
+
+<table class="dataintable">
+  <tr>
+    <th style="width:25%">方法</th>
+    <th>描述</th>
+  </tr>
+  <tr>
+    <td><a href="met_text_blur.htm">blur()</a></td>
+    <td>从文本域上移开焦点。</td>
+  </tr>
+  <tr>
+    <td><a href="met_text_focus.htm">focus()</a></td>
+    <td>在文本域上设置焦点。</td>
+  </tr>
+  <tr>
+    <td><a href="met_text_select.htm">select()</a></td>
+    <td>选取文本域中的内容。</td>
+  </tr>
+</table>
+</div>
+
+
+
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="searchui">
+<form method="get" id="searchform" action="http://www.baidu.com/search">
+<p><label for="searched_content">Search:</label></p>
+<p><input type="hidden" name="s" value="10520733385329581432"><input type="hidden" name="ie" value="gbk"></p>
+<p>
+<input type="text" name="q" class="box"  id="searched_content" title="在此输入搜索内容。" />
+<input type="submit" value="Go" class="button" title="搜索！" />
+</p>
+</form>
+</div>
+
+<div id="tools">
+<h5 id="tools_reference"><a href="index.htm">JavaScript 参考手册</a></h5>
+<h5 id="tools_example"><a href="../example/jseg_examples.htm">JavaScript 实例</a></h5>
+<h5 id="tools_quiz"><a href="../js/js_quiz.htm">JavaScript 测验</a></h5>
+</div>
+
+<div id="ad">
+<h2>赞助商链接</h2>
+
+</div>
+
+</div>
+
+<div id="footer">
+
+</div>
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

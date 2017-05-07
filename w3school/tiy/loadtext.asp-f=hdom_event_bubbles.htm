@@ -1,0 +1,18 @@
+<html>
+<head><meta http-equiv=Content-Type content='text/html; charset=GB2312'>
+
+
+<script type="text/javascript">
+function getEventType(event)
+  { 
+  alert(event.bubbles);
+  }
+</script>
+</head>
+
+<body onmousedown="getEventType(event)">
+
+<p>Click somewhere in the document. An alert box will tell if the event is a bubbling event.</p>
+
+</body>
+</html>

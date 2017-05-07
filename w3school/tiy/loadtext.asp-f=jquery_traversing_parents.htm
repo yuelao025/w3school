@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv=Content-Type content='text/html; charset=GB2312'>
+
+  <style>
+  b, span, p, html body {
+    padding: .5em;
+    border: 1px solid;
+  }
+  b { color:blue; }
+  strong { color:red; }
+  </style>
+  <script type="text/javascript" src="../jquery/jquery.js"></script>
+</head>
+
+<body>
+  <div>
+    <p>
+      <span>
+        <b>我的父元素是：</b>
+      </span>
+    </p>
+  </div>
+
+<script>
+var parentEls = $("b").parents()
+            .map(function () { 
+                  return this.tagName; 
+                })
+            .get().join(", ");
+$("b").append("<strong>" + parentEls + "</strong>");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv=Content-Type content='text/html; charset=GB2312'>
+
+<script type="text/javascript" src="../jquery/jquery.js"></script>
+</head>
+<body>
+<p>Hello <a href="http://myapple.com.cn/">Apple</a>, how are you doing?</p>
+<script>$("p").contents().filter(function(){ return this.nodeType != 1; }).wrap("<b/>");</script>
+</body>
+</html>

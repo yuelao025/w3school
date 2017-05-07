@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="gbk" />
+<meta name="robots" content="all" />
+<meta name="author" content="www.phper8.com" />
+<link rel="stylesheet" type="text/css" href="../c5.css" />
+
+<title>jQuery Mobile 表单选择菜单</title>
+
+</head>
+
+<body class="browserscripting">
+
+<div id="wrapper">
+
+<div id="header">
+<a href="../index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="ad_head">
+
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.htm" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.htm" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.htm" title="服务器脚本教程">服务器脚本</a></li>
+<li id="d"><a href="../d.htm" title="ASP.NET 教程">ASP.NET 教程</a></li>
+<li id="x"><a href="../x.htm" title="XML 系列教程">XML 系列教程</a></li>
+<li id="ws"><a href="../ws.htm" title="Web Services 系列教程">Web Services 系列教程</a></li>
+<li id="w"><a href="../w.htm" title="建站手册">建站手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>jQuery Mobile 教程</h2>
+<ul>
+<li><a href="index.htm" title="jQuery Mobile 教程">jQuery Mobile 教程</a></li>
+<li><a href="jquerymobile_intro.htm" title="jQuery Mobile 简介">jQuery Mobile 简介</a></li>
+<li><a href="jquerymobile_install.htm" title="jQuery Mobile 安装">jQuery Mobile 安装</a></li>
+<li><a href="jquerymobile_pages.htm" title="jQuery Mobile 页面">jQuery Mobile 页面</a></li>
+<li><a href="jquerymobile_transitions.htm" title="jQuery Mobile 过渡">jQuery Mobile 过渡</a></li>
+<li><a href="jquerymobile_buttons.htm" title="jQuery Mobile 按钮">jQuery Mobile 按钮</a></li>
+<li><a href="jquerymobile_icons.htm" title="jQuery Mobile 图标">jQuery Mobile 图标</a></li>
+<li><a href="jquerymobile_toolbars.htm" title="jQuery Mobile 工具栏">jQuery Mobile 工具栏</a></li>
+<li><a href="jquerymobile_navbars.htm" title="jQuery Mobile 导航栏">jQuery Mobile 导航栏</a></li>
+<li><a href="jquerymobile_collapsibles.htm" title="jQuery Mobile 可折叠">jQuery Mobile 可折叠</a></li>
+<li><a href="jquerymobile_grids.htm" title="jQuery Mobile 网格">jQuery Mobile 网格</a></li>
+</ul>
+<h2>jQuery Mobile 列表</h2>
+<ul>
+<li><a href="jquerymobile_list_views.htm" title="jQuery Mobile 列表视图">jQuery Mobile 列表视图</a></li>
+<li><a href="jquerymobile_list_content.htm" title="jQuery Mobile 列表内容">jQuery Mobile 列表内容</a></li>
+</ul>
+<h2>jQuery Mobile 表单</h2>
+<ul>
+<li><a href="jquerymobile_form_basic.htm" title="jQuery Mobile 表单基础">jQuery Mobile 表单基础</a></li>
+<li><a href="jquerymobile_form_inputs.htm" title="jQuery Mobile 表单 - 输入">jQuery Mobile 表单输入</a></li>
+<li class="currentLink"><a href="jquerymobile_form_select.htm" title="jQuery Mobile 表单 - 选择">jQuery Mobile 表单选择</a></li>
+<li><a href="jquerymobile_form_sliders.htm" title="jQuery Mobile 表单 - 滑块">jQuery Mobile 表单滑块</a></li>
+</ul>
+<h2>jQuery Mobile 主题</h2>
+<ul>
+<li><a href="jquerymobile_themes.htm" title="jQuery Mobile 主题">jQuery Mobile 主题</a></li>
+</ul>
+<h2>jQuery Mobile 事件</h2>
+<ul>
+<li><a href="jquerymobile_events_intro.htm" title="jQuery Mobile 事件">jQuery Mobile 事件</a></li>
+<li><a href="jquerymobile_events_touch.htm" title="jQuery Mobile 触控">jQuery Mobile 触控</a></li>
+<li><a href="jquerymobile_events_scroll.htm" title="jQuery Mobile 滚动">jQuery Mobile 滚动</a></li>
+<li><a href="jquerymobile_events_orientation.htm" title="jQuery Mobile 方向">jQuery Mobile 方向</a></li>
+<li><a href="jquerymobile_events_page.htm" title="jQuery Mobile 页面事件">jQuery Mobile 页面事件</a></li>
+</ul>
+<h2>jQuery Mobile 实例</h2>
+<ul>
+<li><a href="jquerymobile_examples.htm" title="jQuery Mobile 实例">jQuery Mobile 实例</a></li>
+</ul>
+<h2>jQuery Mobile 参考手册</h2>
+<ul>
+<li><a href="jquerymobile_ref_data.htm" title="jQuery Mobile Data 参考手册">jQuery Mobile Data</a></li>
+<li><a href="jquerymobile_ref_events.htm" title="jQuery Mobile 事件">jQuery Mobile 事件</a></li>
+<li><a href="jquerymobile_ref_icons.htm" title="jQuery Mobile 图标">jQuery Mobile 图标</a></li>
+</ul>
+</div><div id="selected">
+<h2>建站手册</h2>
+<ul>
+<li><a href="../site/index.htm" title="网站构建">网站构建</a></li>
+<li><a href="../w3c/index.htm" title="万维网联盟 (W3C)">万维网联盟 (W3C)</a></li>
+<li><a href="../browsers/index.htm" title="浏览器信息">浏览器信息</a></li>
+<li><a href="../quality/index.htm" title="网站品质">网站品质</a></li>
+<li><a href="../semweb/index.htm" title="语义网">语义网</a></li>
+<li><a href="../careers/index.htm" title="职业规划">职业规划</a></li>
+<li><a href="../hosting/index.htm" title="网站主机">网站主机</a></li>
+</ul>
+
+<h2><a href="../about/index.htm" title="关于 W3School" id="link_about">关于 W3School</a></h2>
+<h2><a href="../about/about_helping.htm" title="帮助 W3School" id="link_help">帮助 W3School</a></h2>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>jQuery Mobile 表单选择菜单</h1>
+
+<div id="tpn">
+<ul class="prenext">
+<li class="pre"><a href="jquerymobile_form_inputs.htm" title="jQuery Mobile 表单 - 输入">jQuery Mobile 表单输入</a></li>
+<li class="next"><a href="jquerymobile_form_sliders.htm" title="jQuery Mobile 表单 - 滑块">jQuery Mobile 表单滑块</a></li>
+</ul>
+</div>
+
+
+<div>
+<h2>jQuery Mobile 选择菜单</h2>
+
+<p>iPhone 上的选择菜单：</p>
+
+<p>Android 设备上的选择菜单：</p>
+
+<p>&lt;select&gt; 元素创建带有若干选项的下拉菜单。</p>
+
+<p>&lt;select&gt; 元素中的 &lt;option&gt; 元素定义列表中的可用选项：</p>
+
+<h3>实例</h3>
+
+<pre>
+&lt;form method=&quot;post&quot; action=&quot;demoform.asp&quot;&gt;
+  &lt;fieldset data-role=&quot;fieldcontain&quot;&gt;
+    &lt;label for=&quot;day&quot;&gt;选择日期&lt;/label&gt;
+    <code>&lt;select name=&quot;day&quot; id=&quot;day&quot;&gt;
+      &lt;option value=&quot;mon&quot;&gt;星期一&lt;/option&gt;
+      &lt;option value=&quot;tue&quot;&gt;星期二&lt;/option&gt;
+      &lt;option value=&quot;wed&quot;&gt;星期三&lt;/option&gt;
+    &lt;/select&gt;</code>
+  &lt;/fieldset&gt;
+&lt;/form&gt;
+</pre>
+
+<p><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_select.htm">亲自试一试</a></p>
+
+<p class="tip"><span>提示：</span>如果列表中包含了一长列相关的选项，请在 &lt;select&gt; 中使用 &lt;optgroup&gt; 元素：</p>
+
+<h3>实例</h3>
+
+<pre>
+&lt;select name=&quot;day&quot; id=&quot;day&quot;&gt;
+   <code>&lt;optgroup label=&quot;Weekdays&quot;&gt;</code>
+    &lt;option value=&quot;mon&quot;&gt;Monday&lt;/option&gt;
+    &lt;option value=&quot;tue&quot;&gt;Tuesday&lt;/option&gt;
+    &lt;option value=&quot;wed&quot;&gt;Wednesday&lt;/option&gt;
+   <code>&lt;/optgroup&gt;</code>
+   <code>&lt;optgroup label=&quot;Weekends&quot;&gt;</code>
+    &lt;option value=&quot;sat&quot;&gt;Saturday&lt;/option&gt;
+    &lt;option value=&quot;sun&quot;&gt;Sunday&lt;/option&gt;
+   <code>&lt;/optgroup&gt;</code>
+&lt;/select&gt;
+</pre>
+
+<p><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_select_optgroup.htm">亲自试一试</a></p>
+</div>
+
+
+<div>
+<h2>自定义选择菜单</h2>
+
+<p>本页上方的图片，展示了移动平台显示选择菜单的独特方式。</p>
+
+<p>如果您希望在所有移动设备上显示一致外观的选择菜单，请使用 jQuery 的自定义选择菜单，data-native-menu=&quot;false&quot; 属性：</p>
+
+<h3>实例</h3>
+
+<pre>&lt;select name=&quot;day&quot; id=&quot;day&quot; <code>data-native-menu=&quot;false&quot;</code>&gt;</pre>
+
+<p><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_select_native.htm">亲自试一试</a></p>
+</div>
+
+
+<div>
+<h2>Multiple Selections</h2>
+
+<p>如需在选择菜单中选取多个选项，请在 &lt;select&gt; 元素中使用 multiple 属性：</p>
+
+<h3>实例</h3>
+
+<pre>&lt;select name=&quot;day&quot; id=&quot;day&quot; <code>multiple</code> data-native-menu=&quot;false&quot;&gt;</pre>
+
+<p><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_select_multiple.htm">亲自试一试</a></p>
+</div>
+
+
+<div class="example">
+<h2>更多实例</h2>
+
+<dl>
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_select_group.htm">使用 data-role=&quot;controlgroup&quot;</a></dt>
+<dd>如何组合一个或多个选择菜单。</dd>
+
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_select_horizontal.htm">使用 data-type=&quot;horizontal&quot;</a></dt>
+<dd>如何水平地组合选择菜单。</dd>
+
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_select_selected.htm">预选选项</a></dt>
+<dd>如何预选择一个选项。</dd>
+
+<dt><a target="_blank" href="../tiy/t.asp-f=jquerymobile_forms_collapsible.htm">可折叠表单</a></dt>
+<dd>如何创建可折叠表单。</dd>
+</dl>
+</div>
+
+
+<div id="bpn">
+<ul class="prenext">
+<li class="pre"><a href="jquerymobile_form_inputs.htm" title="jQuery Mobile 表单 - 输入">jQuery Mobile 表单输入</a></li>
+<li class="next"><a href="jquerymobile_form_sliders.htm" title="jQuery Mobile 表单 - 滑块">jQuery Mobile 表单滑块</a></li>
+</ul>
+</div>
+
+
+
+
+</div>
+<!-- maincontent end -->
+
+<div id="sidebar">
+
+<div id="searchui">
+<form method="get" id="searchform" action="http://www.baidu.com/search">
+<p><label for="searched_content">Search:</label></p>
+<p><input type="hidden" name="s" value="10520733385329581432"><input type="hidden" name="ie" value="gbk"></p>
+<p>
+<input type="text" name="q" class="box"  id="searched_content" title="在此输入搜索内容。" />
+<input type="submit" value="Go" class="button" title="搜索！" />
+</p>
+</form>
+</div>
+
+<div id="tools">
+<h5 id="tools_reference"><a href="jquerymobile_ref_data.htm">jQuery Mobile Data 属性</a></h5>
+<h5 id="tools_example"><a href="jquerymobile_examples.htm">jQuery Mobile 实例</a></h5>
+</div>
+
+<div id="ad">
+<h2>赞助商链接</h2>
+
+</div>
+
+</div>
+
+<div id="footer">
+
+</div>
+
+</div>
+<!-- wrapper end -->
+
+</body>
+
+</html>

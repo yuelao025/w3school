@@ -1,0 +1,19 @@
+<html><head><meta http-equiv=Content-Type content='text/html; charset=GB2312'></head>
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Hello World!</p>
+
+<div id="main">
+<p>DOM 很有用！</p>
+<p>本例演示 <b>getElementsByTagName</b> 方法。</p>
+</div>
+
+<script>
+x=document.getElementById("main").getElementsByTagName("p");
+document.write("div 中的第一段的文本: " + x[0].innerHTML);
+</script>
+
+</body>
+</html>

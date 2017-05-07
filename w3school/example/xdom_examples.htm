@@ -1,0 +1,444 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="Content-Language" content="zh-cn" />
+
+<meta name="robots" content="all" />
+
+<meta name="author" content="www.phper8.com" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta http-equiv="imagetoolbar" content="false" />
+
+<link rel="stylesheet" type="text/css" href="../c5.css" />
+<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
+
+<title>XML DOM 实例</title>
+</head>
+
+<body class="xml">
+<div id="wrapper">
+
+<div id="header">
+<a href="../index.html" title="w3school 在线教程" style="float:left;">w3school 在线教程</a>
+<div id="ad_head">
+
+</div>
+</div>
+
+<div id="navfirst">
+<ul id="menu">
+<li id="h"><a href="../h.htm" title="HTML 系列教程">HTML 系列教程</a></li>
+<li id="b"><a href="../b.htm" title="浏览器脚本教程">浏览器脚本</a></li>
+<li id="s"><a href="../s.htm" title="服务器脚本教程">服务器脚本</a></li>
+<li id="d"><a href="../d.htm" title="ASP.NET 教程">ASP.NET 教程</a></li>
+<li id="x"><a href="../x.htm" title="XML 系列教程">XML 系列教程</a></li>
+<li id="ws"><a href="../ws.htm" title="Web Services 系列教程">Web Services 系列教程</a></li>
+<li id="w"><a href="../w.htm" title="建站手册">建站手册</a></li>
+</ul>
+</div>
+
+<div id="navsecond">
+
+<div id="course"><h2>XML DOM</h2>
+<ul>
+<li><a href="../xmldom/index.htm" title="XML DOM 教程">DOM 首页</a></li>
+<li><a href="../xmldom/dom_intro.htm" title="XML DOM 简介">DOM 简介</a></li>
+<li><a href="../xmldom/dom_nodes.htm" title="XML DOM 节点">DOM 节点</a></li>
+<li><a href="../xmldom/dom_nodetree.htm" title="XML DOM 节点树">DOM 节点树</a></li>
+<li><a href="../xmldom/dom_parser.htm" title="解析 XML DOM">DOM 解析</a></li>
+<li><a href="../xmldom/dom_loadxmldoc.htm" title="XML DOM 加载函数">DOM 加载</a></li>
+<li><a href="../xmldom/dom_methods.htm" title="XML DOM - 属性和方法">DOM 属性和方法</a></li>
+<li><a href="../xmldom/dom_nodes_access.htm" title="XML DOM 访问节点">DOM 访问节点</a></li>
+<li><a href="../xmldom/dom_nodes_info.htm" title="XML DOM 节点信息">DOM 节点信息</a></li>
+<li><a href="../xmldom/dom_nodes_nodelist.htm" title="XML DOM 节点列表">DOM 节点列表</a></li>
+<li><a href="../xmldom/dom_nodes_traverse.htm" title="XML DOM 遍历节点">DOM 遍历节点</a></li>
+<li><a href="../xmldom/dom_mozilla_vs_ie.htm" title="XML DOM 浏览器差异">DOM 浏览器</a></li>
+<li><a href="../xmldom/dom_nodes_navigate.htm" title="XML DOM 定位节点">DOM 定位节点</a></li>
+</ul>
+<h2>节点操作</h2>
+<ul>
+<li><a href="../xmldom/dom_nodes_get.htm" title="XML DOM 获取节点值">DOM 获取节点</a></li>
+<li><a href="../xmldom/dom_nodes_set.htm" title="XML DOM 改变节点值">DOM 改变节点</a></li>
+<li><a href="../xmldom/dom_nodes_remove.htm" title="XML DOM 删除节点">DOM 删除节点</a></li>
+<li><a href="../xmldom/dom_nodes_replace.htm" title="XML DOM 替换节点">DOM 替换节点</a></li>
+<li><a href="../xmldom/dom_nodes_create.htm" title="XML DOM 创建节点">DOM 创建节点</a></li>
+<li><a href="../xmldom/dom_nodes_add.htm" title="XML DOM 添加节点">DOM 添加节点</a></li>
+<li><a href="../xmldom/dom_nodes_clone.htm" title="XML DOM 克隆节点">DOM 克隆节点</a></li>
+<li><a href="../xmldom/dom_httprequest.htm" title="XMLHttpRequest 对象">DOM HttpRequest</a></li>
+</ul>
+<h2>XML DOM 参考手册</h2>
+<ul>
+<li><a href="../xmldom/xmldom_reference.htm" title="XML DOM 参考手册">DOM 手册目录</a></li>
+<li><a href="../xmldom/dom_nodetype.htm" title="XML DOM 节点类型（Node Types）">DOM 节点类型</a></li>
+<li><a href="../xmldom/dom_attribute.htm" title="XML DOM Attr 对象">DOM Attr</a></li>
+<li><a href="http://www.jb51.net/w3school/xmldom/dom_cdatasection.htm" title="XML DOM CDATASection 对象">DOM CDATASection</a></li>
+<li><a href="../xmldom/dom_characterdata.htm" title="XML DOM CharacterData 对象">DOM CharacterData</a></li>
+<li><a href="../xmldom/dom_css2properties.htm" title="XML DOM CSS2Properties 对象">DOM CSS2Properties</a></li>
+<li><a href="../xmldom/dom_cssrule.htm" title="XML DOM CSSRule 对象">DOM CSSRule</a></li>
+<li><a href="../xmldom/dom_cssstylerule.htm" title="XML DOM CSSStyleRule 对象">DOM CSSStyleRule</a></li>
+<li><a href="../xmldom/dom_cssstylesheet.htm" title="XML DOM CSSStyleSheet 对象">DOM CSSStyleSheet</a></li>
+<li><a href="../xmldom/dom_comment.htm" title="XML DOM Comment 对象">DOM Comment</a></li>
+<li><a href="../xmldom/dom_document.htm" title="XML DOM Document 对象">DOM Document</a></li>
+<li><a href="../xmldom/dom_documenttype.htm" title="XML DOM DocumentType 对象">DOM DocumentType</a></li>
+<li><a href="../xmldom/dom_domexception.htm" title="XML DOM DOMException 对象">DOM DOMException</a></li>
+<li><a href="../xmldom/dom_domimplementation.htm" title="XML DOM Implementation 对象">DOM Implementation</a></li>
+<li><a href="../xmldom/dom_domparser.htm" title="XML DOM DOMParser 对象">DOM DOMParser</a></li>
+<li><a href="../xmldom/dom_element.htm" title="XML DOM Element 对象">DOM Element</a></li>
+<li><a href="../xmldom/dom_event.htm" title="XML DOM Event 对象">DOM Event</a></li>
+<li><a href="../xmldom/dom_htmlcollection.htm" title="XML DOM HTMLCollection 对象">DOM HTMLCollection</a></li>
+<li><a href="../xmldom/dom_htmldocument.htm" title="XML DOM HTMLDocument 对象">DOM HTMLDocument</a></li>
+<li><a href="../xmldom/dom_htmlelement.htm" title="XML DOM HTMLElement 对象">DOM HTMLElement</a></li>
+<li><a href="../xmldom/dom_namednodemap.htm" title="XML DOM NamedNodeMap 对象">DOM NamedNodeMap</a></li>
+<li><a href="../xmldom/dom_node.htm" title="XML DOM Node 对象">DOM Node</a></li>
+<li><a href="../xmldom/dom_nodelist.htm" title="XML DOM NodeList 对象">DOM NodeList</a></li>
+<li><a href="../xmldom/dom_errors.htm" title="XML DOM ParseError 对象">DOM ParseError</a></li>
+<li><a href="../xmldom/dom_processinginstruction.htm" title="XML DOM ProcessingInstr 对象">DOM ProcessingInstr</a></li>
+<li><a href="../xmldom/dom_range.htm" title="XML DOM Range 对象">DOM Range</a></li>
+<li><a href="../xmldom/dom_rangeexception.htm" title="XML DOM RangeException 对象">DOM RangeException</a></li>
+<li><a href="../xmldom/dom_text.htm" title="XML DOM Text 对象">DOM Text</a></li>
+<li><a href="../xmldom/dom_http.htm" title="XML DOM XMLHttpRequest 对象">DOM XMLHttpRequest</a></li>
+<li><a href="../xmldom/dom_xmlserializer.htm" title="XML DOM XMLSerializer 对象">DOM XMLSerializer</a></li>
+<li><a href="../xmldom/dom_xpathexpression.htm" title="XML DOM XPathExpression 对象">DOM XPathExpression</a></li>
+<li><a href="../xmldom/dom_xpathresult.htm" title="XML DOM XPathResult 对象">DOM XPathResult</a></li>
+<li><a href="../xmldom/dom_xsltprocessor.htm" title="XML DOM XSLTProcessor 对象">DOM XSLTProcessor</a></li>
+</ul>
+<h2>DOM 实例</h2>
+<ul>
+<li class="currentLink"><a href="xdom_examples.htm" title="XML DOM 实例">DOM 实例</a></li>
+<li><a href="../xmldom/dom_summary.htm" title="你已经学习了XML DOM，下一步呢？">DOM 总结</a></li>
+</ul>
+</div><div id="selected">
+<h2>建站手册</h2>
+<ul>
+<li><a href="../site/index.htm" title="网站构建">网站构建</a></li>
+<li><a href="../w3c/index.htm" title="万维网联盟 (W3C)">万维网联盟 (W3C)</a></li>
+<li><a href="../browsers/index.htm" title="浏览器信息">浏览器信息</a></li>
+<li><a href="../quality/index.htm" title="网站品质">网站品质</a></li>
+<li><a href="../semweb/index.htm" title="语义网">语义网</a></li>
+<li><a href="../careers/index.htm" title="职业规划">职业规划</a></li>
+<li><a href="../hosting/index.htm" title="网站主机">网站主机</a></li>
+</ul>
+
+<h2><a href="../about/index.htm" title="关于 W3School" id="link_about">关于 W3School</a></h2>
+<h2><a href="../about/about_helping.htm" title="帮助 W3School" id="link_help">帮助 W3School</a></h2>
+
+</div>
+
+</div>
+
+<div id="maincontent">
+
+<h1>XML DOM 实例</h1>
+
+<div  id="tpn">
+<ul class="prenext">
+<li class="pre"><a href="../xmldom/dom_xsltprocessor.htm" title="XML DOM XSLTProcessor 对象">DOM XSLTProcessor</a></li>
+<li class="next"><a href="../xmldom/dom_summary.htm" title="你已经学习了XML DOM，下一步呢？">DOM 总结</a></li>
+</ul>
+</div>
+
+<div class="example">
+<h2>XML DOM 解析</h2>
+<p>在下面的例子中使用的 XML 文件：<a href="xdom/books.xml">books.xml</a></p>
+<dl>
+<dt><a href="../tiy/t.asp-f=xdom_parser.htm">加载并解析 XML 文件</a></dt>
+<dt><a href="../tiy/t.asp-f=xdom_parser2.htm">加载并解析 XML 字符串</a></dt>
+</dl>
+<p><em><a href="../xmldom/dom_parser.htm" title="解析 XML DOM">例子解释</a></em></p>
+</div>
+
+<div class="example">
+<h2>XML DOM 属性和方法</h2>
+
+<p>下面的例子使用 XML 文件 <a href="xdom/books.xml">books.xml</a>。</p>
+
+<p>函数 <a href="../xmldom/dom_loadxmldoc.htm">loadXMLDoc()</a>，位于外部 JavaScript 中，用于加载 XML 文件。</p>
+<p>函数 <a href="../xmldom/dom_loadxmldoc.htm">loadXMLString()</a>，位于外部 JavaScript 中，用于加载 XML 字符串。</p>
+
+<dl>
+<dt><a href="../tiy/t.asp-f=xdom_parsertest.htm">加载并解析 XML 文件</a></dt>
+<dt><a href="../tiy/t.asp-f=xdom_parsertest2.htm">加载并解析 XML 字符串</a></dt>
+</dl>
+
+<p><em><a href="../xmldom/dom_methods.htm" title="XML DOM - 属性和方法">例子解释</a></em></p>
+</div>
+
+<div class="example">
+<h2>XML DOM 访问节点</h2>
+
+<p>下面的例子使用 XML 文件 <a href="xdom/books.xml">books.xml</a>。</p>
+
+<p>函数 <a href="../xmldom/dom_loadxmldoc.htm" title="XML DOM 加载函数">loadXMLDoc()</a>，位于外部 JavaScript 中，用于加载 XML 文件。</p>
+
+<dl>
+<dt><a href="../tiy/t.asp-f=xdom_index.htm">使用节点列表中的下标号来访问节点</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_list_loop.htm">使用 length 属性来循环节点</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_root.htm">查看元素的节点类型</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_loop.htm">循环元素节点</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_navigate.htm">使用节点的关系来循环元素节点</a></dt>
+</dl>
+
+<p><em><a href="../xmldom/dom_nodes_access.htm" title="XML DOM 访问节点">例子解释</a></em></p>
+</div>
+
+<div class="example">
+<h2>XML DOM 节点信息</h2>
+
+<p>下面的例子使用 XML 文件 <a href="xdom/books.xml">books.xml</a>。</p>
+
+<p>函数 <a href="../xmldom/dom_loadxmldoc.htm" title="XML DOM 加载函数">loadXMLDoc()</a>，位于外部 JavaScript 中，用于加载 XML 文件。</p>
+
+<dl>
+<dt><a href="../tiy/t.asp-f=xdom_nodename3.htm">获取元素节点的节点名称</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_getelement.htm">从文本节点获取文本</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_changeelement.htm">更改文本节点中的文本</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_root.htm">获取元素节点的节点名称和类型</a></dt>
+</dl>
+
+<p><em><a href="../xmldom/dom_nodes_info.htm" title="XML DOM 节点信息">例子解释</a></em></p>
+</div>
+
+<div class="example">
+<h2>XML DOM 节点列表和属性列表</h2>
+
+<p>下面的例子使用 XML 文件 <a href="xdom/books.xml">books.xml</a>。</p>
+
+<p>函数 <a href="../xmldom/dom_loadxmldoc.htm" title="XML DOM 加载函数">loadXMLDoc()</a>，位于外部 JavaScript 中，用于加载 XML 文件。</p>
+
+<dl>
+<dt><a href="../tiy/t.asp-f=xdom_nodelist.htm">从第一个 &lt;title&gt; 元素获取文本</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_nodelist_length.htm">通过使用 length 属性来循环节点</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_attributes.htm">获取元素的属性</a></dt>
+</dl>
+
+<p><em><a href="../xmldom/dom_nodes_nodelist.htm" title="XML DOM Node List">例子解释</a></em></p>
+</div>
+
+<div class="example">
+<h2>XML DOM 遍历节点树</h2>
+
+<p>下面的例子使用 XML 文件 <a href="xdom/books.xml">books.xml</a>。</p>
+
+<p>函数 <a href="../xmldom/dom_loadxmldoc.htm" title="XML DOM 加载函数">loadXMLString()</a>，位于外部 JavaScript 中，用于加载 XML 文件。</p>
+
+<dl>
+<dt><a href="../tiy/t.asp-f=xdom_parsertest3.htm">遍历一棵节点树</a></dt>
+<dd>循环 &lt;book&gt; 元素的所有子节点。</dd>
+</dl>
+
+<p><em><a href="../xmldom/dom_nodes_traverse.htm" title="XML DOM 遍历节点树">例子解释</a></em></p>
+</div>
+
+<div class="example">
+<h2>XML DOM 浏览器差异</h2>
+
+<p>下面的例子使用 XML 文件 <a href="xdom/books.xml">books.xml</a>。</p>
+
+<p>函数 <a href="../xmldom/dom_loadxmldoc.htm" title="XML DOM 加载函数">loadXMLDoc()</a>，位于外部 JavaScript 中，用于加载 XML 文件。</p>
+
+<dl>
+<dt><a href="../tiy/t.asp-f=xdom_nodetype_ievsmozilla.htm">显示节点列表的长度</a></dt>
+<dd>本例显示了一个节点列表的长度。在 IE 和其他浏览器中，结果是不同的。</dd>
+
+<dt><a href="../tiy/t.asp-f=xdom_nodetype_ievsmozilla2.htm">忽略节点间的空文本</a></dt>
+<dd>本例检查节点的 nodeType，且仅处理元素节点。</dd>
+</dl>
+
+<p><em><a href="../xmldom/dom_mozilla_vs_ie.htm" title="XML DOM 浏览器差异">例子解释</a></em></p>
+</div>
+
+<div class="example">
+<h2>XML DOM 定位节点</h2>
+
+<p>下面的例子使用 XML 文件 <a href="xdom/books.xml">books.xml</a>。</p>
+
+<p>函数 <a href="../xmldom/dom_loadxmldoc.htm" title="XML DOM 加载函数">loadXMLDoc()</a>，位于外部 JavaScript 中，用于加载 XML 文件。</p>
+
+<dl>
+<dt><a href="../tiy/t.asp-f=xdom_nav_parentnode.htm">获取节点的父节点</a></dt>
+<dt><a href="../tiy/t.asp-f=xdom_nav_firstchild.htm">获取节点的首个子节点</a></dt>
+<dt><a href="../tiy/t.asp-f=xdom_nav_lastchild.htm">获取节点的最后一个子节点</a></dt>
+<dt><a href="../tiy/t.asp-f=xdom_nav_nextsibling.htm">获取节点的下一个同级元素</a></dt>
+<dt><a href="../tiy/t.asp-f=xdom_nav_prevsibling.htm">获取节点的上一个同级元素</a></dt>
+</dl>
+
+<p><em><a href="../xmldom/dom_nodes_navigate.htm" title="XML DOM 定位节点">例子解释</a></em></p>
+</div>
+
+<div class="example">
+<h2>XML DOM 获取节点值</h2>
+ 
+<p>下面的例子使用 XML 文件 <a href="xdom/books.xml">books.xml</a>。</p>
+
+<p>函数 <a href="../xmldom/dom_loadxmldoc.htm" title="XML DOM 加载函数">loadXMLDoc()</a>，位于外部 JavaScript 中，用于加载 XML 文件。</p>
+
+<dl>
+<dt><a href="../tiy/t.asp-f=xdom_getelementsbytagname.htm">获取元素的值</a></dt>
+<dt><a href="../tiy/t.asp-f=xdom_getattribute.htm">获取属性的值</a></dt>
+</dl>
+
+<p><em><a href="../xmldom/dom_nodes_get.htm" title="XML DOM 获取节点值">例子解释</a></em></p>
+</div>
+
+<div class="example">
+<h2>XML DOM 改变节点值</h2>
+
+<p>下面的例子使用 XML 文件 <a href="xdom/books.xml">books.xml</a>。</p>
+<p>函数 <a href="../xmldom/dom_loadxmldoc.htm" title="XML DOM 加载函数">loadXMLDoc()</a>，位于外部 JavaScript 中，用于加载 XML 文件。</p>
+
+<dl>
+<dt><a href="../tiy/t.asp-f=xdom_nodevalue_change.htm">改变元素的文本节点</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_setattribute_1.htm">通过使用 setAttribute 来改变属性的值</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_att_nodevalue.htm">通过使用 nodeValue 来改变属性值</a></dt>
+</dl>
+
+<p><em><a href="../xmldom/dom_nodes_set.htm" title="XML DOM 改变节点值">例子解释</a></em></p>
+</div>
+
+<div class="example">
+<h2>XML DOM 删除节点</h2>
+
+<p>下面的例子使用 XML 文件 <a href="xdom/books.xml">books.xml</a>。</p>
+<p>函数 <a href="../xmldom/dom_loadxmldoc.htm" title="XML DOM 加载函数">loadXMLDoc()</a>，位于外部 JavaScript 中，用于加载 XML 文件。</p>
+
+<dl>
+<dt><a href="../tiy/t.asp-f=xdom_removechild.htm">删除元素节点</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_removecurrent.htm">删除当前元素节点</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_removetextnode.htm">删除文本节点</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_remove_nodevalue.htm">清空文本节点的文本</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_removeattribute.htm">根据名称删除属性</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_removeattributenode.htm">根据对象删除属性</a></dt>
+</dl>
+
+<p><em><a href="../xmldom/dom_nodes_remove.htm" title="XML DOM 删除节点">例子解释</a></em></p>
+</div>
+
+<div class="example">
+<h2>XML DOM 替换节点</h2>
+
+<p>下面的例子使用 XML 文件 <a href="xdom/books.xml">books.xml</a>。</p>
+<p>函数 <a href="../xmldom/dom_loadxmldoc.htm" title="XML DOM 加载函数">loadXMLDoc()</a>，位于外部 JavaScript 中，用于加载 XML 文件。</p>
+
+<dl>
+<dt><a href="../tiy/t.asp-f=xdom_replacechild.htm">替换元素节点</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_replacedata_2.htm">替换文本节点中的数据</a></dt>
+</dl>
+
+<p><em><a href="../xmldom/dom_nodes_replace.htm" title="XML DOM 替换节点">例子解释</a></em></p>
+</div>
+
+<div class="example">
+<h2>XML DOM 创建节点</h2>
+
+<p>下面的例子使用 XML 文件 <a href="xdom/books.xml">books.xml</a>。</p>
+<p>函数 <a href="../xmldom/dom_loadxmldoc.htm" title="XML DOM 加载函数">loadXMLDoc()</a>，位于外部 JavaScript 中，用于加载 XML 文件。</p>
+
+<dl>
+<dt><a href="../tiy/t.asp-f=xdom_createelement_1.htm">创建元素节点</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_createattribute.htm">通过使用 createAttribute 来创建属性节点</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_createattribute_3.htm">通过使用 setAttribute 来创建属性节点</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_createelement_1.htm">创建文本节点</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_createcdatasection_1.htm">创建一个 CDATA section 节点</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_createcomment_1.htm">创建注释节点</a></dt>
+</dl>
+
+<p><em><a href="../xmldom/dom_nodes_create.htm" title="XML DOM 创建节点">例子解释</a></em></p>
+</div>
+
+<div class="example">
+<h2>XML DOM 添加节点</h2>
+
+<p>下面的例子使用 XML 文件 <a href="xdom/books.xml">books.xml</a>。</p>
+<p>函数 <a href="../xmldom/dom_loadxmldoc.htm" title="XML DOM 加载函数">loadXMLDoc()</a>，位于外部 JavaScript 中，用于加载 XML 文件。</p>
+
+<dl>
+<dt><a href="../tiy/t.asp-f=xdom_createelement_2.htm">在最后一个子节点之后添加一个节点</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_insertbefore.htm">在指定的子节点之前添加一个节点</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_createattribute_3.htm">添加一个新属性</a></dt>
+
+<dt><a href="../tiy/t.asp-f=xdom_insertdata.htm">向文本节点添加数据</a></dt>
+</dl>
+
+<p><em><a href="../xmldom/dom_nodes_add.htm" title="XML DOM 添加节点">例子解释</a></em></p>
+</div>
+
+<div class="example">
+<h2>XML DOM 克隆节点</h2>
+
+<p>下面的例子使用 XML 文件 <a href="xdom/books.xml">books.xml</a>。</p>
+<p>函数 <a href="../xmldom/dom_loadxmldoc.htm" title="XML DOM 加载函数">loadXMLDoc()</a>，位于外部 JavaScript 中，用于加载 XML 文件。</p>
+
+<dl>
+<dt><a href="../tiy/t.asp-f=xdom_clonenode.htm">复制一个节点，并把它追加到已有的节点</a></dt>
+<dd>本例使用 cloneNode() 来复制一个节点，并把它追加到 XML 文档的根节点。</dd>
+</dl>
+
+<p><em><a href="../xmldom/dom_nodes_clone.htm" title="XML DOM 克隆节点">例子解释</a></em></p>
+</div>
+
+<div  id="bpn">
+<ul class="prenext">
+<li class="pre"><a href="../xmldom/dom_xsltprocessor.htm" title="XML DOM XSLTProcessor 对象">DOM XSLTProcessor</a></li>
+<li class="next"><a href="../xmldom/dom_summary.htm" title="你已经学习了XML DOM，下一步呢？">DOM 总结</a></li>
+</ul>
+</div>
+</div>
+
+<div id="sidebar">
+
+<div id="searchui">
+<form method="get" id="searchform" action="http://www.baidu.com/search">
+<p><label for="searched_content">Search:</label></p>
+<p><input type="hidden" name="s" value="10520733385329581432"><input type="hidden" name="ie" value="gbk"></p>
+<p>
+<input type="text" name="q" class="box"  id="searched_content" title="在此输入搜索内容。" />
+<input type="submit" value="Go" class="button" title="搜索！" />
+</p>
+</form>
+</div>
+
+<div id="tools">
+<h5 id="tools_reference"><a href="../xmldom/xmldom_reference.htm">XML DOM 参考手册</a></h5>
+<h5 id="tools_example"><a href="xdom_examples.htm">XML DOM 实例</a></h5>
+</div>
+
+<div id="ad">
+<h2>赞助商链接</h2>
+
+</div>
+
+</div>
+
+<div id="footer">
+
+</div>
+
+</div>
+</body>
+</html>

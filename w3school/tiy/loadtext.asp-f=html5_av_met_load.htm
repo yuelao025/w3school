@@ -1,0 +1,25 @@
+<html><head><meta http-equiv=Content-Type content='text/html; charset=GB2312'></head>
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<button onclick="changeSource()" type="button">更改视频</button>
+<br />
+<br />
+<video id="video1" controls="controls" autoplay="autoplay">
+  <source id="mp4_src" src="../example/html5/mov_bbb.mp4" type="video/mp4">
+  <source id="ogg_src" src="../example/html5/mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+<script> 
+function changeSource()
+  { 
+  document.getElementById("mp4_src").src="movie.mp4"/*tpa=http://www.jb51.net/tiy/movie.mp4*/;
+  document.getElementById("ogg_src").src="movie.ogg"/*tpa=http://www.jb51.net/tiy/movie.ogg*/;
+  document.getElementById("video1").load();
+  } 
+</script> 
+
+</body> 
+</html>

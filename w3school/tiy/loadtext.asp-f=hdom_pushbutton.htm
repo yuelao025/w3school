@@ -1,0 +1,21 @@
+<html>
+<head><meta http-equiv=Content-Type content='text/html; charset=GB2312'>
+
+<script type="text/javascript">
+function alertId()
+{
+var txt="Id: " + document.getElementById("myButton").id
+txt=txt + ", type: " + document.getElementById("myButton").type
+alert(txt)
+document.getElementById("myButton").disabled=true
+}
+</script>
+</head>
+
+<body>
+<form>
+<button id="myButton" onClick="alertId()">请点击我！</button>
+</form>
+</body>
+
+</html>

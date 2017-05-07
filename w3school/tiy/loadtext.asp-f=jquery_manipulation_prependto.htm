@@ -1,0 +1,18 @@
+<html>
+<head><meta http-equiv=Content-Type content='text/html; charset=GB2312'>
+
+<script type="text/javascript" src="../jquery/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("<b>Hello World!</b>").prependTo("p");
+  });
+});
+</script>
+</head>
+<body>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<button class="btn1">在每个 p 元素的开头插入文本</button>
+</body>
+</html>
